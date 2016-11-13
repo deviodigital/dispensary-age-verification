@@ -112,10 +112,7 @@ function wpd_ageverification() {
 ?>
 <script type="text/javascript">
 	(function( $ ) {
-
-	   $.ageCheck({
-		 "redirectTo" : "http://example.com/login"
-	   });
+	   $.ageCheck();
 	})( jQuery );
 </script>
 <?php
