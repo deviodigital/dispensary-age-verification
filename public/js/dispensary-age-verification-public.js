@@ -114,7 +114,7 @@
                 }
             },
             handleSuccess : function(){                
-                var successMsg = '<h3>Success!</h3><p>You are now being redirected back to the application...</p>';
+                var successMsg = '<h3>Success!</h3><p>You are now being redirected back to the website...</p>';
                 $('.wpd-av').html(successMsg);
                 setTimeout(function(){
                     $('.wpd-av').animate({'top':'-350px'},200, function(){
