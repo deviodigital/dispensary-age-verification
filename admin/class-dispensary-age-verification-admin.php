@@ -43,9 +43,9 @@ class Dispensary_Age_Verification_Admin {
 	/**
 	 * Initialize the class and set its properties.
 	 *
-	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of this plugin.
-	 * @param      string    $version    The version of this plugin.
+	 * @since 1.0.0
+	 * @param string $plugin_name      The name of this plugin.
+	 * @param string $version          The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
@@ -97,24 +97,5 @@ class Dispensary_Age_Verification_Admin {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-admin.js', array( 'jquery' ), $this->version, false );
-
 	}
-
 }
-
-
-/**
- * Register the JavaScript through wp_footer().
- *
- * @since    1.0.0
- */
-function wpd_ageverification() {
-?>
-<script type="text/javascript">
-	(function( $ ) {
-	   $.ageCheck();
-	})( jQuery );
-</script>
-<?php
-}
-add_action( 'wp_footer', 'wpd_ageverification' );

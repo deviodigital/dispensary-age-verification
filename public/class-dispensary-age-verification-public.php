@@ -97,7 +97,34 @@ class Dispensary_Age_Verification_Public {
 		 */
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
-
+		$translation_array = array(
+			'minAge' => '19',
+			'redirectTo' => 'https://www.wpdispensary.com',
+			'title' => __( 'Sample Title', 'dispensary-age-verification' ),
+			'copy' => 'random copy goes here letting the visitor know they need to be [21] years old  in order to view this website.',
+		);
+		wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
 	}
-
 }
+
+/**
+ * Register the JavaScript through wp_footer().
+ *
+ * @since    1.0.0
+ */
+function wpd_ageverification() {
+
+?>
+<script type="text/javascript">
+	(function( $ ) {
+		$.ageCheck({
+			"minAge" : object_name.minAge,
+      "redirectTo" : object_name.redirectTo,
+			"title" : object_name.title,
+			"copy" : object_name.copy,
+    });
+	})( jQuery );
+</script>
+<?php
+}
+add_action( 'wp_footer', 'wpd_ageverification' );
