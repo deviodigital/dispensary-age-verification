@@ -98,10 +98,10 @@ class Dispensary_Age_Verification_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
-			'minAge' => '19',
-			'redirectTo' => 'https://www.wpdispensary.com',
-			'title' => __( 'Sample Title', 'dispensary-age-verification' ),
-			'copy' => 'random copy goes here letting the visitor know they need to be [21] years old  in order to view this website.',
+			'minAge' => get_theme_mod( 'dav_minAge' ),
+			'redirectTo' => get_theme_mod( 'dav_redirectTo' ),
+			'title' => get_theme_mod( 'dav_title' ),
+			'copy' => get_theme_mod( 'dav_copy' ),
 		);
 		wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
 	}
