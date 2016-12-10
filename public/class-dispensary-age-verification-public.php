@@ -121,7 +121,6 @@ function wpd_ageverification() {
 		$.ageCheck({
 			"imgLogo" : object_name.imgLogo,
 			"minAge" : object_name.minAge,
-      "redirectTo" : object_name.redirectTo,
 			"title" : object_name.title,
 			"copy" : object_name.copy,
     });
