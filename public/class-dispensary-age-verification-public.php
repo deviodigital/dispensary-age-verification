@@ -99,7 +99,6 @@ class Dispensary_Age_Verification_Public {
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
 			'minAge' => get_theme_mod( 'dav_minAge' ),
-			'imgLogo' => get_theme_mod( 'dav_logo' ),
 			'redirectTo' => get_theme_mod( 'dav_redirectTo' ),
 			'title' => get_theme_mod( 'dav_title' ),
 			'copy' => get_theme_mod( 'dav_copy' ),
@@ -119,7 +118,6 @@ function wpd_ageverification() {
 <script type="text/javascript">
 	(function( $ ) {
 		$.ageCheck({
-			"imgLogo" : object_name.imgLogo,
 			"minAge" : object_name.minAge,
 			"title" : object_name.title,
 			"copy" : object_name.copy,

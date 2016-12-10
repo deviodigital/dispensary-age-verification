@@ -87,6 +87,22 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'     => 'number',
 		)
 	);
+	/* redirectTo */
+	$wp_customize->add_setting(
+		'dav_redirectTo',
+		array(
+			'default'           => '',
+			'sanitize_callback' => 'dav_sanitize_input',
+		)
+	);
+	$wp_customize->add_control(
+		'dav_redirectTo',
+		array(
+			'label'    => __( 'Redirect to', 'dispensary-age-verification' ),
+			'section'  => 'dav_display_options',
+			'type'     => 'dropdown-pages',
+		)
+	);
 
 } // end dav_register_theme_customizer
 add_action( 'customize_register', 'dav_register_theme_customizer' );
