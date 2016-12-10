@@ -118,6 +118,7 @@ function wpd_ageverification() {
 <script type="text/javascript">
 	(function( $ ) {
 		$.ageCheck({
+			"imgLogo" : object_name.imgLogo,
 			"minAge" : object_name.minAge,
 			"title" : object_name.title,
 			"copy" : object_name.copy,
