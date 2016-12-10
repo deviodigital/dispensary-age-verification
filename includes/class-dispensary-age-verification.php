@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The file that defines the core plugin class
  *
@@ -69,7 +68,7 @@ class Dispensary_Age_Verification {
 	public function __construct() {
 
 		$this->plugin_name = 'dispensary-age-verification';
-		$this->version = '1.0.0';
+		$this->version = '1.1';
 
 		$this->load_dependencies();
 		$this->set_locale();
@@ -118,6 +117,13 @@ class Dispensary_Age_Verification {
 		 * side of the site.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'public/class-dispensary-age-verification-public.php';
+
+		/**
+		 * Adding options to the WordPress Customizer.
+		 *
+		 * @since 1.1.0
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/customizer.php';
 
 		$this->loader = new Dispensary_Age_Verification_Loader();
 
@@ -211,5 +217,4 @@ class Dispensary_Age_Verification {
 	public function get_version() {
 		return $this->version;
 	}
-
 }
