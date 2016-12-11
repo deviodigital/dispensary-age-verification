@@ -26,6 +26,11 @@ You can read the [blog post](https://www.wpdispensary.com/dispensary-age-verific
 1. Upload `dispensary-age-verification` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin through the 'Plugins' menu in WordPress
 
+== Screenshots ==
+
+1. Example of the age verification plugin modal box
+2.The available Customizer options
+
 == Changelog ==
 
 = 1.1 =
