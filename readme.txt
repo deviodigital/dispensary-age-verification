@@ -29,7 +29,7 @@ You can read the [blog post](https://www.wpdispensary.com/dispensary-age-verific
 == Screenshots ==
 
 1. Example of the age verification plugin modal box
-2.The available Customizer options
+2. The available Customizer options
 
 == Changelog ==
 
