@@ -21,7 +21,7 @@
             redirectTo : '',
             redirectOnFail : '',
             title : 'Age Verification',
-            copy : 'This Website requires you to be [21] years or older to enter. Please enter your Date of Birth in the fields below to continue:'
+            copy : 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:'
         }, options);
 
 
@@ -78,7 +78,7 @@
                 html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
                 }
                 html += '<h2>' + settings.title + '</h2>';
-                html += '<p>' + copy.replace('[21]','<strong>'+settings.minAge+'</strong>'); + '</p>';
+                html += '<p>' + copy.replace('[age]','<strong>'+settings.minAge+'</strong>'); + '</p>';
                 html += '<div class="errors"></div>';
                 html += '<div class="fields"><select class="month">';
                 for(var i=0;i<months.length;i++){
