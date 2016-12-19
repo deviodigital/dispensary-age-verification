@@ -16,7 +16,7 @@
  * Plugin Name:       Dispensary Age Verification
  * Plugin URI:        https://www.wpdispensary.com
  * Description:       Check a visitors age before allowing them to view your dispensary website. Brought to you by <a href="https://www.wpdispensary.com">WP Dispensary</a> and <a href="http://www.deviodigital.com/">Devio Digital</a>
- * Version:           1.1
+ * Version:           1.2
  * Author:            WP Dispensary
  * Author URI:        https://www.wpdispensary.com
  * License:           GPL-2.0+
