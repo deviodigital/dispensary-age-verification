@@ -107,7 +107,7 @@
                 var birthday = new Date(_this.year, _this.month, _this.day);
                 var ageDifMs = Date.now() - birthday.getTime();
                 var ageDate = new Date(ageDifMs); // miliseconds from epoch
-                _this.age = Math.abs(ageDate.getUTCFullYear() - 1970);
+                _this.age = Math.abs(ageDate.getUTCFullYear() - 1999); // needs better way of checking age, more dynamic instead of 1999 being used
             },
             setSessionStorage  : function(key, val){
                 try {
