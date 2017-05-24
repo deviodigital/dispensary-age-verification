@@ -57,7 +57,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dav_copy',
 		array(
-			'default'            => 'This Website requires you to be [21] years or older to enter. Please enter your Date of Birth in the fields below to continue:',
+			'default'            => 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:',
 			'sanitize_callback'  => 'dav_sanitize_input',
 			'transport'          => 'refresh',
 		)
