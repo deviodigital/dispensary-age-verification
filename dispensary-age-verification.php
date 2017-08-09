@@ -3,20 +3,15 @@
 /**
  * The plugin bootstrap file
  *
- * This file is read by WordPress to generate the plugin information in the plugin
- * admin area. This file also includes all of the dependencies used by the plugin,
- * registers the activation and deactivation functions, and defines a function
- * that starts the plugin.
- *
  * @link              https://www.wpdispensary.com
  * @since             1.0.0
  * @package           Dispensary_Age_Verification
  *
  * @wordpress-plugin
- * Plugin Name:       Dispensary Age Verification
+ * Plugin Name:       WP Dispensary's Age Verification
  * Plugin URI:        https://www.wpdispensary.com
- * Description:       Check a visitors age before allowing them to view your dispensary website. Brought to you by <a href="https://www.wpdispensary.com">WP Dispensary</a> and <a href="http://www.deviodigital.com/">Devio Digital</a>
- * Version:           1.3
+ * Description:       Check a visitors age before allowing them to view your dispensary website. Brought to you by <a href="https://www.wpdispensary.com" target="_blank">WP Dispensary</a> and <a href="http://www.deviodigital.com/" target="_blank">Devio Digital</a>
+ * Version:           1.4
  * Author:            WP Dispensary
  * Author URI:        https://www.wpdispensary.com
  * License:           GPL-2.0+
