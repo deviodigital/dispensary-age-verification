@@ -70,6 +70,9 @@
         let html = '';
         html += '<div class="wpd-av-overlay"></div>';
         html += '<div class="wpd-av">';
+		if (settings.imgLogo != '') {
+		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
+		}
         html += `<h2>${settings.title}</h2>`;
         html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; +'</p>';
         html += '<div class="errors"></div>';
