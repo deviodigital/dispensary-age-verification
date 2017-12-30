@@ -87,6 +87,25 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'     => 'number',
 		)
 	);
+	/* Show or Hide Blog Description */
+	$wp_customize->add_setting(
+		'dav_adminHide',
+		array(
+			'default'            => '',
+			'sanitize_callback'  => 'dav_sanitize_input',
+			'transport'          => 'refresh'
+		)
+	);
+	$wp_customize->add_control(
+		'dav_adminHide',
+		array(
+			'section'  => 'dav_display_options',
+			'label'    => 'Hide for Admin users?',
+			'type'     => 'checkbox',
+			'priority'  => 11
+
+		)
+	);
 
 } // end dav_register_theme_customizer
 add_action( 'customize_register', 'dav_register_theme_customizer' );
