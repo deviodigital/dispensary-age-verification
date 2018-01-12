@@ -114,8 +114,7 @@ class Dispensary_Age_Verification_Public {
  */
 function wpd_ageverification() {
 
-?>
-<?php if ( '' != get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {} else { ?>
+if ( '' != get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {} else { ?>
 <script type="text/javascript">
 	(function( $ ) {
 		$.ageCheck({
@@ -126,7 +125,7 @@ function wpd_ageverification() {
     });
 	})( jQuery );
 </script>
-<?php } ?>
-<?php
+<?php }
+
 }
 add_action( 'wp_footer', 'wpd_ageverification' );
