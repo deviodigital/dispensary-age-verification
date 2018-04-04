@@ -18,8 +18,8 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'dav_display_options',
 		array(
-			'title'     => 'Age Verification',
-			'priority'  => 55,
+			'title'    => 'Age Verification',
+			'priority' => 55,
 		)
 	);
 	/* Add setting for logo uploader. */
@@ -40,60 +40,60 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dav_title',
 		array(
-			'default'            => 'Age Verification',
-			'sanitize_callback'  => 'dav_sanitize_input',
-			'transport'          => 'refresh',
+			'default'           => 'Age Verification',
+			'sanitize_callback' => 'dav_sanitize_input',
+			'transport'         => 'refresh',
 		)
 	);
 	$wp_customize->add_control(
 		'dav_title',
 		array(
-			'section'  => 'dav_display_options',
-			'label'    => 'Title',
-			'type'     => 'text',
+			'section' => 'dav_display_options',
+			'label'   => 'Title',
+			'type'    => 'text',
 		)
 	);
 	/* copy */
 	$wp_customize->add_setting(
 		'dav_copy',
 		array(
-			'default'            => 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:',
-			'sanitize_callback'  => 'dav_sanitize_input',
-			'transport'          => 'refresh',
+			'default'           => 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:',
+			'sanitize_callback' => 'dav_sanitize_input',
+			'transport'         => 'refresh',
 		)
 	);
 	$wp_customize->add_control(
 		'dav_copy',
 		array(
-			'section'  => 'dav_display_options',
-			'label'    => 'Copy',
-			'type'     => 'textarea',
+			'section' => 'dav_display_options',
+			'label'   => 'Copy',
+			'type'    => 'textarea',
 		)
 	);
 	/* minAge */
 	$wp_customize->add_setting(
 		'dav_minAge',
 		array(
-			'default'            => '18',
-			'sanitize_callback'  => 'dav_sanitize_input',
-			'transport'          => 'refresh',
+			'default'           => '18',
+			'sanitize_callback' => 'dav_sanitize_input',
+			'transport'         => 'refresh',
 		)
 	);
 	$wp_customize->add_control(
 		'dav_minAge',
 		array(
-			'section'  => 'dav_display_options',
-			'label'    => 'Minimum Age?',
-			'type'     => 'number',
+			'section' => 'dav_display_options',
+			'label'   => 'Minimum Age?',
+			'type'    => 'number',
 		)
 	);
 	/* Show or Hide Blog Description */
 	$wp_customize->add_setting(
 		'dav_adminHide',
 		array(
-			'default'            => '',
-			'sanitize_callback'  => 'dav_sanitize_input',
-			'transport'          => 'refresh'
+			'default'           => '',
+			'sanitize_callback' => 'dav_sanitize_input',
+			'transport'         => 'refresh',
 		)
 	);
 	$wp_customize->add_control(
@@ -102,8 +102,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'section'  => 'dav_display_options',
 			'label'    => 'Hide for Admin users?',
 			'type'     => 'checkbox',
-			'priority'  => 11
-
+			'priority' => 11,
 		)
 	);
 

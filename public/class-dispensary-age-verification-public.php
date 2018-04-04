@@ -44,13 +44,13 @@ class Dispensary_Age_Verification_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param      string    $plugin_name       The name of the plugin.
-	 * @param      string    $version    The version of this plugin.
+	 * @param string $plugin_name The name of the plugin.
+	 * @param string $version     The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
 		$this->plugin_name = $plugin_name;
-		$this->version = $version;
+		$this->version     = $version;
 
 	}
 
@@ -98,10 +98,10 @@ class Dispensary_Age_Verification_Public {
 
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
-			'minAge'     => get_theme_mod( 'dav_minAge', '18' ),
-			'imgLogo'    => get_theme_mod( 'dav_logo' ),
-			'title'      => get_theme_mod( 'dav_title', 'Age Verification' ),
-			'copy'       => get_theme_mod( 'dav_copy', 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:' ),
+			'minAge'  => get_theme_mod( 'dav_minAge', '18' ),
+			'imgLogo' => get_theme_mod( 'dav_logo' ),
+			'title'   => get_theme_mod( 'dav_title', 'Age Verification' ),
+			'copy'    => get_theme_mod( 'dav_copy', 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:' ),
 		);
 		wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
 	}
@@ -114,18 +114,21 @@ class Dispensary_Age_Verification_Public {
  */
 function wpd_ageverification() {
 
-if ( '' != get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {} else { ?>
-<script type="text/javascript">
-	(function( $ ) {
-		$.ageCheck({
-			"minAge" : object_name.minAge,
-			"imgLogo" : object_name.imgLogo,
-			"title" : object_name.title,
-			"copy" : object_name.copy,
-    });
-	})( jQuery );
-</script>
-<?php }
+	if ( '' !== get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
+
+	} else { ?>
+		<script type="text/javascript">
+			(function( $ ) {
+				$.ageCheck({
+					"minAge" : object_name.minAge,
+					"imgLogo" : object_name.imgLogo,
+					"title" : object_name.title,
+					"copy" : object_name.copy,
+				});
+			})( jQuery );
+		</script>
+	<?php
+	}
 
 }
 add_action( 'wp_footer', 'wpd_ageverification' );
