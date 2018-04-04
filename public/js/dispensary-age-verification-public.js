@@ -66,29 +66,19 @@
       },
       buildHtml() {
         const copy = settings.copy;
-        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
         let html = '';
         html += '<div class="wpd-av-overlay"></div>';
         html += '<div class="wpd-av">';
-		if (settings.imgLogo != '') {
-		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
-		}
+    		if (settings.imgLogo != '') {
+    		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
+    		}
         html += `<h2>${settings.title}</h2>`;
-        html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; +'</p>';
-        html += '<div class="errors"></div>';
-        html += '<div class="fields"><select class="month">';
-        for (let i = 0; i < months.length; i++) {
-          html += `<option value="${i}">${months[i]}</option>`;
-        }
-        html += '</select>';
-        html += '<input class="day" maxlength="2" placeholder="01" />';
-        html += '<input class="year" maxlength="4" placeholder="1989"/>';
-        html += '<button>Submit</button></div></div>';
-
+        html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; + '</p>';
+        html += '<button class="no">NO</button><button class="yes">YES</button></div></div>';
         $('body').append(html);
 
         $('.wpd-av-overlay').animate({
-          opacity: 0.8,
+          opacity: 0.9,
         }, 500, () => {
           _this.reCenter($('.wpd-av'));
           $('.wpd-av').css({
@@ -102,10 +92,7 @@
       },
       setAge() {
         _this.age = '';
-        const birthday = new Date(_this.year, _this.month, _this.day);
-        const ageDifMs = Date.now() - birthday.getTime();
-        const ageDate = new Date(ageDifMs); // miliseconds from epoch
-        _this.age = Math.abs(ageDate.getUTCFullYear() - 1970);
+        _this.age = Math.abs(Date.now() - 1970);
       },
       setSessionStorage(key, val) {
         try {
@@ -151,20 +138,12 @@
 
     _this.buildHtml();
 
-    $('.wpd-av button').on('click', () => {
-      _this.setValues();
-      if (_this.validate() === true) {
-        _this.setAge();
+    $('.wpd-av button.yes').on('click', () => {
+      _this.handleSuccess();
+    });
 
-        if (_this.age >= settings.minAge) {
-          if (!_this.setSessionStorage('ageVerified', 'true')) {
-            console.log('sessionStorage not supported by your browser');
-          }
-          _this.handleSuccess();
-        } else {
-          _this.handleUnderAge();
-        }
-      }
+    $('.wpd-av button.no').on('click', () => {
+      _this.handleUnderAge();
     });
 
     $(window).resize(() => {
