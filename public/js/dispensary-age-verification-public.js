@@ -12,6 +12,7 @@
  *
  */
 (function ($) {
+  'use strict';
   $.ageCheck = function (options) {
     const settings = $.extend({
       minAge: 21,
@@ -23,9 +24,6 @@
 
 
     const _this = {
-      month: '',
-      day: '',
-      year: '',
       age: '',
       errors: [],
       setValues() {
