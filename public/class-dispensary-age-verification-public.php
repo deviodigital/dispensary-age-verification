@@ -96,6 +96,7 @@ class Dispensary_Age_Verification_Public {
 		 * class.
 		 */
 
+		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
 			'minAge'  => get_theme_mod( 'dav_minAge', '18' ),

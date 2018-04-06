@@ -74,7 +74,7 @@
     		}
         html += `<h2>${settings.title}</h2>`;
         html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; + '</p>';
-        html += '<button class="no">NO</button><button class="yes">YES</button></div></div>';
+        html += '<p><button class="no">NO</button><button class="yes">YES</button></p></div></div>';
         $('body').append(html);
 
         $('.wpd-av-overlay').animate({
