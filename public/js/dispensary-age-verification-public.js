@@ -137,6 +137,9 @@
     _this.buildHtml();
 
     $('.wpd-av button.yes').on('click', () => {
+      if (!_this.setSessionStorage('ageVerified', 'true')) {
+        console.log('sessionStorage not supported by your browser');
+      }
       _this.handleSuccess();
     });
 
