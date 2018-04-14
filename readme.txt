@@ -4,7 +4,7 @@ Donate link: https://www.wpdispensary.com
 Tags: age-verify, dispensary, marijuana, cannabis, weed, adults-only, modal, over 16, over 18, over 19, over 20, over 21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 3.0.1
 Tested up to: 4.9.5
-Stable tag: 1.7
+Stable tag: 1.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -30,6 +30,9 @@ You can read the [blog post](https://www.wpdispensary.com/dispensary-age-verific
 2. The available Customizer options
 
 == Changelog ==
+
+= 1.8 =
+* Fixes bug where the pop up opened on every single page
 
 = 1.7 =
 * Changed the birthday input for a simple YES/NO button selection

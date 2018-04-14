@@ -68,7 +68,7 @@ class Dispensary_Age_Verification {
 	public function __construct() {
 
 		$this->plugin_name = 'dispensary-age-verification';
-		$this->version     = '1.7';
+		$this->version     = '1.8';
 
 		$this->load_dependencies();
 		$this->set_locale();
