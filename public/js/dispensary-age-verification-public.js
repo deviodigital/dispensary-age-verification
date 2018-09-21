@@ -101,7 +101,7 @@
         }
       },
       handleSuccess() {
-        const successMsg = '<h3>Success!</h3><p>You are now being redirected back to the site...</p>';
+        const successMsg = '<h2>Success!</h2><p>You are now being redirected back to the site...</p>';
         $('.wpd-av').html(successMsg);
         setTimeout(() => {
           $('.wpd-av').animate({
