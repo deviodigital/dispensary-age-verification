@@ -120,7 +120,7 @@
         }, 2000);
       },
       handleUnderAge() {
-        const underAgeMsg = '<h3>Sorry, you are not old enough to view this site...</h3>';
+        const underAgeMsg = '<h2>Sorry, you are not old enough to view this site...</h2>';
         $('.wpd-av').html(underAgeMsg);
         if (settings.redirectOnFail !== '') {
           setTimeout(() => {
