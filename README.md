@@ -5,7 +5,7 @@ Official add-on for [WP Dispensary](https://www.wpdipensary.com) that adds a pop
 
 **PLEASE NOTE: The `master` branch is under active development and not always stable to use**
 
-If you're looking to use this plugin, please download it from the [official WordPress plugin directory](https://wordpress.org/plugins/dispensary-age-verification/).
+If you're looking to use this plugin, please [download it](https://wordpress.org/plugins/dispensary-age-verification/) from the WordPress plugin directory.
 
 ### Release notes
 
