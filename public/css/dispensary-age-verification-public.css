@@ -35,19 +35,12 @@
 	border-bottom: 1px solid #ccc;
 	box-sizing: border-box;
 	font-size: 36px;
-	margin: 0 0 16px 0;
-	padding-bottom: 16px;
-}
-
-.wpd-av h3 {
-	box-sizing: border-box;
-	color: #649D09;
-	font-size: 36px;
-	margin-bottom: 5px;
+	margin: 0 0 12px 0;
+	padding-bottom: 12px;
 }
 
 .wpd-av img {
-	margin-botom: 15px;
+	margin-bottom: 12px;
 }
 
 .wpd-av p {
@@ -61,36 +54,6 @@
 	color:#FF1F1F;
 }
 
-.wpd-av select,
-.wpd-av input {
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	box-sizing: border-box;
-	color: #555;
-	font-size: 15px;
-	line-height: 1.5;
-	padding: 5px 10px;
-}
-
-.wpd-av input.day{
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	margin-right: 1%;
-	width: 19%;
-}
-
-.wpd-av input.year{
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	width: 30%;
-}
-.wpd-av select {
-	box-sizing: border-box;
-	margin-bottom: 10px;
-	margin-right: 1%;
-	padding-left: 4px;
-	width: 49%;
-}
 .wpd-av button {
 	background: #DDD;
 	background-image: none;
@@ -182,16 +145,6 @@
 		margin-left: 1px;
 		margin-right: 20px;
 		width: auto;
-	}
-
-	.wpd-av select,
-	.wpd-av input.day,
-	.wpd-av input.year{
-		box-sizing: border-box;
-		display:block;
-		margin-bottom:10px;
-		margin-right:0;
-		width:100%;
 	}
 
 	.wpd-av button {
