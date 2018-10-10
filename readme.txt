@@ -1,5 +1,5 @@
 === Dispensary Age Verification ===
-Contributors: deviodigital, wpdispensary
+Contributors: wpdispensary, deviodigital
 Donate link: https://www.wpdispensary.com
 Tags: age-verify, dispensary, marijuana, cannabis, weed, adults-only, modal, over 16, over 18, over 19, over 20, over 21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 3.0.1
@@ -12,8 +12,19 @@ Check a visitors age before allowing them to view your dispensary website.
 
 == Description ==
 
-### Dispensary Age Verification
-Official add-on for [WP Dispensary](https://www.wpdipensary.com) that adds a pop-up window to your website in order to verify the age of the visitor before allowing them to view your content.
+### Age Verification
+Add a pop-up window to your website and verify the age of the visitor before allowing them to view your content.
+
+Customize a variety of features in the age verification box.
+
+* Logo image
+* Title text
+* Message text
+* Minimum age
+
+You can do this by going to `Appearance -> Customize -> Age Verification` in your WordPress dashboard.
+
+This plugin is an official add-on for [WP Dispensary](https://www.wpdispensary.com), but **does not** require WP Dispensary to be install in order for it to work.
 
 ### Release notes
 
@@ -21,8 +32,9 @@ You can read the [blog post](https://www.wpdispensary.com/dispensary-age-verific
 
 == Installation ==
 
-1. Upload `dispensary-age-verification` folder to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
+1. Go to `Plugins -> Add New` and search for `Dispensary Age Verification`.
+2. Install & Activate the **Dispensary Age Verification** plugin.
+3. Customize the settings by going to `Appearance -> Customize -> Age Verification`.
 
 == Screenshots ==
 
