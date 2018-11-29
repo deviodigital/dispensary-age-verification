@@ -77,7 +77,7 @@
         $('body').append(html);
 
         $('.wpd-av-overlay').animate({
-          opacity: 0.9,
+          opacity: 1,
         }, 500, () => {
           _this.reCenter($('.wpd-av'));
           $('.wpd-av').css({
