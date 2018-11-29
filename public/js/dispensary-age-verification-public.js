@@ -20,8 +20,9 @@
       redirectOnFail: '',
       title: 'Age Verification',
       copy: 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below in order to continue:',
+      btnYes: 'YES',
+      btnNo: 'NO',
     }, options);
-
 
     const _this = {
       age: '',
@@ -72,7 +73,7 @@
     		}
         html += `<h2>${settings.title}</h2>`;
         html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; + '</p>';
-        html += '<p><button class="no">NO</button><button class="yes">YES</button></p></div></div>';
+        html += `<p><button class="no">${settings.btnNo}</button><button class="yes">${settings.btnYes}</button></p></div></div>`;
         $('body').append(html);
 
         $('.wpd-av-overlay').animate({

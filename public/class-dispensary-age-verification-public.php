@@ -103,6 +103,8 @@ class Dispensary_Age_Verification_Public {
 			'imgLogo' => get_theme_mod( 'dav_logo' ),
 			'title'   => get_theme_mod( 'dav_title', 'Age Verification' ),
 			'copy'    => get_theme_mod( 'dav_copy', 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:' ),
+			'btnYes'  => get_theme_mod( 'dav_button_yes', 'YES' ),
+			'btnNo'   => get_theme_mod( 'dav_button_no', 'NO' ),
 		);
 		wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
 	}
@@ -125,6 +127,8 @@ function wpd_ageverification() {
 					"imgLogo" : object_name.imgLogo,
 					"title" : object_name.title,
 					"copy" : object_name.copy,
+					"btnYes" : object_name.btnYes,
+					"btnNo" : object_name.btnNo,
 				});
 			})( jQuery );
 		</script>
