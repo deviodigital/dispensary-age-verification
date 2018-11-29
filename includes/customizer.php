@@ -30,7 +30,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			$wp_customize,
 			'dav_logo',
 			array(
-				'label'    => __( 'Upload Logo', 'dispensary-age-verification' ),
+				'label'    => __( 'Logo image', 'dispensary-age-verification' ),
 				'section'  => 'dav_display_options',
 				'settings' => 'dav_logo',
 			)
