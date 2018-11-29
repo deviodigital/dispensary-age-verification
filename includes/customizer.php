@@ -101,23 +101,6 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'    => 'number',
 		)
 	);
-	/* Yes button */
-	$wp_customize->add_setting(
-		'dav_button_yes',
-		array(
-			'default'           => 'YES',
-			'sanitize_callback' => 'dav_sanitize_input',
-			'transport'         => 'refresh',
-		)
-	);
-	$wp_customize->add_control(
-		'dav_button_yes',
-		array(
-			'section' => 'dav_display_options',
-			'label'   => 'Yes button text',
-			'type'    => 'text',
-		)
-	);
 	/* No button */
 	$wp_customize->add_setting(
 		'dav_button_no',
@@ -131,7 +114,24 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_button_no',
 		array(
 			'section' => 'dav_display_options',
-			'label'   => 'No button text',
+			'label'   => 'Button #1 text',
+			'type'    => 'text',
+		)
+	);
+	/* Yes button */
+	$wp_customize->add_setting(
+		'dav_button_yes',
+		array(
+			'default'           => 'YES',
+			'sanitize_callback' => 'dav_sanitize_input',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'dav_button_yes',
+		array(
+			'section' => 'dav_display_options',
+			'label'   => 'Button #2 text',
 			'type'    => 'text',
 		)
 	);
