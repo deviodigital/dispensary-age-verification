@@ -22,6 +22,20 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'priority' => 55,
 		)
 	);
+	/* Add setting for background image uploader. */
+	$wp_customize->add_setting( 'dav_bgImage' );
+	/* Add control for background image uploader (actual uploader) */
+	$wp_customize->add_control(
+		new WP_Customize_Image_Control(
+			$wp_customize,
+			'dav_bgImage',
+			array(
+				'label'    => __( 'Background image', 'dispensary-age-verification' ),
+				'section'  => 'dav_display_options',
+				'settings' => 'dav_bgImage',
+			)
+		)
+	);
 	/* Add setting for logo uploader. */
 	$wp_customize->add_setting( 'dav_logo' );
 	/* Add control for logo uploader (actual uploader) */

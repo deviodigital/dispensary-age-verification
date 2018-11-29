@@ -99,6 +99,7 @@ class Dispensary_Age_Verification_Public {
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
+			'bgImage' => get_theme_mod( 'dav_bgImage' ),
 			'minAge'  => get_theme_mod( 'dav_minAge', '18' ),
 			'imgLogo' => get_theme_mod( 'dav_logo' ),
 			'title'   => get_theme_mod( 'dav_title', 'Age Verification' ),
@@ -123,6 +124,7 @@ function wpd_ageverification() {
 		<script type="text/javascript">
 			(function( $ ) {
 				$.ageCheck({
+					"bgImage" : object_name.bgImage,
 					"minAge" : object_name.minAge,
 					"imgLogo" : object_name.imgLogo,
 					"title" : object_name.title,
@@ -136,4 +138,27 @@ function wpd_ageverification() {
 	}
 
 }
-add_action( 'wp_footer', 'wpd_ageverification' );
+add_action( 'wp_footer', 'wpd_av_public_js' );
+
+/**
+ * Register the CSS through wp_header().
+ *
+ * @since    1.0.0
+ */
+function wpd_av_public_css() {
+	if ( '' !== get_theme_mod( 'dav_bgImage' ) ) {
+	?>
+		<style type="text/css">
+		.wpd-av-overlay {
+			background: url(<?php echo get_theme_mod('dav_bgImage'); ?>) no-repeat center center;
+			box-sizing: border-box;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+		.wpd-av {
+			box-shadow: none;
+		}
+		</style>
+	<?php }
+}
+add_action( 'wp_head', 'wpd_av_public_css' );
