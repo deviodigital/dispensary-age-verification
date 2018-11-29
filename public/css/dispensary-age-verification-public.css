@@ -4,7 +4,7 @@
  */
 
 .wpd-av-overlay{
-	background: rgba(0,0,0,0.98);
+	background: rgba(0,0,0,0.9);
 	box-sizing: border-box;
 	cursor: wait;
 	height: 100%;
@@ -48,6 +48,10 @@
 	margin: 0;
 	color: #959595;
 	line-height: 20px;
+}
+
+.wpd-av p:last-child {
+    margin-bottom: 0;
 }
 
 .wpd-av p strong {
@@ -145,6 +149,11 @@
 		margin-left: 1px;
 		margin-right: 20px;
 		width: auto;
+	}
+
+	.wpd-av img {
+		max-width: 100%;
+		max-height: 200px;
 	}
 
 	.wpd-av button {
