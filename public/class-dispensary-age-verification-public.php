@@ -116,7 +116,7 @@ class Dispensary_Age_Verification_Public {
  *
  * @since    1.0.0
  */
-function wpd_ageverification() {
+function wpd_av_public_js() {
 
 	if ( '' !== get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
 
