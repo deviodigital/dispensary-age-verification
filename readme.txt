@@ -17,10 +17,12 @@ Add a pop-up window to your website and verify the age of the visitor before all
 
 Customize a variety of features in the age verification box.
 
+* Background image
 * Logo image
 * Title text
 * Message text
 * Minimum age
+* Yes/No button text
 
 You can do this by going to `Appearance -> Customize -> Age Verification` in your WordPress dashboard.
 
