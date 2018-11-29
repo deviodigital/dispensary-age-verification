@@ -103,7 +103,7 @@ class Dispensary_Age_Verification_Public {
 			'minAge'  => get_theme_mod( 'dav_minAge', '18' ),
 			'imgLogo' => get_theme_mod( 'dav_logo' ),
 			'title'   => get_theme_mod( 'dav_title', 'Age Verification' ),
-			'copy'    => get_theme_mod( 'dav_copy', 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below to continue:' ),
+			'copy'    => get_theme_mod( 'dav_copy', 'You must be [age] years old to enter.' ),
 			'btnYes'  => get_theme_mod( 'dav_button_yes', 'YES' ),
 			'btnNo'   => get_theme_mod( 'dav_button_no', 'NO' ),
 		);

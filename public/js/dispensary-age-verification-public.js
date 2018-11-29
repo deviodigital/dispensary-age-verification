@@ -19,7 +19,7 @@
       redirectTo: '',
       redirectOnFail: '',
       title: 'Age Verification',
-      copy: 'This Website requires you to be [age] years or older to enter. Please enter your Date of Birth in the fields below in order to continue:',
+      copy: 'You must be [age] years old to enter.',
       btnYes: 'YES',
       btnNo: 'NO',
     }, options);
