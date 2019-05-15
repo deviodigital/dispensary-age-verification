@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: WP Dispensary's Age Verification\n"
-"POT-Creation-Date: 2018-09-23 23:19-0400\n"
-"PO-Revision-Date: 2018-09-23 23:19-0400\n"
+"POT-Creation-Date: 2019-05-15 19:48-0400\n"
+"PO-Revision-Date: 2019-05-15 19:47-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,8 +21,52 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: includes/customizer.php:33
-msgid "Upload Logo"
+#: includes/customizer.php:21 includes/customizer.php:61
+msgid "Age Verification"
+msgstr ""
+
+#: includes/customizer.php:34
+msgid "Background image"
+msgstr ""
+
+#: includes/customizer.php:50
+msgid "Logo image"
+msgstr ""
+
+#: includes/customizer.php:70
+msgid "Title"
+msgstr ""
+
+#: includes/customizer.php:79
+msgid "You must be [age] years old to enter."
+msgstr ""
+
+#: includes/customizer.php:88
+msgid "Copy"
+msgstr ""
+
+#: includes/customizer.php:106
+msgid "Minimum Age?"
+msgstr ""
+
+#: includes/customizer.php:115
+msgid "NO"
+msgstr ""
+
+#: includes/customizer.php:124
+msgid "Button #1 text"
+msgstr ""
+
+#: includes/customizer.php:133
+msgid "YES"
+msgstr ""
+
+#: includes/customizer.php:142
+msgid "Button #2 text"
+msgstr ""
+
+#: includes/customizer.php:159
+msgid "Hide for Admin users?"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
@@ -38,7 +82,7 @@ msgstr ""
 msgid ""
 "Check a visitors age before allowing them to view your dispensary website. "
 "Brought to you by <a href=\"https://www.wpdispensary.com\" target=\"_blank"
-"\">WP Dispensary</a> and <a href=\"http://www.deviodigital.com/\" target="
+"\">WP Dispensary</a> and <a href=\"https://www.deviodigital.com/\" target="
 "\"_blank\">Devio Digital</a>"
 msgstr ""
 
