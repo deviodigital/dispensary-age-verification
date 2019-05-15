@@ -24,6 +24,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	);
 	/* Add setting for background image uploader. */
 	$wp_customize->add_setting( 'dav_bgImage' );
+
 	/* Add control for background image uploader (actual uploader) */
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
@@ -36,8 +37,10 @@ function dav_register_theme_customizer( $wp_customize ) {
 			)
 		)
 	);
+
 	/* Add setting for logo uploader. */
 	$wp_customize->add_setting( 'dav_logo' );
+
 	/* Add control for logo uploader (actual uploader) */
 	$wp_customize->add_control(
 		new WP_Customize_Image_Control(
@@ -50,6 +53,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			)
 		)
 	);
+
 	/* title */
 	$wp_customize->add_setting(
 		'dav_title',
@@ -67,6 +71,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+
 	/* copy */
 	$wp_customize->add_setting(
 		'dav_copy',
@@ -84,6 +89,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'    => 'textarea',
 		)
 	);
+
 	/* minAge */
 	$wp_customize->add_setting(
 		'dav_minAge',
@@ -101,6 +107,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'    => 'number',
 		)
 	);
+
 	/* No button */
 	$wp_customize->add_setting(
 		'dav_button_no',
@@ -118,6 +125,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'type'    => 'text',
 		)
 	);
+
 	/* Yes button */
 	$wp_customize->add_setting(
 		'dav_button_yes',
@@ -156,6 +164,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 
 } // end dav_register_theme_customizer
 add_action( 'customize_register', 'dav_register_theme_customizer' );
+
 /**
  * Sanitizes the incoming input and returns it prior to serialization.
  *
