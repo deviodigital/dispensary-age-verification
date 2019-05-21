@@ -15,7 +15,7 @@
   'use strict';
   $.ageCheck = function (options) {
     const settings = $.extend({
-      minAge: 21,
+      minAge: 18,
       redirectTo: '',
       redirectOnFail: '',
       title: 'Age Verification',
@@ -131,12 +131,15 @@
       },
     }; // end _this
 
+    // Check for cookie and reture false if it's set.
     if (sessionStorage.getItem('ageVerified') === 'true') {
       return false;
     }
 
+    // Create pop up.
     _this.buildHtml();
 
+    // Successful "YES" button click.
     $('.wpd-av button.yes').on('click', () => {
       if (!_this.setSessionStorage('ageVerified', 'true')) {
         console.log('sessionStorage not supported by your browser');
@@ -144,6 +147,7 @@
       _this.handleSuccess();
     });
 
+    // Successful "NO" button click.
     $('.wpd-av button.no').on('click', () => {
       _this.handleUnderAge();
     });
