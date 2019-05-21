@@ -84,28 +84,23 @@ class Dispensary_Age_Verification_Public {
 	 */
 	public function enqueue_scripts() {
 
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Dispensary_Age_Verification_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Dispensary_Age_Verification_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
+		// Empty redirect.
+		$redirect_fail = '';
+
+		// Set the redirect URL.
+		$redirectOnFail = esc_url( apply_filters( 'dav_redirect_on_fail_link', $redirect_fail ) );
 
 		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
-			'bgImage' => get_theme_mod( 'dav_bgImage' ),
-			'minAge'  => get_theme_mod( 'dav_minAge', '18' ),
-			'imgLogo' => get_theme_mod( 'dav_logo' ),
-			'title'   => get_theme_mod( 'dav_title', 'Age Verification' ),
-			'copy'    => get_theme_mod( 'dav_copy', 'You must be [age] years old to enter.' ),
-			'btnYes'  => get_theme_mod( 'dav_button_yes', 'YES' ),
-			'btnNo'   => get_theme_mod( 'dav_button_no', 'NO' ),
+			'bgImage'        => get_theme_mod( 'dav_bgImage' ),
+			'minAge'         => get_theme_mod( 'dav_minAge', '18' ),
+			'imgLogo'        => get_theme_mod( 'dav_logo' ),
+			'title'          => get_theme_mod( 'dav_title', 'Age Verification' ),
+			'copy'           => get_theme_mod( 'dav_copy', 'You must be [age] years old to enter.' ),
+			'btnYes'         => get_theme_mod( 'dav_button_yes', 'YES' ),
+			'btnNo'          => get_theme_mod( 'dav_button_no', 'NO' ),
+			'redirectOnFail' => $redirectOnFail,
 		);
 		wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
 	}
@@ -131,6 +126,7 @@ function wpd_av_public_js() {
 					"copy" : object_name.copy,
 					"btnYes" : object_name.btnYes,
 					"btnNo" : object_name.btnNo,
+					"redirectOnFail" : object_name.redirectOnFail,
 				});
 			})( jQuery );
 		</script>
