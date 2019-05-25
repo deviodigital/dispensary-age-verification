@@ -19,7 +19,7 @@
  *
  * @package    Dispensary_Age_Verification
  * @subpackage Dispensary_Age_Verification/includes
- * @author     WP Dispensary <deviodigital@gmail.com>
+ * @author     Devio Digital <deviodigital@gmail.com>
  */
 class Dispensary_Age_Verification_Loader {
 
