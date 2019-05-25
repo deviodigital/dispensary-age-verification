@@ -5,7 +5,7 @@
  *
  * This file is used to markup the admin-facing aspects of the plugin.
  *
- * @link       https://www.wpdispensary.com
+ * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
  * @package    Dispensary_Age_Verification

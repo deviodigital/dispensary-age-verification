@@ -2,7 +2,7 @@
 /**
  * The plugin bootstrap file
  *
- * @link              https://www.wpdispensary.com
+ * @link              https://www.deviodigital.com
  * @since             1.0.0
  * @package           Dispensary_Age_Verification
  *

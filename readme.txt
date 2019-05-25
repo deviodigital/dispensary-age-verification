@@ -1,7 +1,7 @@
 === Dispensary Age Verification ===
 Contributors: wpdispensary, deviodigital
-Donate link: https://www.wpdispensary.com
 Tags: age-verify, dispensary, marijuana, cannabis, weed, adults-only, modal, over 16, over 18, over 19, over 20, over 21, pop-up, popup, restrict, splash screen, verify
+Donate link: https://www.deviodigital.com
 Requires at least: 3.0.1
 Tested up to: 5.2
 Stable tag: 2.0.1
