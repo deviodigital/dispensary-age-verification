@@ -118,8 +118,7 @@ function wpd_av_public_js() {
 			})( jQuery );
 		</script>
 	<?php
-	}
-
+	} // end adminHide check.
 }
 add_action( 'wp_footer', 'wpd_av_public_js' );
 
@@ -129,8 +128,7 @@ add_action( 'wp_footer', 'wpd_av_public_js' );
  * @since    1.0.0
  */
 function wpd_av_public_css() {
-	if ( '' !== get_theme_mod( 'dav_bgImage' ) ) {
-	?>
+	if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>
 		<style type="text/css">
 		.wpd-av-overlay {
 			background: url(<?php echo get_theme_mod('dav_bgImage'); ?>) no-repeat center center;
