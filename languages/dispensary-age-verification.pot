@@ -2,9 +2,9 @@
 msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
-"Project-Id-Version: WP Dispensary's Age Verification\n"
-"POT-Creation-Date: 2019-05-15 19:48-0400\n"
-"PO-Revision-Date: 2019-05-15 19:47-0400\n"
+"Project-Id-Version: Age Verification\n"
+"POT-Creation-Date: 2019-05-24 21:13-0400\n"
+"PO-Revision-Date: 2019-05-24 21:12-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,7 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#. Plugin Name of the plugin/theme
 #: includes/customizer.php:21 includes/customizer.php:61
 msgid "Age Verification"
 msgstr ""
@@ -69,10 +70,6 @@ msgstr ""
 msgid "Hide for Admin users?"
 msgstr ""
 
-#. Plugin Name of the plugin/theme
-msgid "WP Dispensary's Age Verification"
-msgstr ""
-
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "https://www.deviodigital.com"
@@ -81,11 +78,10 @@ msgstr ""
 #. Description of the plugin/theme
 msgid ""
 "Check a visitors age before allowing them to view your dispensary website. "
-"Brought to you by <a href=\"https://www.deviodigital.com\" target=\"_blank"
-"\">WP Dispensary</a> and <a href=\"https://www.deviodigital.com/\" target="
-"\"_blank\">Devio Digital</a>"
+"Brought to you by <a href=\"https://www.deviodigital.com/\" target=\"_blank"
+"\">Devio Digital</a>"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "WP Dispensary"
+msgid "Devio Digital"
 msgstr ""
