@@ -75,13 +75,13 @@ msgstr ""
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
-msgid "https://www.wpdispensary.com"
+msgid "https://www.deviodigital.com"
 msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
 "Check a visitors age before allowing them to view your dispensary website. "
-"Brought to you by <a href=\"https://www.wpdispensary.com\" target=\"_blank"
+"Brought to you by <a href=\"https://www.deviodigital.com\" target=\"_blank"
 "\">WP Dispensary</a> and <a href=\"https://www.deviodigital.com/\" target="
 "\"_blank\">Devio Digital</a>"
 msgstr ""
