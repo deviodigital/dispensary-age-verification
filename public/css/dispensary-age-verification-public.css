@@ -3,7 +3,7 @@
  * included in this file.
  */
 
-.wpd-av-overlay{
+.wpd-av-overlay {
 	background: rgba(0,0,0,0.9);
 	box-sizing: border-box;
 	cursor: wait;
@@ -111,7 +111,7 @@
 }
 
 .wpd-av .errors ul,
-.wpd-av .errors li{
+.wpd-av .errors li {
 	box-sizing: border-box;
 	list-style: none;
 	margin: 0 0 0 0;
@@ -161,5 +161,4 @@
 		display: block;
 		width: 100%;
 	}
-
 }
