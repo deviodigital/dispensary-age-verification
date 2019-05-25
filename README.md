@@ -1,7 +1,7 @@
-# Dispensary Age Verification
-Official add-on for [WP Dispensary](https://www.wpdipensary.com) that adds a pop-up window to your website in order to verify the age of the visitor before allowing them to view your content.
+# Age Verification for WordPress
+Check a visitors age before allowing them to view your website content.
 
-![Dispensary Age Verification](https://www.wpdispensary.com/wp-content/uploads/2016/11/dispensary-age-verification-add-on.jpg)
+![Age Verification for WooCommerce](https://deviodigital.com/wp-content/uploads/2019/05/banner-772x250.jpg)
 
 **PLEASE NOTE: The `master` branch is under active development and not always stable to use**
 
