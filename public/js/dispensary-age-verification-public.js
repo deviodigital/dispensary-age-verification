@@ -132,7 +132,8 @@
     }; // end _this
 
     // Check for cookie and reture false if it's set.
-    if (sessionStorage.getItem('ageVerified') === 'true') {
+    var cookiereader = readCookie('age-verification');
+    if (cookiereader) {
       return false;
     }
 
@@ -141,9 +142,7 @@
 
     // Successful "YES" button click.
     $('.wpd-av button.yes').on('click', () => {
-      if (!_this.setSessionStorage('ageVerified', 'true')) {
-        console.log('sessionStorage not supported by your browser');
-      }
+      createCookie('age-verification', 'true', 30);
       _this.handleSuccess();
     });
 

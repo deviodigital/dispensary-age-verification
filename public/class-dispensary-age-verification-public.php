@@ -60,21 +60,7 @@ class Dispensary_Age_Verification_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-
-		/**
-		 * This function is provided for demonstration purposes only.
-		 *
-		 * An instance of this class should be passed to the run() function
-		 * defined in Dispensary_Age_Verification_Loader as all of the hooks are defined
-		 * in that particular class.
-		 *
-		 * The Dispensary_Age_Verification_Loader will then create the relationship
-		 * between the defined hooks and the functions defined in this
-		 * class.
-		 */
-
 		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-public.css', array(), $this->version, 'all' );
-
 	}
 
 	/**
@@ -90,7 +76,7 @@ class Dispensary_Age_Verification_Public {
 		// Set the redirect URL.
 		$redirectOnFail = esc_url( apply_filters( 'dav_redirect_on_fail_link', $redirect_fail ) );
 
-		//wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
+		wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 		$translation_array = array(
 			'bgImage'        => get_theme_mod( 'dav_bgImage' ),
