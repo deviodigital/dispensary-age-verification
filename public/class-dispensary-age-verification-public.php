@@ -99,8 +99,9 @@ class Dispensary_Age_Verification_Public {
  */
 function wpd_av_public_js() {
 
-	if ( '' !== get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
-
+	// Add JavaScript codes to footer based on setting in the Customizer.	
+	if ( '1' === get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
+		// Do nothing.
 	} else { ?>
 		<script type="text/javascript">
 			(function( $ ) {
