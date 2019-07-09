@@ -78,6 +78,8 @@ class Dispensary_Age_Verification_Public {
 
 		wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
+
+		// Translation array data.
 		$translation_array = array(
 			'bgImage'        => get_theme_mod( 'dav_bgImage' ),
 			'minAge'         => get_theme_mod( 'dav_minAge', '18' ),
@@ -88,6 +90,11 @@ class Dispensary_Age_Verification_Public {
 			'btnNo'          => get_theme_mod( 'dav_button_no', 'NO' ),
 			'redirectOnFail' => $redirectOnFail,
 		);
+
+		// Translation array filter.
+		$translation_array = apply_filters( 'avwp_localize_script_translation_array', $translation_array );
+
+		// Localize script.
 		wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
 	}
 }
