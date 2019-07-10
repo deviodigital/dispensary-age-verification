@@ -34,6 +34,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 				'label'    => __( 'Background image', 'dispensary-age-verification' ),
 				'section'  => 'dav_display_options',
 				'settings' => 'dav_bgImage',
+				'priority' => 8
 			)
 		)
 	);
@@ -50,6 +51,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 				'label'    => __( 'Logo image', 'dispensary-age-verification' ),
 				'section'  => 'dav_display_options',
 				'settings' => 'dav_logo',
+				'priority' => 9
 			)
 		)
 	);
@@ -66,9 +68,10 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'dav_title',
 		array(
-			'section' => 'dav_display_options',
-			'label'   => __( 'Title', 'dispensary-age-verification' ),
-			'type'    => 'text',
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Title', 'dispensary-age-verification' ),
+			'type'     => 'text',
+			'priority' => 10,
 		)
 	);
 
@@ -84,9 +87,10 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'dav_copy',
 		array(
-			'section' => 'dav_display_options',
-			'label'   => __( 'Copy', 'dispensary-age-verification' ),
-			'type'    => 'textarea',
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Copy', 'dispensary-age-verification' ),
+			'type'     => 'textarea',
+			'priority' => 11,
 		)
 	);
 
@@ -102,9 +106,10 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'dav_minAge',
 		array(
-			'section' => 'dav_display_options',
-			'label'   => __( 'Minimum Age?', 'dispensary-age-verification' ),
-			'type'    => 'number',
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Minimum Age?', 'dispensary-age-verification' ),
+			'type'     => 'number',
+			'priority' => 12,
 		)
 	);
 
@@ -120,9 +125,10 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'dav_button_no',
 		array(
-			'section' => 'dav_display_options',
-			'label'   => __( 'Button #1 text', 'dispensary-age-verification' ),
-			'type'    => 'text',
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Button #1 text', 'dispensary-age-verification' ),
+			'type'     => 'text',
+			'priority' => 13,
 		)
 	);
 
@@ -138,9 +144,10 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_control(
 		'dav_button_yes',
 		array(
-			'section' => 'dav_display_options',
-			'label'   => __( 'Button #2 text', 'dispensary-age-verification' ),
-			'type'    => 'text',
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Button #2 text', 'dispensary-age-verification' ),
+			'type'     => 'text',
+			'priority' => 14,
 		)
 	);
 	/* Show or Hide Blog Description */
@@ -158,7 +165,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'section'  => 'dav_display_options',
 			'label'    => __( 'Hide for Admin users?', 'dispensary-age-verification' ),
 			'type'     => 'checkbox',
-			'priority' => 11,
+			'priority' => 99,
 		)
 	);
 
