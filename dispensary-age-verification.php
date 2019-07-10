@@ -9,7 +9,7 @@
  * @wordpress-plugin
  * Plugin Name:       Age Verification
  * Plugin URI:        https://www.deviodigital.com
- * Description:       Check a visitors age before allowing them to view your dispensary website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
+ * Description:       Check a visitors age before allowing them to view your website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
  * Version:           2.1
  * Author:            Devio Digital
  * Author URI:        https://www.deviodigital.com
