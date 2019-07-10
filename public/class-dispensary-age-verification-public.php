@@ -138,7 +138,7 @@ function wpd_av_public_css() {
 	if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>
 		<style type="text/css">
 		.wpd-av-overlay {
-			background: url(<?php echo get_theme_mod('dav_bgImage'); ?>) no-repeat center center;
+			background-image: url(<?php echo get_theme_mod('dav_bgImage'); ?>) no-repeat center center;
 			box-sizing: border-box;
 			background-size: cover;
 			background-attachment: fixed;
