@@ -22,6 +22,10 @@
       copy: 'You must be [age] years old to enter.',
       btnYes: 'YES',
       btnNo: 'NO',
+      successTitle: 'Success!',
+      successText: 'You are now being redirected back to the site...',
+      failTitle: 'Sorry',
+      failText: 'You are not old enough to view this site...'
     }, options);
 
     const _this = {
@@ -102,7 +106,7 @@
         }
       },
       handleSuccess() {
-        const successMsg = '<h2>Success!</h2><p>You are now being redirected back to the site...</p>';
+        const successMsg = `<h2>${settings.successTitle}</h2><p>${settings.successText}</p>`;
         $('.wpd-av').html(successMsg);
         setTimeout(() => {
           $('.wpd-av').animate({
@@ -121,7 +125,7 @@
         }, 2000);
       },
       handleUnderAge() {
-        const underAgeMsg = '<h2>Sorry</h2><p>You are not old enough to view this site...</p>';
+        const underAgeMsg = `<h2>${settings.failTitle}</h2><p>${settings.failText}</p>`;
         $('.wpd-av').html(underAgeMsg);
         if (settings.redirectOnFail !== '') {
           setTimeout(() => {

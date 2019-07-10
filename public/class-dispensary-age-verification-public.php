@@ -88,6 +88,10 @@ class Dispensary_Age_Verification_Public {
 			'copy'           => get_theme_mod( 'dav_copy', 'You must be [age] years old to enter.' ),
 			'btnYes'         => get_theme_mod( 'dav_button_yes', 'YES' ),
 			'btnNo'          => get_theme_mod( 'dav_button_no', 'NO' ),
+			'successTitle'   => get_theme_mod( 'dav_success_title', 'Success!' ),
+			'successText'    => get_theme_mod( 'dav_success_text', 'You are now being redirected back to the site ...' ),
+			'failTitle'      => get_theme_mod( 'dav_fail_title', 'Sorry!' ),
+			'failText'       => get_theme_mod( 'dav_fail_text', 'You are not old enough to view the site ...' ),
 			'redirectOnFail' => $redirectOnFail,
 		);
 
@@ -121,6 +125,10 @@ function wpd_av_public_js() {
 					"btnYes" : object_name.btnYes,
 					"btnNo" : object_name.btnNo,
 					"redirectOnFail" : object_name.redirectOnFail,
+					"successTitle" : object_name.successTitle,
+					"successText" : object_name.successText,
+					"failTitle" : object_name.failTitle,
+					"failText" : object_name.failText,
 				});
 			})( jQuery );
 		</script>
