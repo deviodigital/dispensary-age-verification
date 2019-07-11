@@ -1,10 +1,10 @@
 === Age Verification ===
 Contributors: deviodigital
 Donate link: https://www.deviodigital.com
-Tags: age-verify, dispensary, adults-only, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
+Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 3.0.1
-Tested up to: 5.2.1
-Stable tag: 2.1
+Tested up to: 5.2.2
+Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,14 +17,35 @@ Add a pop-up window to your website and verify the age of the visitor before all
 
 Customize a variety of features in the age verification box.
 
+* Minimum age
 * Background image
 * Logo image
 * Title text
 * Message text
-* Minimum age
 * Yes/No button text
 
 You can customize your age verification pop up by going to `Appearance -> Customize -> Age Verification` in your WordPress dashboard.
+
+There is also a cookie that gets saved for 30 days when the user selects the "Yes" button.
+
+# Age Verification Pro
+
+Customize your age verification pop up even more by using our [Age Verification Pro](https://deviodigital.com/product/age-verification-pro/) plugin.
+
+### Pro features
+
+* Set the amount of days to save cookies
+* Turn on debug to test popup changes without saving cookies
+* Customize the Success & Failure messages (title & text)
+
+**Color customizations**
+
+* Page background color
+* Popup background color
+* Title text color
+* Message text color
+* "No" button colors
+* "Yes" button colors
 
 == Installation ==
 
@@ -39,6 +60,15 @@ You can customize your age verification pop up by going to `Appearance -> Custom
 3. All of the available customizer options
 
 == Changelog ==
+
+= 2.2 =
+* Added `avwp_localize_script_translation_array` filter in `public/class-dispensary-age-verification-public.php`
+* Bugfix for empty background image CSS overriding background color in `public/class-dispensary-age-verification-public.php`
+* Updated $translation_array data in `public/class-dispensary-age-verification-public.php`
+* Updated prefix for `dav_redirect_on_fail_link` filter to use avwp instead of dav in `public/class-dispensary-age-verification-public.php`
+* Updated priority order for settings controls in `includes/customizer.php`
+* Updated text strings for localization in `languages/dispensary-age-verification.pot`
+* General code cleanup in multiple files
 
 = 2.1 =
 * Added JavaScript functions for cookie that saves to users computer for 30 days when they verify their age in `public/js/js.cookie.js`

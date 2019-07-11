@@ -10,7 +10,7 @@
  * Plugin Name:       Age Verification
  * Plugin URI:        https://www.deviodigital.com
  * Description:       Check a visitors age before allowing them to view your website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
- * Version:           2.1
+ * Version:           2.2
  * Author:            Devio Digital
  * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
@@ -77,7 +77,7 @@ run_dispensary_age_verification();
  */
 function avwp_go_pro_link( $links ) {
 	// Pro link.
-	$pro_link = '<a href="https://deviodigital.com/product/age-verification-for-wordpress-pro" target="_blank" style="font-weight:700;">' . __( 'Go Pro', 'dispensary-age-verification' ) . '</a>';
+	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . __( 'Go Pro', 'dispensary-age-verification' ) . '</a>';
 
 	if ( ! function_exists( 'run_avwp_pro' ) ) {
 		array_unshift( $links, $pro_link );
