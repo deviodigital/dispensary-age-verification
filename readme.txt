@@ -28,7 +28,7 @@ You can customize your age verification pop up by going to `Appearance -> Custom
 
 There is also a cookie that gets saved for 30 days when the user selects the "Yes" button.
 
-# Age Verification Pro
+## Age Verification Pro
 
 Customize your age verification pop up even more by using our [Age Verification Pro](https://deviodigital.com/product/age-verification-pro/) plugin.
 
@@ -57,7 +57,8 @@ Customize your age verification pop up even more by using our [Age Verification 
 
 1. Example of the background image feature
 2. Example of the default age verification pop up modal box
-3. All of the available customizer options
+3. All of the available customizer options in the free version
+4. All of the available customizer options in the Pro version
 
 == Changelog ==
 
