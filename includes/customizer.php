@@ -22,6 +22,26 @@ function dav_register_theme_customizer( $wp_customize ) {
 			'priority' => 55,
 		)
 	);
+
+	/* minAge */
+	$wp_customize->add_setting(
+		'dav_minAge',
+		array(
+			'default'           => '18',
+			'sanitize_callback' => 'dav_sanitize_input',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'dav_minAge',
+		array(
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Minimum age?', 'dispensary-age-verification' ),
+			'type'     => 'number',
+			'priority' => 7,
+		)
+	);
+
 	/* Add setting for background image uploader. */
 	$wp_customize->add_setting( 'dav_bgImage' );
 
@@ -94,25 +114,6 @@ function dav_register_theme_customizer( $wp_customize ) {
 		)
 	);
 
-	/* minAge */
-	$wp_customize->add_setting(
-		'dav_minAge',
-		array(
-			'default'           => '18',
-			'sanitize_callback' => 'dav_sanitize_input',
-			'transport'         => 'refresh',
-		)
-	);
-	$wp_customize->add_control(
-		'dav_minAge',
-		array(
-			'section'  => 'dav_display_options',
-			'label'    => __( 'Minimum Age?', 'dispensary-age-verification' ),
-			'type'     => 'number',
-			'priority' => 12,
-		)
-	);
-
 	/* No button */
 	$wp_customize->add_setting(
 		'dav_button_no',
@@ -163,7 +164,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_adminHide',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Hide for Admin users?', 'dispensary-age-verification' ),
+			'label'    => __( 'Hide for admin users?', 'dispensary-age-verification' ),
 			'type'     => 'checkbox',
 			'priority' => 99,
 		)
