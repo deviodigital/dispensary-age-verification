@@ -74,7 +74,7 @@ class Dispensary_Age_Verification_Public {
 		$redirect_fail = '';
 
 		// Set the redirect URL.
-		$redirectOnFail = esc_url( apply_filters( 'dav_redirect_on_fail_link', $redirect_fail ) );
+		$redirectOnFail = esc_url( apply_filters( 'avwp_redirect_on_fail_link', $redirect_fail ) );
 
 		wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
