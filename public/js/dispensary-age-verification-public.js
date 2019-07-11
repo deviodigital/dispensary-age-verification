@@ -25,7 +25,9 @@
       successTitle: 'Success!',
       successText: 'You are now being redirected back to the site...',
       failTitle: 'Sorry',
-      failText: 'You are not old enough to view this site...'
+      failText: 'You are not old enough to view this site...',
+      cookieDays: 30,
+      adminDebug: ''
     }, options);
 
     const _this = {
@@ -138,7 +140,11 @@
     // Check for cookie and reture false if it's set.
     var cookiereader = readCookie('age-verification');
     if (cookiereader) {
-      return false;
+      if (settings.adminDebug != '') {
+        eraseCookie('age-verification');
+      } else {
+        return false;
+      }
     }
 
     // Create pop up.
@@ -146,7 +152,7 @@
 
     // Successful "YES" button click.
     $('.wpd-av button.yes').on('click', () => {
-      createCookie('age-verification', 'true', 30);
+      createCookie('age-verification', 'true', settings.cookieDays);
       _this.handleSuccess();
     });
 

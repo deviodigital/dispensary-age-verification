@@ -125,6 +125,8 @@ function wpd_av_public_js() {
 					"successText" : object_name.successText,
 					"failTitle" : object_name.failTitle,
 					"failText" : object_name.failText,
+					"cookieDays" : object_name.cookieDays,
+					"adminDebug" : object_name.adminDebug
 				});
 			})( jQuery );
 		</script>
