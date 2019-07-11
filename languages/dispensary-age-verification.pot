@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2019-05-24 21:13-0400\n"
-"PO-Revision-Date: 2019-05-24 21:12-0400\n"
+"POT-Creation-Date: 2019-07-10 23:30-0400\n"
+"PO-Revision-Date: 2019-07-10 23:30-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,53 +21,57 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
+#: dispensary-age-verification.php:80
+msgid "Go Pro"
+msgstr ""
+
 #. Plugin Name of the plugin/theme
-#: includes/customizer.php:21 includes/customizer.php:61
+#: includes/customizer.php:21 includes/customizer.php:83
 msgid "Age Verification"
 msgstr ""
 
-#: includes/customizer.php:34
+#: includes/customizer.php:39
+msgid "Minimum age?"
+msgstr ""
+
+#: includes/customizer.php:54
 msgid "Background image"
 msgstr ""
 
-#: includes/customizer.php:50
+#: includes/customizer.php:71
 msgid "Logo image"
 msgstr ""
 
-#: includes/customizer.php:70
+#: includes/customizer.php:92
 msgid "Title"
 msgstr ""
 
-#: includes/customizer.php:79
+#: includes/customizer.php:102
 msgid "You must be [age] years old to enter."
 msgstr ""
 
-#: includes/customizer.php:88
+#: includes/customizer.php:111
 msgid "Copy"
 msgstr ""
 
-#: includes/customizer.php:106
-msgid "Minimum Age?"
-msgstr ""
-
-#: includes/customizer.php:115
+#: includes/customizer.php:121
 msgid "NO"
 msgstr ""
 
-#: includes/customizer.php:124
+#: includes/customizer.php:130
 msgid "Button #1 text"
 msgstr ""
 
-#: includes/customizer.php:133
+#: includes/customizer.php:140
 msgid "YES"
 msgstr ""
 
-#: includes/customizer.php:142
+#: includes/customizer.php:149
 msgid "Button #2 text"
 msgstr ""
 
-#: includes/customizer.php:159
-msgid "Hide for Admin users?"
+#: includes/customizer.php:167
+msgid "Hide for admin users?"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
@@ -77,9 +81,9 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Check a visitors age before allowing them to view your dispensary website. "
-"Brought to you by <a href=\"https://www.deviodigital.com/\" target=\"_blank"
-"\">Devio Digital</a>"
+"Check a visitors age before allowing them to view your website. Brought to "
+"you by <a href=\"https://www.deviodigital.com/\" target=\"_blank\">Devio "
+"Digital</a>"
 msgstr ""
 
 #. Author of the plugin/theme
