@@ -3,12 +3,12 @@ Contributors: deviodigital
 Donate link: https://www.deviodigital.com
 Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 3.0.1
-Tested up to: 5.2.2
+Tested up to: 5.3
 Stable tag: 2.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Check a visitors age before allowing them to view your dispensary website.
+Check a visitors age before allowing them to view your website.
 
 == Description ==
 
