@@ -76,6 +76,12 @@ class Dispensary_Age_Verification_Public {
 		// Set the redirect URL.
 		$redirectOnFail = esc_url( apply_filters( 'avwp_redirect_on_fail_link', $redirect_fail ) );
 
+		// Add content before popup contents.
+		$beforeContent = apply_filters( 'avwp_before_popup_content', '' );
+
+		// Add content after popup contents.
+		$afterContent = apply_filters( 'avwp_after_popup_content', '' );
+
 		wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
 		wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
 
@@ -89,6 +95,8 @@ class Dispensary_Age_Verification_Public {
 			'btnYes'         => get_theme_mod( 'dav_button_yes', 'YES' ),
 			'btnNo'          => get_theme_mod( 'dav_button_no', 'NO' ),
 			'redirectOnFail' => $redirectOnFail,
+			'beforeContent'  => $beforeContent,
+			'afterContent'   => $afterContent
 		);
 
 		// Translation array filter.
@@ -126,7 +134,9 @@ function wpd_av_public_js() {
 					"failTitle" : object_name.failTitle,
 					"failText" : object_name.failText,
 					"cookieDays" : object_name.cookieDays,
-					"adminDebug" : object_name.adminDebug
+					"adminDebug" : object_name.adminDebug,
+					"beforeContent" : object_name.beforeContent,
+					"afterContent" : object_name.afterContent
 				});
 			})( jQuery );
 		</script>

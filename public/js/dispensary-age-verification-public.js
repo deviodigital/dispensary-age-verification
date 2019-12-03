@@ -27,7 +27,9 @@
       failTitle: "Sorry",
       failText: "You are not old enough to view this site...",
       cookieDays: 30,
-      adminDebug: ""
+      adminDebug: "",
+      beforeContent: "",
+      afterContent: "",
     }, options);
 
     const _this = {
@@ -74,12 +76,19 @@
         let html = "";
         html += '<div class="wpd-av-overlay"></div>';
         html += '<div class="wpd-av">';
+        if (settings.beforeContent !== '') {
+          html += settings.beforeContent;
+        }
         if (settings.imgLogo !== '') {
     		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
         }
         html += `<h2>${settings.title}</h2>`;
-        html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; + '</p>';
-        html += `<p><button class="no">${settings.btnNo}</button><button class="yes">${settings.btnYes}</button></p></div></div>`;
+        html += `<p>${copy.replace('[age]', `<strong>${settings.minAge}</strong>`)}`; + `</p>`;
+        html += `<p><button class="no">${settings.btnNo}</button><button class="yes">${settings.btnYes}</button></p>`;
+        if (settings.afterContent !== '') {
+          html += settings.afterContent;
+        }
+        html += `</div></div>`;
         $('body').append(html);
 
         $(".wpd-av-overlay").animate({
