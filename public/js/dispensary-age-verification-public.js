@@ -84,7 +84,7 @@
         }
         html += `<h2>${settings.title}</h2>`;
         html += `<p>${copy.replace("[age]", `<strong>${settings.minAge}</strong>`)}`; + `</p>`;
-        html += `<p><button class="no">${settings.btnNo}</button><button class="yes">${settings.btnYes}</button></p>`;
+        html += `<p><button class="yes">${settings.btnYes}</button><button class="no">${settings.btnNo}</button></p>`;
         if (settings.afterContent !== "") {
           html += settings.afterContent;
         }
