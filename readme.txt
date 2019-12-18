@@ -3,8 +3,8 @@ Contributors: deviodigital
 Donate link: https://www.deviodigital.com
 Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 3.0.1
-Tested up to: 5.3
-Stable tag: 2.3
+Tested up to: 5.3.1
+Stable tag: 2.3.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,14 @@ Customize your age verification pop up even more by using our [Age Verification 
 4. All of the available customizer options in the Pro version
 
 == Changelog ==
+
+= 2.3.1 =
+*   Updated the YES/NO button order in the customizer settings in `includes/customizer.php`
+*   Updated the YES/NO button order in the popup in `public/js/dispensary-age-verification-public.js`
+*   Updated the YES/NO button styles in `public/css/dispensary-age-verification-public.css`
+*   Updated popup title to not display if the setting is empty in `public/js/dispensary-age-verification-public.js`
+*   Updated text strings for localization in `languages/dispensary-age-verification.pot`
+*   General code cleanup in multiple files
 
 = 2.3 =
 *   Added 2 new filters for before/after the popup content in `public/class-dispensary-age-verification-public.php`
