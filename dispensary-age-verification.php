@@ -77,7 +77,7 @@ run_dispensary_age_verification();
  */
 function avwp_go_pro_link( $links ) {
 	// Pro link.
-	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . __( 'Go Pro', 'dispensary-age-verification' ) . '</a>';
+	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . esc_attr__( 'Go Pro', 'dispensary-age-verification' ) . '</a>';
 
 	if ( ! function_exists( 'run_avwp_pro' ) ) {
 		array_unshift( $links, $pro_link );
