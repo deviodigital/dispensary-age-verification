@@ -82,7 +82,9 @@
         if (settings.imgLogo !== "") {
       		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
         }
-        html += `<h2>${settings.title}</h2>`;
+        if (settings.title !== "") {
+          html += `<h2>${settings.title}</h2>`;
+        }
         html += `<p>${copy.replace("[age]", `<strong>${settings.minAge}</strong>`)}`; + `</p>`;
         html += `<p><button class="yes">${settings.btnYes}</button><button class="no">${settings.btnNo}</button></p>`;
         if (settings.afterContent !== "") {
