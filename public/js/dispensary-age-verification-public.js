@@ -79,8 +79,8 @@
         if (settings.beforeContent !== "") {
           html += settings.beforeContent;
         }
-        if (settings.imgLogo !== '') {
-    		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
+        if (settings.imgLogo !== "") {
+      		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
         }
         html += `<h2>${settings.title}</h2>`;
         html += `<p>${copy.replace("[age]", `<strong>${settings.minAge}</strong>`)}`; + `</p>`;
