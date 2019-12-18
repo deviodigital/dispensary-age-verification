@@ -70,7 +70,7 @@
 	font-weight: bold;
 	line-height: 1.5;
 	margin-bottom: 0;
-	margin-right: 1%;
+	margin-left: 1%;
 	margin-top: 12px;
 	padding: 6px 10px 6px 10px;
 	text-align: center;
@@ -93,11 +93,11 @@
 
 .wpd-av button.yes {
 	background: #8EB908;
-	margin-right: 0;
-	margin-left: 1%;
+	margin-left: 0;
+	margin-right: 1%;
 }
 
-.wpd-av button.yes:hover{
+.wpd-av button.yes:hover {
 	background: #82A711;
 	box-sizing: border-box;
 }
@@ -161,4 +161,11 @@
 		display: block;
 		width: 100%;
 	}
+
+	.wpd-av button.no,
+	.wpd-av button.yes {
+		margin-left: 0;
+		margin-right: 0;
+	}
+
 }
