@@ -108,6 +108,14 @@ class Dispensary_Age_Verification {
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-dispensary-age-verification-i18n.php';
 
 		/**
+		 * The file responsible for all helper functions used throughout the
+		 * core plugin.
+		 *
+		 * @since 2.4.0
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/age-verification-functions.php';
+
+		/**
 		 * The class responsible for defining all actions that occur in the admin area.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-dispensary-age-verification-admin.php';
