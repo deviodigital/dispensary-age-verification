@@ -22,7 +22,7 @@
  * @since      1.0.0
  * @package    Dispensary_Age_Verification
  * @subpackage Dispensary_Age_Verification/includes
- * @author     Devio Digital <deviodigital@gmail.com>
+ * @author     Devio Digital <contact@deviodigital.com>
  */
 class Dispensary_Age_Verification_i18n {
 
