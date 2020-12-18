@@ -88,3 +88,40 @@ function avwp_go_pro_link( $links ) {
 $pluginname = plugin_basename( __FILE__ );
 
 add_filter( "plugin_action_links_$pluginname", 'avwp_go_pro_link' );
+
+/**
+ * Check AVWP Pro version number.
+ *
+ * If the AVWP Pro version number is less than what's defined below, there will
+ * be a notice added to the admin screen letting the user know there's a new
+ * version of the AVWP Pro plugin available.
+ *
+ * @since 2.4
+ */
+function avwp_check_pro_version() {
+	// Only run if AVWP Pro is active.
+	if ( function_exists( 'run_avwp_pro' ) ) {
+		// Check if AVWP Pro version is defined.
+		if ( ! defined( 'AVWP_PRO_VERSION' ) ) {
+			define( 'AVWP_PRO_VERSION', 0 ); // default to zero.
+		}
+		// Set pro version number.
+		$pro_version = AVWP_PRO_VERSION;
+		if ( '0' == $pro_version || $pro_version < '1.1' ) {
+			add_action( 'admin_notices', 'avwp_update_avwp_pro_notice' );
+		}
+	}
+}
+add_action( 'admin_init', 'avwp_check_pro_version' );
+
+/**
+ * Error notice - Runs if AVWP Pro is out of date.
+ *
+ * @see avwp_check_pro_version()
+ * @since 2.9
+ */
+function avwp_update_avwp_pro_notice() {
+	$avwp_orders = '<a href="https://www.deviodigital.com/my-account/orders/" target="_blank">' . __( 'Orders', 'avwp' ) . '</a>';
+	$error       = sprintf( esc_html__( 'There is a new version of AVWP Pro available. Download your copy from the %1$s page on Devio Digital.', 'avwp' ), $avwp_orders );
+	echo '<div class="notice notice-info"><p>' . $error . '</p></div>';
+}
