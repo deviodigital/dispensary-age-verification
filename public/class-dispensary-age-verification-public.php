@@ -154,7 +154,7 @@ add_action( 'wp_footer', 'avwp_public_js' );
 function avwp_public_css() {
 	if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>
 		<style type="text/css">
-		.wpd-av-overlay {
+		.avwp-av-overlay {
 			background-image: url(<?php esc_url( get_theme_mod( 'dav_bgImage' ) ); ?>);
 			background-repeat: no-repeat;
 			background-position: center;
@@ -162,7 +162,7 @@ function avwp_public_css() {
 			background-attachment: fixed;
 			box-sizing: border-box;
 		}
-		.wpd-av {
+		.avwp-av {
 			box-shadow: none;
 		}
 		</style>

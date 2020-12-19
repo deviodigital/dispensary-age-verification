@@ -36,11 +36,11 @@
       age: "",
       errors: [],
       setValues() {
-        const month = $(".wpd-av .month").val();
-        const day = $(".wpd-av .day").val();
+        const month = $(".avwp-av .month").val();
+        const day = $(".avwp-av .day").val();
         _this.month = month;
         _this.day = day.replace(/^0+/, ''); // remove leading zero
-        _this.year = $(".wpd-av .year").val();
+        _this.year = $(".avwp-av .year").val();
       },
       validate() {
         _this.errors = [];
@@ -64,7 +64,7 @@
         }
         html += "</ul>";
         setTimeout(() => {
-          $(".wpd-av .errors").html(html);
+          $(".avwp-av .errors").html(html);
         }, 200);
       },
       reCenter(b) {
@@ -74,8 +74,8 @@
       buildHtml() {
         const copy = settings.copy;
         let html = "";
-        html += '<div class="wpd-av-overlay"></div>';
-        html += '<div class="wpd-av">';
+        html += '<div class="avwp-av-overlay"></div>';
+        html += '<div class="avwp-av">';
         if (settings.beforeContent !== "") {
           html += settings.beforeContent;
         }
@@ -93,16 +93,16 @@
         html += "</div></div>";
         $('body').append(html);
 
-        $(".wpd-av-overlay").animate({
+        $(".avwp-av-overlay").animate({
           opacity: 1,
         }, 500, () => {
-          _this.reCenter($(".wpd-av"));
-          $(".wpd-av").css({
+          _this.reCenter($(".avwp-av"));
+          $(".avwp-av").css({
             opacity: 1,
           });
         });
 
-        $(".wpd-av .day, .wpd-av .year").focus(function () {
+        $(".avwp-av .day, .avwp-av .year").focus(function () {
           $(this).removeAttr("placeholder");
         });
       },
@@ -120,18 +120,18 @@
       },
       handleSuccess() {
         const successMsg = `<h2>${settings.successTitle}</h2><p>${settings.successText}</p>`;
-        $(".wpd-av").html(successMsg);
+        $(".avwp-av").html(successMsg);
         setTimeout(() => {
-          $(".wpd-av").animate({
+          $(".avwp-av").animate({
             top: "-350px",
           }, 200, () => {
-            $(".wpd-av-overlay").animate({
+            $(".avwp-av-overlay").animate({
               opacity: "0",
             }, 500, () => {
               if (settings.redirectTo !== '') {
                 window.location.replace(settings.redirectTo);
               } else {
-                $(".wpd-av-overlay, .wpd-av").remove();
+                $(".avwp-av-overlay, .avwp-av").remove();
               }
             });
           });
@@ -139,7 +139,7 @@
       },
       handleUnderAge() {
         const underAgeMsg = `<h2>${settings.failTitle}</h2><p>${settings.failText}</p>`;
-        $(".wpd-av").html(underAgeMsg);
+        $(".avwp-av").html(underAgeMsg);
         if (settings.redirectOnFail !== '') {
           setTimeout(() => {
             window.location.replace(settings.redirectOnFail);
@@ -162,20 +162,20 @@
     _this.buildHtml();
 
     // Successful "YES" button click.
-    $(".wpd-av button.yes").on("click", () => {
+    $(".avwp-av button.yes").on("click", () => {
       createCookie("age-verification", "true", settings.cookieDays);
       _this.handleSuccess();
     });
 
     // Successful "NO" button click.
-    $(".wpd-av button.no").on("click", () => {
+    $(".avwp-av button.no").on("click", () => {
       _this.handleUnderAge();
     });
 
     $(window).resize(() => {
-      _this.reCenter($(".wpd-av"));
+      _this.reCenter($(".avwp-av"));
       setTimeout(() => {
-        _this.reCenter($(".wpd-av"));
+        _this.reCenter($(".avwp-av"));
       }, 500);
     });
   };
