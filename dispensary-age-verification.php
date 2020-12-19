@@ -15,7 +15,7 @@
  * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       dispensary-age-verification
+ * Text Domain:       avwp
  * Domain Path:       /languages
  */
 
@@ -77,7 +77,7 @@ run_avwp();
  */
 function avwp_go_pro_link( $links ) {
 	// Pro link.
-	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . esc_attr__( 'Go Pro', 'dispensary-age-verification' ) . '</a>';
+	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . esc_attr__( 'Go Pro', 'avwp' ) . '</a>';
 
 	if ( ! function_exists( 'run_avwp_pro' ) ) {
 		array_unshift( $links, $pro_link );

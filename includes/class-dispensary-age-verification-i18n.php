@@ -35,7 +35,7 @@ class Age_Verification_i18n {
 	public function load_plugin_textdomain() {
 
 		load_plugin_textdomain(
-			'dispensary-age-verification',
+			'avwp',
 			false,
 			dirname( dirname( plugin_basename( __FILE__ ) ) ) . '/languages/'
 		);

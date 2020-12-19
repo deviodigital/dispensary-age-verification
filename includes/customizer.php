@@ -18,7 +18,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_section(
 		'dav_display_options',
 		array(
-			'title'    => __( 'Age Verification', 'dispensary-age-verification' ),
+			'title'    => __( 'Age Verification', 'avwp' ),
 			'priority' => 55,
 		)
 	);
@@ -36,7 +36,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_minAge',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Minimum age?', 'dispensary-age-verification' ),
+			'label'    => __( 'Minimum age?', 'avwp' ),
 			'type'     => 'number',
 			'priority' => 7,
 		)
@@ -51,7 +51,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			$wp_customize,
 			'dav_bgImage',
 			array(
-				'label'    => __( 'Background image', 'dispensary-age-verification' ),
+				'label'    => __( 'Background image', 'avwp' ),
 				'section'  => 'dav_display_options',
 				'settings' => 'dav_bgImage',
 				'priority' => 8
@@ -68,7 +68,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 			$wp_customize,
 			'dav_logo',
 			array(
-				'label'    => __( 'Logo image', 'dispensary-age-verification' ),
+				'label'    => __( 'Logo image', 'avwp' ),
 				'section'  => 'dav_display_options',
 				'settings' => 'dav_logo',
 				'priority' => 9
@@ -80,7 +80,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dav_title',
 		array(
-			'default'           => __( 'Age Verification', 'dispensary-age-verification' ),
+			'default'           => __( 'Age Verification', 'avwp' ),
 			'sanitize_callback' => 'dav_sanitize_input',
 			'transport'         => 'refresh',
 		)
@@ -89,7 +89,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_title',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Title', 'dispensary-age-verification' ),
+			'label'    => __( 'Title', 'avwp' ),
 			'type'     => 'text',
 			'priority' => 10,
 		)
@@ -99,7 +99,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dav_copy',
 		array(
-			'default'           => __( 'You must be [age] years old to enter.', 'dispensary-age-verification' ),
+			'default'           => __( 'You must be [age] years old to enter.', 'avwp' ),
 			'sanitize_callback' => 'dav_sanitize_input',
 			'transport'         => 'refresh',
 		)
@@ -108,7 +108,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_copy',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Copy', 'dispensary-age-verification' ),
+			'label'    => __( 'Copy', 'avwp' ),
 			'type'     => 'textarea',
 			'priority' => 11,
 		)
@@ -118,7 +118,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dav_button_yes',
 		array(
-			'default'           => __( 'YES', 'dispensary-age-verification' ),
+			'default'           => __( 'YES', 'avwp' ),
 			'sanitize_callback' => 'dav_sanitize_input',
 			'transport'         => 'refresh',
 		)
@@ -127,7 +127,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_button_yes',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Button #1 text', 'dispensary-age-verification' ),
+			'label'    => __( 'Button #1 text', 'avwp' ),
 			'type'     => 'text',
 			'priority' => 14,
 		)
@@ -137,7 +137,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 	$wp_customize->add_setting(
 		'dav_button_no',
 		array(
-			'default'           => __( 'NO', 'dispensary-age-verification' ),
+			'default'           => __( 'NO', 'avwp' ),
 			'sanitize_callback' => 'dav_sanitize_input',
 			'transport'         => 'refresh',
 		)
@@ -146,7 +146,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_button_no',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Button #2 text', 'dispensary-age-verification' ),
+			'label'    => __( 'Button #2 text', 'avwp' ),
 			'type'     => 'text',
 			'priority' => 13,
 		)
@@ -165,7 +165,7 @@ function dav_register_theme_customizer( $wp_customize ) {
 		'dav_adminHide',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Hide for admin users?', 'dispensary-age-verification' ),
+			'label'    => __( 'Hide for admin users?', 'avwp' ),
 			'type'     => 'checkbox',
 			'priority' => 99,
 		)
