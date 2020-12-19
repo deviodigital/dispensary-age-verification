@@ -28,7 +28,7 @@ if ( ! defined( 'WPINC' ) ) {
  * The code that runs during plugin activation.
  * This action is documented in includes/class-dispensary-age-verification-activator.php
  */
-function activate_dispensary_age_verification() {
+function avwp_activate() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-dispensary-age-verification-activator.php';
 	Age_Verification_Activator::activate();
 }
@@ -37,13 +37,13 @@ function activate_dispensary_age_verification() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-dispensary-age-verification-deactivator.php
  */
-function deactivate_dispensary_age_verification() {
+function avwp_deactivate() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-dispensary-age-verification-deactivator.php';
 	Age_Verification_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_dispensary_age_verification' );
-register_deactivation_hook( __FILE__, 'deactivate_dispensary_age_verification' );
+register_activation_hook( __FILE__, 'avwp_activate' );
+register_deactivation_hook( __FILE__, 'avwp_deactivate' );
 
 /**
  * The core plugin class that is used to define internationalization,
@@ -60,13 +60,13 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-dispensary-age-verificatio
  *
  * @since    1.0.0
  */
-function run_dispensary_age_verification() {
+function run_avwp() {
 
 	$plugin = new Age_Verification();
 	$plugin->run();
 
 }
-run_dispensary_age_verification();
+run_avwp();
 
 /**
  * Add Go Pro link on plugin page
