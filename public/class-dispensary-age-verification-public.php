@@ -60,7 +60,8 @@ class Dispensary_Age_Verification_Public {
 	 * @since    1.0.0
 	 */
 	public function enqueue_styles() {
-		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-public.css', array(), $this->version, 'all' );
+		// Public CSS.
+		wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-public.min.css', array(), $this->version, 'all' );
 	}
 
 	/**
