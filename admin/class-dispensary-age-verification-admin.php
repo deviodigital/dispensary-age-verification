@@ -6,8 +6,8 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/admin
+ * @package    Age_Verification
+ * @subpackage Age_Verification/admin
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/admin
+ * @package    Age_Verification
+ * @subpackage Age_Verification/admin
  * @author     Devio Digital <contact@deviodigital.com>
  */
-class Dispensary_Age_Verification_Admin {
+class Age_Verification_Admin {
 
 	/**
 	 * The ID of this plugin.

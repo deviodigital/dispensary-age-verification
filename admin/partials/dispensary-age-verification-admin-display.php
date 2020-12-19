@@ -8,8 +8,8 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/admin/partials
+ * @package    Age_Verification
+ * @subpackage Age_Verification/admin/partials
  */
 ?>
 

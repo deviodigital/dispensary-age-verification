@@ -6,8 +6,8 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  */
 
 /**
@@ -17,11 +17,11 @@
  * the plugin, and register them with the WordPress API. Call the
  * run function to execute the list of actions and filters.
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  * @author     Devio Digital <contact@deviodigital.com>
  */
-class Dispensary_Age_Verification_Loader {
+class Age_Verification_Loader {
 
 	/**
 	 * The array of actions registered with WordPress.

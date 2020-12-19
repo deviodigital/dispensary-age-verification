@@ -6,8 +6,8 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/public
+ * @package    Age_Verification
+ * @subpackage Age_Verification/public
  */
 
 /**
@@ -16,11 +16,11 @@
  * Defines the plugin name, version, and two examples hooks for how to
  * enqueue the admin-specific stylesheet and JavaScript.
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/public
+ * @package    Age_Verification
+ * @subpackage Age_Verification/public
  * @author     Devio Digital <contact@deviodigital.com>
  */
-class Dispensary_Age_Verification_Public {
+class Age_Verification_Public {
 
 	/**
 	 * The ID of this plugin.
@@ -113,7 +113,7 @@ class Dispensary_Age_Verification_Public {
  *
  * @since    1.0.0
  */
-function wpd_av_public_js() {
+function avwp_public_js() {
 
 	// Add JavaScript codes to footer based on setting in the Customizer.	
 	if ( '1' === get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
@@ -144,14 +144,14 @@ function wpd_av_public_js() {
 	<?php
 	} // end adminHide check.
 }
-add_action( 'wp_footer', 'wpd_av_public_js' );
+add_action( 'wp_footer', 'avwp_public_js' );
 
 /**
  * Register the CSS through wp_header().
  *
  * @since    1.0.0
  */
-function wpd_av_public_css() {
+function avwp_public_css() {
 	if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>
 		<style type="text/css">
 		.wpd-av-overlay {
@@ -168,4 +168,4 @@ function wpd_av_public_css() {
 		</style>
 	<?php }
 }
-add_action( 'wp_head', 'wpd_av_public_css' );
+add_action( 'wp_head', 'avwp_public_css' );

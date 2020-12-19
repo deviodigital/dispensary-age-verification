@@ -21,7 +21,7 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
+ * @package    Age_Verification
  */
 
 // If uninstall not called from WordPress, then exit.

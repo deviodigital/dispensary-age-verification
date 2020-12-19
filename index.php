@@ -2,5 +2,5 @@
 /**
  * Silence is golden
  *
- * @package    Dispensary_Age_Verification
+ * @package    Age_Verification
  */

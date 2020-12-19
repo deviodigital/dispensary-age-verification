@@ -9,8 +9,8 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  */
 
 /**
@@ -20,11 +20,11 @@
  * so that it is ready for translation.
  *
  * @since      1.0.0
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  * @author     Devio Digital <contact@deviodigital.com>
  */
-class Dispensary_Age_Verification_i18n {
+class Age_Verification_i18n {
 
 
 	/**

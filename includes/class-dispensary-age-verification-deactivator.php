@@ -6,8 +6,8 @@
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  */
 
 /**
@@ -16,11 +16,11 @@
  * This class defines all code necessary to run during the plugin's deactivation.
  *
  * @since      1.0.0
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  * @author     Devio Digital <contact@deviodigital.com>
  */
-class Dispensary_Age_Verification_Deactivator {
+class Age_Verification_Deactivator {
 
 	/**
 	 * Short Description. (use period)

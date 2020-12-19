@@ -4,7 +4,7 @@
  *
  * @link              https://www.deviodigital.com
  * @since             1.0.0
- * @package           Dispensary_Age_Verification
+ * @package           Age_Verification
  *
  * @wordpress-plugin
  * Plugin Name:       Age Verification
@@ -30,7 +30,7 @@ if ( ! defined( 'WPINC' ) ) {
  */
 function activate_dispensary_age_verification() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-dispensary-age-verification-activator.php';
-	Dispensary_Age_Verification_Activator::activate();
+	Age_Verification_Activator::activate();
 }
 
 /**
@@ -39,7 +39,7 @@ function activate_dispensary_age_verification() {
  */
 function deactivate_dispensary_age_verification() {
 	require_once plugin_dir_path( __FILE__ ) . 'includes/class-dispensary-age-verification-deactivator.php';
-	Dispensary_Age_Verification_Deactivator::deactivate();
+	Age_Verification_Deactivator::deactivate();
 }
 
 register_activation_hook( __FILE__, 'activate_dispensary_age_verification' );
@@ -62,7 +62,7 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-dispensary-age-verificatio
  */
 function run_dispensary_age_verification() {
 
-	$plugin = new Dispensary_Age_Verification();
+	$plugin = new Age_Verification();
 	$plugin->run();
 
 }

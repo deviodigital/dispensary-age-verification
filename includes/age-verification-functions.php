@@ -5,8 +5,8 @@
  * @link       https://www.deviodigital.com
  * @since      2.4
  *
- * @package    Dispensary_Age_Verification
- * @subpackage Dispensary_Age_Verification/includes
+ * @package    Age_Verification
+ * @subpackage Age_Verification/includes
  */
 
 

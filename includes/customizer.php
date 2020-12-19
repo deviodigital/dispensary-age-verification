@@ -2,7 +2,7 @@
 /**
  * Dispensary Age Verification Customizer Options.
  *
- * @package    Dispensary_Age_Verification
+ * @package    Age_Verification
  * @since      1.1.0
  */
 
