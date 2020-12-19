@@ -66,9 +66,11 @@ class Age_Verification {
 	 * @since    1.0.0
 	 */
 	public function __construct() {
-
+		$this->version = '2.3.2';
+		if ( defined( 'AVWP_VERSION' ) ) {
+			$this->version = AVWP_VERSION;
+		}
 		$this->plugin_name = 'avwp';
-		$this->version     = '2.3.2';
 
 		$this->load_dependencies();
 		$this->set_locale();

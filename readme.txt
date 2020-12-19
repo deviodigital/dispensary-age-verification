@@ -3,8 +3,8 @@ Contributors: deviodigital
 Donate link: https://www.deviodigital.com
 Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 3.0.1
-Tested up to: 5.3.2
-Stable tag: 2.3.2
+Tested up to: 5.6
+Stable tag: 2.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,16 @@ Customize your age verification pop up even more by using our [Age Verification 
 4. All of the available customizer options in the Pro version
 
 == Changelog ==
+
+= 2.4 =
+*   Added admin notice based on installed version of AVWP Pro in `dispensary-age-verification.php`
+*   Updated public CSS enqueue to use the minified file version in `public/class-dispensary-age-verification-public.php`
+*   Updated `.pot` file name and updated text strings for localization in `languages/age-verification.pot`
+*   Updated the plugin text-domain from `dispensary-age-verification` to `avwp` in multiple files
+*   Updated Class names to use use the `Age_Verification` prefix (removing 'Dispensary') in multiple files
+*   Updated function names to use the `avwp` prefix in multiple files
+*   Updated CSS class names to use the `avwp` prefix in multiple files
+*   General code cleanup in multiple files
 
 = 2.3.2 =
 *   Added `avwp_hex2rgba` helper function in `includes/age-verification-functions.php`
