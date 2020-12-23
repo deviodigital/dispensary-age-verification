@@ -24,9 +24,7 @@ if ( ! defined( 'WPINC' ) ) {
 	die;
 }
 
-/**
- * Current plugin version.
- */
+// Current plugin version.
 define( 'AVWP_VERSION', '2.4.1' );
 
 /**
