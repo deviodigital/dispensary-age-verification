@@ -82,7 +82,7 @@ run_avwp();
  */
 function avwp_go_pro_link( $links ) {
 	// Pro link.
-	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . esc_attr__( 'Go Pro', 'avwp' ) . '</a>';
+	$pro_link = '<a href="https://deviodigital.com/product/age-verification-pro" target="_blank" style="font-weight:700;">' . esc_attr__( 'Go Pro', 'dispensary-age-verification' ) . '</a>';
 
 	if ( ! function_exists( 'run_avwp_pro' ) ) {
 		array_unshift( $links, $pro_link );
@@ -126,7 +126,7 @@ add_action( 'admin_init', 'avwp_check_pro_version' );
  * @since 2.9
  */
 function avwp_update_avwp_pro_notice() {
-	$avwp_orders = '<a href="https://www.deviodigital.com/my-account/orders/" target="_blank">' . __( 'Orders', 'avwp' ) . '</a>';
-	$error       = sprintf( esc_html__( 'There is a new version of AVWP Pro available. Download your copy from the %1$s page on Devio Digital.', 'avwp' ), $avwp_orders );
+	$avwp_orders = '<a href="https://www.deviodigital.com/my-account/orders/" target="_blank">' . __( 'Orders', 'dispensary-age-verification' ) . '</a>';
+	$error       = sprintf( esc_html__( 'There is a new version of AVWP Pro available. Download your copy from the %1$s page on Devio Digital.', 'dispensary-age-verification' ), $avwp_orders );
 	echo '<div class="notice notice-info"><p>' . $error . '</p></div>';
 }

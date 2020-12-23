@@ -70,7 +70,7 @@ class Age_Verification {
 		if ( defined( 'AVWP_VERSION' ) ) {
 			$this->version = AVWP_VERSION;
 		}
-		$this->plugin_name = 'avwp';
+		$this->plugin_name = 'dispensary-age-verification';
 
 		$this->load_dependencies();
 		$this->set_locale();
