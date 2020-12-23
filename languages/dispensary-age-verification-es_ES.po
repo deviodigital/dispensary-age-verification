@@ -1,33 +1,33 @@
-#, fuzzy
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2020-12-22 20:45-0500\n"
-"PO-Revision-Date: 2020-12-22 20:38-0500\n"
+"POT-Creation-Date: 2020-12-22 20:51-0500\n"
+"PO-Revision-Date: 2020-12-22 23:40-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Poedit 2.4.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: dispensary-age-verification.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
 #: dispensary-age-verification.php:85
 msgid "Go Pro"
-msgstr ""
+msgstr "Hazte Pro"
 
 #: dispensary-age-verification.php:129
 msgid "Orders"
-msgstr ""
+msgstr "Pedidos"
 
 #: dispensary-age-verification.php:130
 #, php-format
@@ -35,86 +35,91 @@ msgid ""
 "There is a new version of AVWP Pro available. Download your copy from the "
 "%1$s page on Devio Digital."
 msgstr ""
+"Hay una nueva versión de AVWP Pro disponible. Descargue su copia de la %1$s "
+"página de Devio Digital."
 
 #. Plugin Name of the plugin/theme
 #: includes/customizer.php:21 includes/customizer.php:83
 #: public/class-dispensary-age-verification-public.php:94
 msgid "Age Verification"
-msgstr ""
+msgstr "Verificación de Edad"
 
 #: includes/customizer.php:39
 msgid "Minimum age?"
-msgstr ""
+msgstr "¿Edad mínima?"
 
 #: includes/customizer.php:54
 msgid "Background image"
-msgstr ""
+msgstr "Imagen de fondo"
 
 #: includes/customizer.php:71
 msgid "Logo image"
-msgstr ""
+msgstr "Imagen del logo"
 
 #: includes/customizer.php:92
 msgid "Title"
-msgstr ""
+msgstr "Título"
 
 #: includes/customizer.php:102
 #: public/class-dispensary-age-verification-public.php:95
 msgid "You must be [age] years old to enter."
-msgstr ""
+msgstr "Debe tener [age] años de edad para entrar."
 
 #: includes/customizer.php:111
 msgid "Copy"
-msgstr ""
+msgstr "Copiar"
 
 #: includes/customizer.php:121
 #: public/class-dispensary-age-verification-public.php:96
 msgid "YES"
-msgstr ""
+msgstr "SÍ"
 
 #: includes/customizer.php:130
 msgid "Button #1 text"
-msgstr ""
+msgstr "Botón #1 de texto"
 
 #: includes/customizer.php:140
 #: public/class-dispensary-age-verification-public.php:97
 msgid "NO"
-msgstr ""
+msgstr "NO"
 
 #: includes/customizer.php:149
 msgid "Button #2 text"
-msgstr ""
+msgstr "Botón #2 de texto"
 
 #: includes/customizer.php:168
 msgid "Hide for admin users?"
-msgstr ""
+msgstr "¿Ocultar para los usuarios administradores?"
 
 #: public/class-dispensary-age-verification-public.php:101
 msgid "Success!"
-msgstr ""
+msgstr "Correcto!"
 
 #: public/class-dispensary-age-verification-public.php:102
 msgid "You are now being redirected back to the site ..."
-msgstr ""
+msgstr "Ahora está siendo redirigido de nuevo al sitio …"
 
 #: public/class-dispensary-age-verification-public.php:103
 msgid "Sorry!"
-msgstr ""
+msgstr "¡Lo sentimos!"
 
 #: public/class-dispensary-age-verification-public.php:104
 msgid "You are not old enough to view the site ..."
-msgstr ""
+msgstr "No tienes la edad suficiente para ver el sitio …"
 
 #. Plugin URI of the plugin/theme
 #. Author URI of the plugin/theme
 msgid "https://www.deviodigital.com"
-msgstr ""
+msgstr "https://www.deviodigital.com"
 
 #. Description of the plugin/theme
 msgid ""
-"Check a visitors age before allowing them to view your website."
+"Check a visitors age before allowing them to view your website. Brought to "
+"you by <a href=\"https://www.deviodigital.com/\" target=\"_blank\">Devio "
+"Digital</a>"
 msgstr ""
+"Verifique la edad de los visitantes antes de permitirles ver su sitio web"
 
 #. Author of the plugin/theme
 msgid "Devio Digital"
-msgstr ""
+msgstr "Devio Digital"

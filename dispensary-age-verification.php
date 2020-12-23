@@ -10,12 +10,12 @@
  * Plugin Name:       Age Verification
  * Plugin URI:        https://www.deviodigital.com
  * Description:       Check a visitors age before allowing them to view your website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
- * Version:           2.4
+ * Version:           2.4.1
  * Author:            Devio Digital
  * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
- * Text Domain:       avwp
+ * Text Domain:       dispensary-age-verification
  * Domain Path:       /languages
  */
 
@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Current plugin version.
  */
-define( 'AVWP_VERSION', '2.4' );
+define( 'AVWP_VERSION', '2.4.1' );
 
 /**
  * The code that runs during plugin activation.
