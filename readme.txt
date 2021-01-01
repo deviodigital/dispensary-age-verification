@@ -64,6 +64,8 @@ Customize your age verification pop up even more by using our [Age Verification 
 == Changelog ==
 
 *   Added new Spanish translation in `languages/dispensary-age-verification-es_ES.pot`
+*   Added new French translation in `languages/dispensary-age-verification-fr_FR.pot`
+*   Added new Italian translation in `languages/dispensary-age-verification-it_IT.pot`
 *   Updated `.pot` file name and updated text strings for localization in `languages/dispensary-age-verification.pot`
 
 = 2.4 =
