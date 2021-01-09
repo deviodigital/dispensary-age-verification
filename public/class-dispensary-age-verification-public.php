@@ -95,14 +95,14 @@ class Age_Verification_Public {
 			'copy'           => get_theme_mod( 'dav_copy', __( 'You must be [age] years old to enter.', 'dispensary-age-verification' ) ),
 			'btnYes'         => get_theme_mod( 'dav_button_yes', __( 'YES', 'dispensary-age-verification' ) ),
 			'btnNo'          => get_theme_mod( 'dav_button_no', __( 'NO', 'dispensary-age-verification' ) ),
-			'redirectOnFail' => $redirectOnFail,
-			'beforeContent'  => $beforeContent,
-			'afterContent'   => $afterContent,
 			'successHide'    => get_theme_mod( 'dav_success_hide' ),
 			'successTitle'   => __( 'Success!', 'dispensary-age-verification' ),
 			'successText'    => __( 'You are now being redirected back to the site ...', 'dispensary-age-verification' ),
 			'failTitle'      => __( 'Sorry!', 'dispensary-age-verification' ),
 			'failText'       => __( 'You are not old enough to view the site ...', 'dispensary-age-verification' ),
+			'redirectOnFail' => $redirectOnFail,
+			'beforeContent'  => $beforeContent,
+			'afterContent'   => $afterContent,
 		);	
 
 		// Translation array filter.
