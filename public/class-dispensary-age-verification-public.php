@@ -98,6 +98,7 @@ class Age_Verification_Public {
 			'redirectOnFail' => $redirectOnFail,
 			'beforeContent'  => $beforeContent,
 			'afterContent'   => $afterContent,
+			'successHide'    => get_theme_mod( 'dav_success_hide' ),
 			'successTitle'   => __( 'Success!', 'dispensary-age-verification' ),
 			'successText'    => __( 'You are now being redirected back to the site ...', 'dispensary-age-verification' ),
 			'failTitle'      => __( 'Sorry!', 'dispensary-age-verification' ),
