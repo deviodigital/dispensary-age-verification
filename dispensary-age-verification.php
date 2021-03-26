@@ -27,6 +27,9 @@ if ( ! defined( 'WPINC' ) ) {
 // Current plugin version.
 define( 'AVWP_VERSION', '2.5' );
 
+// Plugin folder name.
+$pluginname = plugin_basename( __FILE__ );
+
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-dispensary-age-verification-activator.php
@@ -87,9 +90,6 @@ function avwp_go_pro_link( $links ) {
 	}
 	return $links;
 }
-
-$pluginname = plugin_basename( __FILE__ );
-
 add_filter( "plugin_action_links_$pluginname", 'avwp_go_pro_link' );
 
 /**
