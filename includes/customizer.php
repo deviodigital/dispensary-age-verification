@@ -152,6 +152,29 @@ function dav_register_theme_customizer( $wp_customize ) {
 		)
 	);
 
+	/* Success message */
+	$wp_customize->add_setting(
+		'dav_success_message',
+		array(
+			'default'           => 'show',
+			'sanitize_callback' => 'dav_sanitize_select',
+			'transport'         => 'refresh',
+		)
+	);
+	$wp_customize->add_control(
+		'dav_success_message',
+		array(
+			'section'  => 'dav_display_options',
+			'label'    => __( 'Success Message', 'dispensary-age-verification' ),
+			'type'     => 'select',
+			'choices' => array(
+				'show' => __( 'Show', 'dispensary-age-verification' ),
+				'hide' => __( 'Hide', 'dispensary-age-verification' ),
+			),
+			'priority' => 16,
+		)
+	);
+
 	/* Show or Hide Blog Description */
 	$wp_customize->add_setting(
 		'dav_adminHide',
