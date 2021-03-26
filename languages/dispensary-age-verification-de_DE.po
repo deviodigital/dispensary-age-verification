@@ -1,0 +1,138 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Age Verification\n"
+"POT-Creation-Date: 2021-03-26 08:08-0400\n"
+"PO-Revision-Date: 2021-03-26 08:08-0400\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.4.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: dispensary-age-verification.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: dispensary-age-verification.php:86
+msgid "Go Pro"
+msgstr "Pro erwerben"
+
+#: dispensary-age-verification.php:127
+msgid "Orders"
+msgstr "Bestellungen"
+
+#: dispensary-age-verification.php:128
+#, php-format
+msgid ""
+"There is a new version of AVWP Pro available. Download your copy from the "
+"%1$s page on Devio Digital."
+msgstr ""
+"Es ist eine neue Version von AVWP Pro verfügbar. Laden Sie Ihre Kopie von "
+"der %1$s -Seite auf Devio Digital herunter."
+
+#. Plugin Name of the plugin/theme
+#: includes/customizer.php:21 includes/customizer.php:83
+#: public/class-dispensary-age-verification-public.php:94
+msgid "Age Verification"
+msgstr "Altersprüfung"
+
+#: includes/customizer.php:39
+msgid "Minimum age?"
+msgstr "Mindestalter?"
+
+#: includes/customizer.php:54
+msgid "Background image"
+msgstr "Hintergrundbild"
+
+#: includes/customizer.php:71
+msgid "Logo image"
+msgstr "Logo-Bild"
+
+#: includes/customizer.php:92
+msgid "Title"
+msgstr "Titel"
+
+#: includes/customizer.php:102
+#: public/class-dispensary-age-verification-public.php:95
+msgid "You must be [age] years old to enter."
+msgstr "Sie müssen mindestens [age] Jahre alt sein, um die Seite zu besuchen."
+
+#: includes/customizer.php:111
+msgid "Copy"
+msgstr "Kopieren"
+
+#: includes/customizer.php:121
+#: public/class-dispensary-age-verification-public.php:96
+msgid "YES"
+msgstr "JA"
+
+#: includes/customizer.php:130
+msgid "Button #1 text"
+msgstr "Link-Text #1"
+
+#: includes/customizer.php:140
+#: public/class-dispensary-age-verification-public.php:97
+msgid "NO"
+msgstr "NEIN"
+
+#: includes/customizer.php:149
+msgid "Button #2 text"
+msgstr "Link-Text #2"
+
+#: includes/customizer.php:168
+msgid "Success Message"
+msgstr "Erfolgsmeldung"
+
+#: includes/customizer.php:171
+msgid "Show"
+msgstr "Anzeigen"
+
+#: includes/customizer.php:172
+msgid "Hide"
+msgstr "Verstecken"
+
+#: includes/customizer.php:191
+msgid "Hide for admin users?"
+msgstr "Für Admin-Benutzer ausblenden?"
+
+#: public/class-dispensary-age-verification-public.php:98
+msgid "Success!"
+msgstr "Erfolgreich!"
+
+#: public/class-dispensary-age-verification-public.php:99
+msgid "You are now being redirected back to the site ..."
+msgstr "Sie werden jetzt zurück zur Site weitergeleitet …"
+
+#: public/class-dispensary-age-verification-public.php:101
+msgid "Sorry!"
+msgstr "Entschuldigung!"
+
+#: public/class-dispensary-age-verification-public.php:102
+msgid "You are not old enough to view the site ..."
+msgstr "Sie sind nicht alt genug, um die Website anzuzeigen …"
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.deviodigital.com"
+msgstr "https://www.deviodigital.com"
+
+#. Description of the plugin/theme
+msgid ""
+"Check a visitors age before allowing them to view your website. Brought to "
+"you by <a href=\"https://www.deviodigital.com/\" target=\"_blank\">Devio "
+"Digital</a>"
+msgstr ""
+"Überprüft das Alter eines Besuchers, bevor ihm erlaubt wird, die Website zu "
+"betreten"
+
+#. Author of the plugin/theme
+msgid "Devio Digital"
+msgstr "Devio Digital"
