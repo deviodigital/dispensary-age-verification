@@ -1,8 +1,7 @@
-/*
- * The Dispensary Age Verification plugin utilizes
- * the following open source javascript plugin.
- *
- * Thanks Michael!
+/**
+ * AVWP Public JS
+ * 
+ * Age Verification for WordPress utilizes the following open source javascript plugin. Thanks Michael!
  *
  * Plugin: ageCheck.js
  * Description: A simple plugin to verify user's age. Uses sessionStorage API to store if user is verified - only kept until browser is closed.
@@ -24,8 +23,10 @@
       btnNo: "NO",
       successTitle: "Success!",
       successText: "You are now being redirected back to the site...",
+      successMessage: "show",
       failTitle: "Sorry",
       failText: "You are not old enough to view this site...",
+      failMessage: "show",
       cookieDays: 30,
       adminDebug: "",
       beforeContent: "",
@@ -120,11 +121,18 @@
       },
       handleSuccess() {
         const successMsg = `<h2>${settings.successTitle}</h2><p>${settings.successText}</p>`;
+        if (settings.successMessage !== "hide") {
+          var animateOne = 200;
+          var animateTwo = 2000;
+        } else {
+          var animateOne = 0;
+          var animateTwo = 0;  
+        }
         $(".avwp-av").html(successMsg);
         setTimeout(() => {
           $(".avwp-av").animate({
             top: "-350px",
-          }, 200, () => {
+          }, animateOne, () => {
             $(".avwp-av-overlay").animate({
               opacity: "0",
             }, 500, () => {
@@ -135,7 +143,7 @@
               }
             });
           });
-        }, 2000);
+        }, animateTwo);
       },
       handleUnderAge() {
         const underAgeMsg = `<h2>${settings.failTitle}</h2><p>${settings.failText}</p>`;

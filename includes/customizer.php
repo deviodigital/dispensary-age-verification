@@ -177,12 +177,31 @@ add_action( 'customize_register', 'dav_register_theme_customizer' );
 /**
  * Sanitizes the incoming input and returns it prior to serialization.
  *
- * @param      string $input    The string to sanitize.
- * @return     string              The sanitized string
+ * @param      string    $input    The string to sanitize.
+ * @return     string    $input    The sanitized string.
  * @package    dav
  * @since      0.5.0
  * @version    1.0.2
  */
 function dav_sanitize_input( $input ) {
 	return strip_tags( stripslashes( $input ) );
+}
+
+/**
+ * Sanitizes the incoming input and returns it prior to serialization.
+ *
+ * @param      string     $input      The string to sanitize.
+ * @param      string     $setting    The sanitized string.
+ * @return     string     $input      The sanitized string.
+ * @package    dav
+ * @since      2.5.0
+ * @version    1.0.0
+ */
+function dav_sanitize_select( $input, $setting ) {
+	// Ensure input is a slug.
+	$input = sanitize_key( $input );
+	// Get list of choices from the control associated with the setting.
+	$choices = $setting->manager->get_control( $setting->id )->choices;
+	// If the input is a valid key, return it; otherwise, return the default.
+	return ( array_key_exists( $input, $choices ) ? $input : $setting->default );
 }
