@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2020-12-22 20:45-0500\n"
-"PO-Revision-Date: 2020-12-22 20:38-0500\n"
+"POT-Creation-Date: 2021-03-25 23:12-0400\n"
+"PO-Revision-Date: 2021-03-25 23:12-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,15 +21,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: dispensary-age-verification.php:85
+#: dispensary-age-verification.php:86
 msgid "Go Pro"
 msgstr ""
 
-#: dispensary-age-verification.php:129
+#: dispensary-age-verification.php:127
 msgid "Orders"
 msgstr ""
 
-#: dispensary-age-verification.php:130
+#: dispensary-age-verification.php:128
 #, php-format
 msgid ""
 "There is a new version of AVWP Pro available. Download your copy from the "
@@ -86,22 +86,34 @@ msgid "Button #2 text"
 msgstr ""
 
 #: includes/customizer.php:168
+msgid "Success Message"
+msgstr ""
+
+#: includes/customizer.php:171
+msgid "Show"
+msgstr ""
+
+#: includes/customizer.php:172
+msgid "Hide"
+msgstr ""
+
+#: includes/customizer.php:191
 msgid "Hide for admin users?"
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:101
+#: public/class-dispensary-age-verification-public.php:98
 msgid "Success!"
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:102
+#: public/class-dispensary-age-verification-public.php:99
 msgid "You are now being redirected back to the site ..."
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:103
+#: public/class-dispensary-age-verification-public.php:101
 msgid "Sorry!"
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:104
+#: public/class-dispensary-age-verification-public.php:102
 msgid "You are not old enough to view the site ..."
 msgstr ""
 
@@ -112,7 +124,9 @@ msgstr ""
 
 #. Description of the plugin/theme
 msgid ""
-"Check a visitors age before allowing them to view your website."
+"Check a visitors age before allowing them to view your website. Brought to "
+"you by <a href=\"https://www.deviodigital.com/\" target=\"_blank\">Devio "
+"Digital</a>"
 msgstr ""
 
 #. Author of the plugin/theme

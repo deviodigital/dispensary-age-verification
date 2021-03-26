@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2020-12-28 20:11-0500\n"
-"PO-Revision-Date: 2020-12-28 20:11-0500\n"
+"POT-Creation-Date: 2021-03-25 23:16-0400\n"
+"PO-Revision-Date: 2021-03-25 23:16-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr\n"
@@ -16,12 +16,12 @@ msgstr ""
 "X-Poedit-WPHeader: dispensary-age-verification.php\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
-"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: dispensary-age-verification.php:83
+#: dispensary-age-verification.php:86
 msgid "Go Pro"
 msgstr "Go Pro"
 
@@ -88,22 +88,34 @@ msgid "Button #2 text"
 msgstr "Texte du bouton 2"
 
 #: includes/customizer.php:168
+msgid "Success Message"
+msgstr "Message de réussite"
+
+#: includes/customizer.php:171
+msgid "Show"
+msgstr "Afficher"
+
+#: includes/customizer.php:172
+msgid "Hide"
+msgstr "Cacher"
+
+#: includes/customizer.php:191
 msgid "Hide for admin users?"
 msgstr "Masquer pour les utilisateurs administrateurs?"
 
-#: public/class-dispensary-age-verification-public.php:101
+#: public/class-dispensary-age-verification-public.php:98
 msgid "Success!"
 msgstr "Succès !"
 
-#: public/class-dispensary-age-verification-public.php:102
+#: public/class-dispensary-age-verification-public.php:99
 msgid "You are now being redirected back to the site ..."
 msgstr "Vous êtes maintenant redirigé vers le site …"
 
-#: public/class-dispensary-age-verification-public.php:103
+#: public/class-dispensary-age-verification-public.php:101
 msgid "Sorry!"
 msgstr "Désolé !"
 
-#: public/class-dispensary-age-verification-public.php:104
+#: public/class-dispensary-age-verification-public.php:102
 msgid "You are not old enough to view the site ..."
 msgstr "Vous n’êtes pas assez âgé pour consulter le site …"
 
@@ -118,12 +130,10 @@ msgid ""
 "you by <a href=\"https://www.deviodigital.com/\" target=\"_blank\">Devio "
 "Digital</a>"
 msgstr ""
+"Vérifiez l’âge des visiteurs avant de leur permettre de consulter votre site "
+"Web. Présenté par <a href=“https://www.deviodigital.com/“ "
+"target=“_blank”>Devio Digital</a>"
 
 #. Author of the plugin/theme
 msgid "Devio Digital"
 msgstr "Devio Digital"
-
-#~ msgid "Check a visitors age before allowing them to view your website."
-#~ msgstr ""
-#~ "Vérifiez l’âge des visiteurs avant de leur permettre de consulter votre "
-#~ "site Web."
