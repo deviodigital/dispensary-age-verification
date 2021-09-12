@@ -44,8 +44,8 @@ class Age_Verification_Public {
 	 * Initialize the class and set its properties.
 	 *
 	 * @since    1.0.0
-	 * @param string $plugin_name The name of the plugin.
-	 * @param string $version     The version of this plugin.
+	 * @param    string    $plugin_name    The name of the plugin.
+	 * @param    string    $version        The version of this plugin.
 	 */
 	public function __construct( $plugin_name, $version ) {
 
@@ -100,6 +100,7 @@ class Age_Verification_Public {
 			'successMessage' => get_theme_mod( 'dav_success_message' ),
 			'failTitle'      => __( 'Sorry!', 'dispensary-age-verification' ),
 			'failText'       => __( 'You are not old enough to view the site ...', 'dispensary-age-verification' ),
+			'messageTime'    => get_theme_mod( 'dav_message_display_time' ),
 			'redirectOnFail' => $redirectOnFail,
 			'beforeContent'  => $beforeContent,
 			'afterContent'   => $afterContent,
@@ -140,6 +141,7 @@ function avwp_public_js() {
 					"successMessage" : object_name.successMessage,
 					"failTitle" : object_name.failTitle,
 					"failText" : object_name.failText,
+					"messageTime" : object_name.messageTime,
 					"cookieDays" : object_name.cookieDays,
 					"adminDebug" : object_name.adminDebug,
 					"beforeContent" : object_name.beforeContent,

@@ -121,21 +121,16 @@
       },
       handleSuccess() {
         const successMsg = `<h2>${settings.successTitle}</h2><p>${settings.successText}</p>`;
-        if (settings.successMessage !== "hide") {
-          var animateOne = 200;
-          var animateTwo = 2000;
-        } else {
-          var animateOne = 0;
-          var animateTwo = 0;  
+        if (settings.messageTime != 0) {
+          $(".avwp-av").html(successMsg);
         }
-        $(".avwp-av").html(successMsg);
         setTimeout(() => {
           $(".avwp-av").animate({
             top: "-350px",
-          }, animateOne, () => {
+          }, settings.successTime, () => {
             $(".avwp-av-overlay").animate({
               opacity: "0",
-            }, 500, () => {
+            }, settings.messageTime, () => {
               if (settings.redirectTo !== '') {
                 window.location.replace(settings.redirectTo);
               } else {
@@ -143,7 +138,7 @@
               }
             });
           });
-        }, animateTwo);
+        }, settings.messageTime);
       },
       handleUnderAge() {
         const underAgeMsg = `<h2>${settings.failTitle}</h2><p>${settings.failText}</p>`;
@@ -151,7 +146,7 @@
         if (settings.redirectOnFail !== '') {
           setTimeout(() => {
             window.location.replace(settings.redirectOnFail);
-          }, 2000);
+          }, settings.messageTime);
         }
       },
     }; // end _this

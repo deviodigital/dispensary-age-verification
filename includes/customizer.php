@@ -152,26 +152,22 @@ function dav_register_theme_customizer( $wp_customize ) {
 		)
 	);
 
-	/* Success message */
+	/* Success/Failure message display time */
 	$wp_customize->add_setting(
-		'dav_success_message',
+		'dav_message_display_time',
 		array(
-			'default'           => 'show',
-			'sanitize_callback' => 'dav_sanitize_select',
+			'default'           => 2000,
+			'sanitize_callback' => 'dav_sanitize_input',
 			'transport'         => 'refresh',
 		)
 	);
 	$wp_customize->add_control(
-		'dav_success_message',
+		'dav_message_display_time',
 		array(
 			'section'  => 'dav_display_options',
-			'label'    => __( 'Success Message', 'dispensary-age-verification' ),
-			'type'     => 'select',
-			'choices' => array(
-				'show' => __( 'Show', 'dispensary-age-verification' ),
-				'hide' => __( 'Hide', 'dispensary-age-verification' ),
-			),
-			'priority' => 16,
+			'label'    => __( 'Message display time (milliseconds)', 'dispensary-age-verification' ),
+			'type'     => 'number',
+			'priority' => 18,
 		)
 	);
 
