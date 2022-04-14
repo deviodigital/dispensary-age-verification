@@ -40,7 +40,7 @@
         const month = $(".avwp-av .month").val();
         const day = $(".avwp-av .day").val();
         _this.month = month;
-        _this.day = day.replace(/^0+/, ''); // remove leading zero
+        _this.day = day.replace(/^0+/, ""); // remove leading zero
         _this.year = $(".avwp-av .year").val();
       },
       validate() {
