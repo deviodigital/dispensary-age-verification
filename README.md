@@ -3,6 +3,8 @@ Check a visitors age before allowing them to view your website content.
 
 ![Age Verification for WordPress](https://deviodigital.com/wp-content/uploads/2019/05/banner-772x250.jpg)
 
+[![Codacy Badge](https://app.codacy.com/project/badge/Grade/bf2274cccdca46838c516b7f4a1ea936)](https://www.codacy.com/gh/deviodigital/dispensary-age-verification/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=deviodigital/dispensary-age-verification&amp;utm_campaign=Badge_Grade)
+
 Customize a variety of features in the age verification box.
 
 *   Minimum age
