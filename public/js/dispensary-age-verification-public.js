@@ -11,7 +11,7 @@
  *
  */
 (function ($) {
-  'use strict';
+  "use strict";
   $.ageCheck = function (options) {
     const settings = $.extend({
       minAge: 18,
@@ -75,13 +75,13 @@
       buildHtml() {
         const copy = settings.copy;
         let html = "";
-        html += '<div class="avwp-av-overlay"></div>';
-        html += '<div class="avwp-av">';
+        html += "<div class=\"avwp-av-overlay\"></div>";
+        html += "<div class=\"avwp-av\">";
         if (settings.beforeContent !== "") {
           html += settings.beforeContent;
         }
         if (settings.imgLogo !== "") {
-      		html += '<img src="' + settings.imgLogo + '" alt="' + settings.title + '" />';
+          html += "<img src=\"" + settings.imgLogo + "\" alt=\"" + settings.title + "\" />";
         }
         if (settings.title !== "") {
           html += `<h2>${settings.title}</h2>`;
@@ -92,7 +92,7 @@
           html += settings.afterContent;
         }
         html += "</div></div>";
-        $('body').append(html);
+        $("body").append(html);
 
         $(".avwp-av-overlay").animate({
           opacity: 1,
@@ -131,7 +131,7 @@
             $(".avwp-av-overlay").animate({
               opacity: "0",
             }, settings.messageTime, () => {
-              if (settings.redirectTo !== '') {
+              if (settings.redirectTo !== "") {
                 window.location.replace(settings.redirectTo);
               } else {
                 $(".avwp-av-overlay, .avwp-av").remove();
@@ -143,7 +143,7 @@
       handleUnderAge() {
         const underAgeMsg = `<h2>${settings.failTitle}</h2><p>${settings.failText}</p>`;
         $(".avwp-av").html(underAgeMsg);
-        if (settings.redirectOnFail !== '') {
+        if (settings.redirectOnFail !== "") {
           setTimeout(() => {
             window.location.replace(settings.redirectOnFail);
           }, settings.messageTime);
