@@ -4,7 +4,7 @@ Donate link: https://www.deviodigital.com
 Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 4.6
 Tested up to: 5.9.2
-Stable tag: 2.6
+Stable tag: 2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -62,6 +62,9 @@ Customize your age verification pop up even more by using our [Age Verification 
 4. All of the available customizer options in the Pro version
 
 == Changelog ==
+
+= 2.7 =
+*   Updated various security related issues found with [Codacy](https://codacy.com) throughout multiple files in the plugin
 
 = 2.6 =
 *   Added new German translation in `languages/dispensary-age-verification-de_DE.pot`
