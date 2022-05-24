@@ -1,16 +1,16 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2021-03-25 23:16-0400\n"
-"PO-Revision-Date: 2021-03-25 23:16-0400\n"
+"POT-Creation-Date: 2022-05-23 22:27-0400\n"
+"PO-Revision-Date: 2022-05-23 22:27-0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
-"Language: fr\n"
+"Language: fr_FR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Poedit 2.4.2\n"
+"X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: dispensary-age-verification.php\n"
@@ -21,15 +21,15 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 
-#: dispensary-age-verification.php:86
+#: dispensary-age-verification.php:93
 msgid "Go Pro"
 msgstr "Go Pro"
 
-#: dispensary-age-verification.php:127
+#: dispensary-age-verification.php:136
 msgid "Orders"
 msgstr "Commandes"
 
-#: dispensary-age-verification.php:128
+#: dispensary-age-verification.php:137
 #, php-format
 msgid ""
 "There is a new version of AVWP Pro available. Download your copy from the "
@@ -39,83 +39,75 @@ msgstr ""
 "partir de la page %1$s sur Devio Digital."
 
 #. Plugin Name of the plugin/theme
-#: includes/customizer.php:21 includes/customizer.php:83
-#: public/class-dispensary-age-verification-public.php:94
+#: includes/customizer.php:26 includes/customizer.php:88
+#: public/class-dispensary-age-verification-public.php:98
 msgid "Age Verification"
 msgstr "Verification d'âge"
 
-#: includes/customizer.php:39
+#: includes/customizer.php:44
 msgid "Minimum age?"
 msgstr "Âge minimum?"
 
-#: includes/customizer.php:54
+#: includes/customizer.php:59
 msgid "Background image"
 msgstr "Image de fond"
 
-#: includes/customizer.php:71
+#: includes/customizer.php:76
 msgid "Logo image"
 msgstr "Image du logo"
 
-#: includes/customizer.php:92
+#: includes/customizer.php:97
 msgid "Title"
 msgstr "Titre"
 
-#: includes/customizer.php:102
-#: public/class-dispensary-age-verification-public.php:95
+#: includes/customizer.php:107
+#: public/class-dispensary-age-verification-public.php:99
 msgid "You must be [age] years old to enter."
 msgstr "Vous devez avoir [age] des années pour entrer."
 
-#: includes/customizer.php:111
+#: includes/customizer.php:116
 msgid "Copy"
 msgstr "Copier"
 
-#: includes/customizer.php:121
-#: public/class-dispensary-age-verification-public.php:96
+#: includes/customizer.php:126
+#: public/class-dispensary-age-verification-public.php:100
 msgid "YES"
 msgstr "OUI"
 
-#: includes/customizer.php:130
+#: includes/customizer.php:135
 msgid "Button #1 text"
 msgstr "Texte du bouton 1"
 
-#: includes/customizer.php:140
-#: public/class-dispensary-age-verification-public.php:97
+#: includes/customizer.php:145
+#: public/class-dispensary-age-verification-public.php:101
 msgid "NO"
 msgstr "NON"
 
-#: includes/customizer.php:149
+#: includes/customizer.php:154
 msgid "Button #2 text"
 msgstr "Texte du bouton 2"
 
-#: includes/customizer.php:168
-msgid "Success Message"
-msgstr "Message de réussite"
+#: includes/customizer.php:173
+msgid "Message display time (milliseconds)"
+msgstr ""
 
-#: includes/customizer.php:171
-msgid "Show"
-msgstr "Afficher"
-
-#: includes/customizer.php:172
-msgid "Hide"
-msgstr "Cacher"
-
-#: includes/customizer.php:191
+#: includes/customizer.php:192
 msgid "Hide for admin users?"
 msgstr "Masquer pour les utilisateurs administrateurs?"
 
-#: public/class-dispensary-age-verification-public.php:98
+#: public/class-dispensary-age-verification-public.php:102
 msgid "Success!"
 msgstr "Succès !"
 
-#: public/class-dispensary-age-verification-public.php:99
+#: public/class-dispensary-age-verification-public.php:103
 msgid "You are now being redirected back to the site ..."
 msgstr "Vous êtes maintenant redirigé vers le site …"
 
-#: public/class-dispensary-age-verification-public.php:101
+#: public/class-dispensary-age-verification-public.php:105
 msgid "Sorry!"
 msgstr "Désolé !"
 
-#: public/class-dispensary-age-verification-public.php:102
+#: public/class-dispensary-age-verification-public.php:106
 msgid "You are not old enough to view the site ..."
 msgstr "Vous n’êtes pas assez âgé pour consulter le site …"
 
@@ -137,3 +129,12 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Devio Digital"
 msgstr "Devio Digital"
+
+#~ msgid "Success Message"
+#~ msgstr "Message de réussite"
+
+#~ msgid "Show"
+#~ msgstr "Afficher"
+
+#~ msgid "Hide"
+#~ msgstr "Cacher"
