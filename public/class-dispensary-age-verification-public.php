@@ -131,7 +131,7 @@ function avwp_public_js() {
         // Do nothing.
     } else { ?>
         <script type="text/javascript">
-            (function( $ ) {
+            jQuery(document).ready(function($) {
                 $.ageCheck({
                     "bgImage" : object_name.bgImage,
                     "minAge" : object_name.minAge,
@@ -152,7 +152,7 @@ function avwp_public_js() {
                     "beforeContent" : object_name.beforeContent,
                     "afterContent" : object_name.afterContent
                 });
-            })( jQuery );
+            });
         </script>
         <?php
     } // end adminHide check.
