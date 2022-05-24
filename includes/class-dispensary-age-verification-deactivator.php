@@ -3,11 +3,11 @@
 /**
  * Fired during plugin deactivation
  *
- * @link       https://www.deviodigital.com
- * @since      1.0.0
- *
  * @package    Age_Verification
  * @subpackage Age_Verification/includes
+ * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
+ * @since      1.0.0
  */
 
 /**
@@ -19,6 +19,7 @@
  * @package    Age_Verification
  * @subpackage Age_Verification/includes
  * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
  */
 class Age_Verification_Deactivator {
 
@@ -27,7 +28,8 @@ class Age_Verification_Deactivator {
      *
      * Long Description.
      *
-     * @since    1.0.0
+     * @since  1.0.0
+     * @return void
      */
     public static function deactivate() {
 

@@ -45,7 +45,9 @@ function avwp_hex2rgba( $color, $opacity = false ) {
 
     // Check if opacity is set(rgba or rgb).
     if ( $opacity ) {
-        if ( abs( $opacity ) > 1 ) { $opacity = 1.0; }
+        if ( abs( $opacity ) > 1 ) {
+            $opacity = 1.0;
+        }
         $output  = 'rgba(' . implode( ',', $rgb ) . ',' . $opacity . ')';
     } else {
         $output = 'rgb(' . implode( ',', $rgb ) . ')';

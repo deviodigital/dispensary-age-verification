@@ -3,13 +3,18 @@
  * Dispensary Age Verification Customizer Options.
  *
  * @package    Age_Verification
+ * @subpackage Age_Verification/includes
+ * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
  * @since      1.1.0
  */
 
 /**
  * Registers options with the Theme Customizer
  *
- * @param      object $wp_customize The WordPress Theme Customizer.
+ * @param object $wp_customize The WordPress Theme Customizer.
+ * 
+ * @return void
  */
 function dav_register_theme_customizer( $wp_customize ) {
     /**
@@ -196,11 +201,13 @@ add_action( 'customize_register', 'dav_register_theme_customizer' );
 /**
  * Sanitizes the incoming input and returns it prior to serialization.
  *
- * @param      string    $input    The string to sanitize.
- * @return     string    $input    The sanitized string.
- * @package    dav
- * @since      0.5.0
- * @version    1.0.2
+ * @param string $input The string to sanitize.
+ * 
+ * @package dav
+ * 
+ * @since   0.5.0
+ * @version 1.0.2
+ * @return  string $input The sanitized string.
  */
 function dav_sanitize_input( $input ) {
     return strip_tags( stripslashes( $input ) );
@@ -209,12 +216,14 @@ function dav_sanitize_input( $input ) {
 /**
  * Sanitizes the incoming input and returns it prior to serialization.
  *
- * @param      string     $input      The string to sanitize.
- * @param      string     $setting    The sanitized string.
- * @return     string     $input      The sanitized string.
- * @package    dav
- * @since      2.5.0
- * @version    1.0.0
+ * @param string $input   The string to sanitize.
+ * @param string $setting The sanitized string.
+ * 
+ * @package dav
+ * 
+ * @since   2.5.0
+ * @version 1.0.0
+ * @return  string $input The sanitized string.
  */
 function dav_sanitize_select( $input, $setting ) {
     // Ensure input is a slug.

@@ -5,11 +5,11 @@
  * A class definition that includes attributes and functions used across both the
  * public-facing side of the site and the admin area.
  *
- * @link       https://www.deviodigital.com
- * @since      1.0.0
- *
  * @package    Age_Verification
  * @subpackage Age_Verification/includes
+ * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
+ * @since      1.0.0
  */
 
 /**
@@ -21,10 +21,10 @@
  * Also maintains the unique identifier of this plugin as well as the current
  * version of the plugin.
  *
- * @since      1.0.0
  * @package    Age_Verification
  * @subpackage Age_Verification/includes
  * @author     Devio Digital <contact@deviodigital.com>
+ * @since      1.0.0
  */
 class Age_Verification {
 
@@ -32,29 +32,29 @@ class Age_Verification {
      * The loader that's responsible for maintaining and registering all hooks that power
      * the plugin.
      *
-     * @since    1.0.0
-     * @access   protected
-     * @var      Age_Verification_Loader    $loader    Maintains and registers all hooks for the plugin.
+     * @since  1.0.0
+     * @access protected
+     * @var    Age_Verification_Loader $loader Maintains and registers all plugin hooks.
      */
     protected $loader;
 
     /**
      * The unique identifier of this plugin.
      *
-     * @since    1.0.0
-     * @access   protected
-     * @var      string    $_plugin_name    The string used to uniquely identify this plugin.
+     * @since  1.0.0
+     * @access protected
+     * @var    string    $plugin_name The string used to uniquely identify this plugin.
      */
-    protected $_plugin_name;
+    protected $plugin_name;
 
     /**
      * The current version of the plugin.
      *
-     * @since    1.0.0
-     * @access   protected
-     * @var      string    $_version    The current version of the plugin.
+     * @since  1.0.0
+     * @access protected
+     * @var    string    $version The current version of the plugin.
      */
-    protected $_version;
+    protected $version;
 
     /**
      * Define the core functionality of the plugin.
@@ -63,7 +63,8 @@ class Age_Verification {
      * Load the dependencies, define the locale, and set the hooks for the admin area and
      * the public-facing side of the site.
      *
-     * @since    1.0.0
+     * @since  1.0.0
+     * @return void
      */
     public function __construct() {
         $this->plugin_name = 'dispensary-age-verification';
@@ -92,8 +93,9 @@ class Age_Verification {
      * Create an instance of the loader which will be used to register the hooks
      * with WordPress.
      *
-     * @since    1.0.0
-     * @access   private
+     * @since  1.0.0
+     * @access private
+     * @return void
      */
     private function load_dependencies() {
 
@@ -142,11 +144,12 @@ class Age_Verification {
     /**
      * Define the locale for this plugin for internationalization.
      *
-     * Uses the Age_Verification_i18n class in order to set the domain and to register the hook
-     * with WordPress.
+     * Uses the Age_Verification_i18n class in order to set the domain and to
+     * register the hook with WordPress.
      *
-     * @since    1.0.0
-     * @access   private
+     * @since  1.0.0
+     * @access private
+     * @return void
      */
     private function set_locale() {
 
@@ -160,8 +163,9 @@ class Age_Verification {
      * Register all of the hooks related to the admin area functionality
      * of the plugin.
      *
-     * @since    1.0.0
-     * @access   private
+     * @since  1.0.0
+     * @access private
+     * @return void
      */
     private function define_admin_hooks() {
 
@@ -176,8 +180,9 @@ class Age_Verification {
      * Register all of the hooks related to the public-facing functionality
      * of the plugin.
      *
-     * @since    1.0.0
-     * @access   private
+     * @since  1.0.0
+     * @access private
+     * @return void
      */
     private function define_public_hooks() {
 
@@ -191,7 +196,8 @@ class Age_Verification {
     /**
      * Run the loader to execute all of the hooks with WordPress.
      *
-     * @since    1.0.0
+     * @since  1.0.0
+     * @return void
      */
     public function run() {
         $this->loader->run();
@@ -201,8 +207,8 @@ class Age_Verification {
      * The name of the plugin used to uniquely identify it within the context of
      * WordPress and to define internationalization functionality.
      *
-     * @since     1.0.0
-     * @return    string    The name of the plugin.
+     * @since  1.0.0
+     * @return string The name of the plugin.
      */
     public function get_plugin_name() {
         return $this->plugin_name;
@@ -211,8 +217,8 @@ class Age_Verification {
     /**
      * The reference to the class that orchestrates the hooks with the plugin.
      *
-     * @since     1.0.0
-     * @return    Age_Verification_Loader    Orchestrates the hooks of the plugin.
+     * @since  1.0.0
+     * @return Age_Verification_Loader Orchestrates the hooks of the plugin.
      */
     public function get_loader() {
         return $this->loader;
@@ -221,8 +227,8 @@ class Age_Verification {
     /**
      * Retrieve the version number of the plugin.
      *
-     * @since     1.0.0
-     * @return    string    The version number of the plugin.
+     * @since  1.0.0
+     * @return string The version number of the plugin.
      */
     public function get_version() {
         return $this->version;

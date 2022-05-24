@@ -3,11 +3,11 @@
 /**
  * The public-facing functionality of the plugin.
  *
- * @link       https://www.deviodigital.com
- * @since      1.0.0
- *
  * @package    Age_Verification
  * @subpackage Age_Verification/public
+ * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
+ * @since      1.0.0
  */
 
 /**
@@ -19,33 +19,35 @@
  * @package    Age_Verification
  * @subpackage Age_Verification/public
  * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
  */
 class Age_Verification_Public {
 
     /**
      * The ID of this plugin.
      *
-     * @since    1.0.0
-     * @access   private
-     * @var      string    $_plugin_name    The ID of this plugin.
+     * @since  1.0.0
+     * @access private
+     * @var    string  $_plugin_name The ID of this plugin.
      */
     private $_plugin_name;
 
     /**
      * The version of this plugin.
      *
-     * @since    1.0.0
-     * @access   private
-     * @var      string    $_version    The current version of this plugin.
+     * @since  1.0.0
+     * @access private
+     * @var    string  $_version The current version of this plugin.
      */
     private $_version;
 
     /**
      * Initialize the class and set its properties.
-     *
-     * @since    1.0.0
-     * @param    string    $_plugin_name    The name of the plugin.
-     * @param    string    $_version        The version of this plugin.
+     * 
+     * @param string $_plugin_name The name of the plugin.
+     * @param string $_version     The version of this plugin.
+     * 
+     * @since 1.0.0
      */
     public function __construct( $_plugin_name, $_version ) {
 
@@ -57,7 +59,8 @@ class Age_Verification_Public {
     /**
      * Register the stylesheets for the public-facing side of the site.
      *
-     * @since    1.0.0
+     * @since  1.0.0
+     * @return void
      */
     public function enqueue_styles() {
         // Public CSS.
@@ -67,7 +70,8 @@ class Age_Verification_Public {
     /**
      * Register the JavaScript for the public-facing side of the site.
      *
-     * @since    1.0.0
+     * @since  1.0.0
+     * @return void
      */
     public function enqueue_scripts() {
 
@@ -117,7 +121,8 @@ class Age_Verification_Public {
 /**
  * Register the JavaScript through wp_footer().
  *
- * @since    1.0.0
+ * @since  1.0.0
+ * @return string
  */
 function avwp_public_js() {
 
@@ -149,7 +154,7 @@ function avwp_public_js() {
                 });
             })( jQuery );
         </script>
-    <?php
+        <?php
     } // end adminHide check.
 }
 add_action( 'wp_footer', 'avwp_public_js' );
@@ -157,7 +162,8 @@ add_action( 'wp_footer', 'avwp_public_js' );
 /**
  * Register the CSS through wp_header().
  *
- * @since    1.0.0
+ * @since  1.0.0
+ * @return void
  */
 function avwp_public_css() {
     if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>

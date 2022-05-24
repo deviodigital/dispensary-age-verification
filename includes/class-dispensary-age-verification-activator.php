@@ -3,11 +3,11 @@
 /**
  * Fired during plugin activation
  *
- * @link       https://www.deviodigital.com
- * @since      1.0.0
- *
  * @package    Age_Verification
  * @subpackage Age_Verification/includes
+ * @author     Devio Digital <contact@deviodigital.com>
+ * @link       https://www.deviodigital.com
+ * @since      1.0.0
  */
 
 /**
@@ -15,10 +15,10 @@
  *
  * This class defines all code necessary to run during the plugin's activation.
  *
- * @since      1.0.0
  * @package    Age_Verification
  * @subpackage Age_Verification/includes
  * @author     Devio Digital <contact@deviodigital.com>
+ * @since      1.0.0
  */
 class Age_Verification_Activator {
 
@@ -27,7 +27,8 @@ class Age_Verification_Activator {
      *
      * Long Description.
      *
-     * @since    1.0.0
+     * @since  1.0.0
+     * @return void
      */
     public static function activate() {
 
