@@ -19,14 +19,14 @@
 function avwp_hex2rgba( $color, $opacity = false ) {
 
     // Default.
-	$default = 'rgb(0,0,0)';
+    $default = 'rgb(0,0,0)';
  
-	// Return default if no color provided.
-	if ( empty( $color ) ) {
+    // Return default if no color provided.
+    if ( empty( $color ) ) {
         return $default; 
     }
  
-	// Sanitize $color if "#" is provided.
+    // Sanitize $color if "#" is provided.
     if ( '#' == $color[0] ) {
         $color = substr( $color, 1 );
     }
