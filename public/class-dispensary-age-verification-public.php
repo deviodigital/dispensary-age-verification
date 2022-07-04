@@ -172,7 +172,7 @@ function avwp_public_css() {
     if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>
         <style type="text/css">
         .avwp-av-overlay {
-            background-image: url(<?php esc_url( get_theme_mod( 'dav_bgImage' ) ); ?>);
+            background-image: url(<?php echo esc_url( get_theme_mod( 'dav_bgImage' ) ); ?>);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
