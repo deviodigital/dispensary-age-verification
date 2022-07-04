@@ -6,6 +6,7 @@
  * @package    Age_Verification
  * @subpackage Age_Verification/public
  * @author     Devio Digital <contact@deviodigital.com>
+ * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  */
@@ -19,7 +20,9 @@
  * @package    Age_Verification
  * @subpackage Age_Verification/public
  * @author     Devio Digital <contact@deviodigital.com>
+ * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
  * @link       https://www.deviodigital.com
+ * @since      1.0.0
  */
 class Age_Verification_Public {
 

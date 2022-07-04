@@ -5,6 +5,8 @@
  *
  * @package    Age_Verification
  * @subpackage Age_Verification/admin
+ * @author     Devio Digital <contact@deviodigital.com>
+ * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
  * @link       https://www.deviodigital.com
  * @since      1.0.0
  */
@@ -18,6 +20,9 @@
  * @package    Age_Verification
  * @subpackage Age_Verification/admin
  * @author     Devio Digital <contact@deviodigital.com>
+ * @license    GPL-2.0+ http://www.gnu.org/licenses/gpl-2.0.txt
+ * @link       https://www.deviodigital.com
+ * @since      1.0.0
  */
 class Age_Verification_Admin {
 
@@ -26,31 +31,31 @@ class Age_Verification_Admin {
      *
      * @since  1.0.0
      * @access private
-     * @var    string  $plugin_name    The ID of this plugin.
+     * @var    string  $_plugin_name    The ID of this plugin.
      */
-    private $plugin_name;
+    private $_plugin_name;
 
     /**
      * The version of this plugin.
      *
      * @since  1.0.0
      * @access private
-     * @var    string  $version    The current version of this plugin.
+     * @var    string  $_version    The current version of this plugin.
      */
-    private $version;
+    private $_version;
 
     /**
      * Initialize the class and set its properties.
      *
-     * @param string $plugin_name The name of this plugin.
-     * @param string $version     The version of this plugin.
+     * @param string $_plugin_name The name of this plugin.
+     * @param string $_version     The version of this plugin.
      * 
      * @since 1.0.0
      */
-    public function __construct( $plugin_name, $version ) {
+    public function __construct( $_plugin_name, $_version ) {
 
-        $this->plugin_name = $plugin_name;
-        $this->version     = $version;
+        $this->plugin_name = $_plugin_name;
+        $this->version     = $_version;
 
     }
 
