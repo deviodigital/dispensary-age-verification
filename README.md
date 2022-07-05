@@ -18,6 +18,19 @@ You can customize your age verification pop up by going to `Appearance -> Custom
 
 There is also a cookie that gets saved for 30 days when the user selects the "Yes" button.
 
+## Translations
+
+Age Verification for WordPress has been translated into the following languages:
+
+*   Afrikaans
+*   Czech
+*   German
+*   Spanish
+*   Spanish (Mexico)
+*   Finnish
+*   French
+*   Italian
+
 ## Age Verification Pro
 
 Customize your age verification pop up even more by using our [Age Verification Pro](https://deviodigital.com/product/age-verification-pro/) plugin.

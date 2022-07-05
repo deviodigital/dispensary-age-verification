@@ -12,7 +12,7 @@
  * Plugin Name:       Age Verification
  * Plugin URI:        https://www.deviodigital.com
  * Description:       Check a visitors age before allowing them to view your website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
- * Version:           2.8
+ * Version:           2.9.0
  * Author:            Devio Digital
  * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
@@ -27,7 +27,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 // Current plugin version.
-define( 'AVWP_VERSION', '2.8' );
+define( 'AVWP_VERSION', '2.9.0' );
 
 // Plugin folder name.
 $pluginname = plugin_basename( __FILE__ );
@@ -119,7 +119,7 @@ function avwp_check_pro_version() {
         }
         // Set pro version number.
         $pro_version = AVWP_PRO_VERSION;
-        if ( '0' == $pro_version || $pro_version < '1.2' ) {
+        if ( '0' == $pro_version || $pro_version < '1.3' ) {
             add_action( 'admin_notices', 'avwp_update_avwp_pro_notice' );
         }
     }
