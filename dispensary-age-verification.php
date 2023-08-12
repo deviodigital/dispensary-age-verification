@@ -108,7 +108,7 @@ add_filter( "plugin_action_links_$pluginname", 'avwp_go_pro_link' );
  * version of the AVWP Pro plugin available.
  *
  * @since  2.4
- * @return string
+ * @return void
  */
 function avwp_check_pro_version() {
     // Only run if AVWP Pro is active.

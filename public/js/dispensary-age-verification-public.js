@@ -183,3 +183,26 @@
     });
   };
 }(jQuery));
+
+jQuery(document).ready(function($) {
+    $.ageCheck({
+        "bgImage" : object_name.bgImage,
+        "minAge" : object_name.minAge,
+        "imgLogo" : object_name.imgLogo,
+        "title" : object_name.title,
+        "copy" : object_name.copy,
+        "btnYes" : object_name.btnYes,
+        "btnNo" : object_name.btnNo,
+        "redirectOnFail" : object_name.redirectOnFail,
+        "successTitle" : object_name.successTitle,
+        "successText" : object_name.successText,
+        "successMessage" : object_name.successMessage,
+        "failTitle" : object_name.failTitle,
+        "failText" : object_name.failText,
+        "messageTime" : object_name.messageTime,
+        "cookieDays" : object_name.cookieDays,
+        "adminDebug" : object_name.adminDebug,
+        "beforeContent" : object_name.beforeContent,
+        "afterContent" : object_name.afterContent
+    });
+});

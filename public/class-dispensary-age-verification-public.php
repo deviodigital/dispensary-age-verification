@@ -90,8 +90,15 @@ class Age_Verification_Public {
         // Add content after popup contents.
         $afterContent = apply_filters( 'avwp_after_popup_content', '' );
 
+        // Enqueue the cookie script.
         wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
-        wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
+
+        // Add age verification codes based on setting in the Customizer.    
+        if ( '1' === get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
+            // Do nothing.
+        } else {
+            wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
+        }
 
         // Translation array data.
         $translation_array = array(
@@ -120,47 +127,6 @@ class Age_Verification_Public {
         wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
     }
 }
-
-/**
- * Register the JavaScript through wp_footer().
- *
- * @since  1.0.0
- * @return string
- */
-function avwp_public_js() {
-
-    // Add JavaScript codes to footer based on setting in the Customizer.    
-    if ( '1' === get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
-        // Do nothing.
-    } else { ?>
-        <script type="text/javascript">
-            jQuery(document).ready(function($) {
-                $.ageCheck({
-                    "bgImage" : object_name.bgImage,
-                    "minAge" : object_name.minAge,
-                    "imgLogo" : object_name.imgLogo,
-                    "title" : object_name.title,
-                    "copy" : object_name.copy,
-                    "btnYes" : object_name.btnYes,
-                    "btnNo" : object_name.btnNo,
-                    "redirectOnFail" : object_name.redirectOnFail,
-                    "successTitle" : object_name.successTitle,
-                    "successText" : object_name.successText,
-                    "successMessage" : object_name.successMessage,
-                    "failTitle" : object_name.failTitle,
-                    "failText" : object_name.failText,
-                    "messageTime" : object_name.messageTime,
-                    "cookieDays" : object_name.cookieDays,
-                    "adminDebug" : object_name.adminDebug,
-                    "beforeContent" : object_name.beforeContent,
-                    "afterContent" : object_name.afterContent
-                });
-            });
-        </script>
-        <?php
-    } // end adminHide check.
-}
-add_action( 'wp_footer', 'avwp_public_js' );
 
 /**
  * Register the CSS through wp_header().
