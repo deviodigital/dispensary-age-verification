@@ -41,6 +41,8 @@
 
 .avwp-av img {
   margin-bottom: 12px;
+  max-width: 100%;
+  height: auto;
 }
 
 .avwp-av p {
