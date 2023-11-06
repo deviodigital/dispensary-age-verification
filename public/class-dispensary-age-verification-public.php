@@ -112,17 +112,6 @@ class Age_Verification_Public {
             $img_dimensions = avwp_get_image_sizes_by_id( $logo_media_id );
         }
 
-        echo '<pre>';
-        var_dump( $logo_media_id );
-        echo '</pre>';
-        echo '<pre>';
-        var_dump( $img_dimensions );
-        echo '</pre>';
-
-        echo '<pre>';
-        var_dump( $img_dimensions['width'] );
-        echo '</pre>';
-
         // Translation array data.
         $translation_array = array(
             'bgImage'        => get_theme_mod( 'dav_bgImage' ),
