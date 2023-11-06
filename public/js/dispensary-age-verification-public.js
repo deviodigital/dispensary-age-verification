@@ -31,6 +31,8 @@
       adminDebug: "",
       beforeContent: "",
       afterContent: "",
+      logoHeight: "",
+      logoWidth: "",
     }, options);
 
     const _this = {
@@ -81,7 +83,7 @@
           html += settings.beforeContent;
         }
         if (settings.imgLogo !== "") {
-          html += "<img src=\"" + settings.imgLogo + "\" alt=\"" + settings.title + "\" />";
+          html += "<img src=\"" + settings.imgLogo + "\" alt=\"" + settings.title + "\" width=\"" + settings.logoWidth + "\" height=\"" + settings.logoHeight + "\" />";
         }
         if (settings.title !== "") {
           html += `<h2>${settings.title}</h2>`;
@@ -189,6 +191,8 @@ jQuery(document).ready(function($) {
         "bgImage" : object_name.bgImage,
         "minAge" : object_name.minAge,
         "imgLogo" : object_name.imgLogo,
+        "logoWidth" : object_name.logoWidth,
+        "logoHeight" : object_name.logoHeight,
         "title" : object_name.title,
         "copy" : object_name.copy,
         "btnYes" : object_name.btnYes,

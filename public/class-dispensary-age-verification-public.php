@@ -100,11 +100,36 @@ class Age_Verification_Public {
             wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
         }
 
+        // Default logo image dimensions.
+        $img_dimensions = array(
+            'width'  => '',
+            'height' => '',
+        );
+
+        // Get image dimensions for logo (if available).
+        if ( get_theme_mod( 'dav_logo' ) ) {
+            $logo_media_id  = avwp_get_media_id_from_url( get_theme_mod( 'dav_logo' ) );
+            $img_dimensions = avwp_get_image_sizes_by_id( $logo_media_id );
+        }
+
+        echo '<pre>';
+        var_dump( $logo_media_id );
+        echo '</pre>';
+        echo '<pre>';
+        var_dump( $img_dimensions );
+        echo '</pre>';
+
+        echo '<pre>';
+        var_dump( $img_dimensions['width'] );
+        echo '</pre>';
+
         // Translation array data.
         $translation_array = array(
             'bgImage'        => get_theme_mod( 'dav_bgImage' ),
             'minAge'         => get_theme_mod( 'dav_minAge', '18' ),
             'imgLogo'        => get_theme_mod( 'dav_logo' ),
+            'logoWidth'      => $img_dimensions['width'],
+            'logoHeight'     => $img_dimensions['height'],
             'title'          => get_theme_mod( 'dav_title', esc_attr__( 'Age Verification', 'dispensary-age-verification' ) ),
             'copy'           => get_theme_mod( 'dav_copy', esc_attr__( 'You must be [age] years old to enter.', 'dispensary-age-verification' ) ),
             'btnYes'         => get_theme_mod( 'dav_button_yes', esc_attr__( 'YES', 'dispensary-age-verification' ) ),
