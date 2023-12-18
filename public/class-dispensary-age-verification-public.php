@@ -109,7 +109,14 @@ class Age_Verification_Public {
         // Get image dimensions for logo (if available).
         if ( get_theme_mod( 'dav_logo' ) ) {
             $logo_media_id  = avwp_get_media_id_from_url( get_theme_mod( 'dav_logo' ) );
-            $img_dimensions = avwp_get_image_sizes_by_id( $logo_media_id );
+            if ( $logo_media_id ) {
+                $img_dimensions = avwp_get_image_sizes_by_id( $logo_media_id );
+            } else { 
+                $img_dimensions = array(
+                    'width'  => '',
+                    'height' => ''
+                );
+            }
         }
 
         // Translation array data.
