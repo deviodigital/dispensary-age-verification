@@ -153,7 +153,7 @@ function dav_register_theme_customizer( $wp_customize ) {
             'section'  => 'dav_display_options',
             'label'    => esc_attr__( 'Button #2 text', 'dispensary-age-verification' ),
             'type'     => 'text',
-            'priority' => 13,
+            'priority' => 15,
         )
     );
 
