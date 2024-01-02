@@ -68,7 +68,7 @@ class Age_Verification {
      */
     public function __construct() {
         $this->plugin_name = 'dispensary-age-verification';
-        $this->version     = '2.9.2';
+        $this->version     = '2.9.3';
         if ( defined( 'AVWP_VERSION' ) ) {
             $this->version = AVWP_VERSION;
         }
