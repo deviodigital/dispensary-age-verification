@@ -26,6 +26,18 @@ if ( ! defined( 'WPINC' ) ) {
     wp_die();
 }
 
+require 'plugin-update-checker/plugin-update-checker.php';
+use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
+
+$myUpdateChecker = PucFactory::buildUpdateChecker(
+	'https://github.com/deviodigital/dispensary-age-verification/',
+	__FILE__,
+	'dispensary-age-verification'
+);
+
+//Set the branch that contains the stable release.
+$myUpdateChecker->setBranch( 'main' );
+
 // Current plugin version.
 define( 'AVWP_VERSION', '2.9.5' );
 
