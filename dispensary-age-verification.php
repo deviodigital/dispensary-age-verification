@@ -266,8 +266,8 @@ function wpcom_admin_notice() {
                 <?php
                 echo wp_kses_post(
                     sprintf(
-                        __( 'My Plugin has been deactivated because it cannot be used on WordPress.com-hosted websites. %s', 'plugin-name' ),
-                        '<a href="' . esc_url( $notice_link ) . '" target="_blank" rel="noopener">' . __( 'Learn more', 'plugin-name' ) . '</a>'
+                        __( 'My Plugin has been deactivated because it cannot be used on WordPress.com-hosted websites. %s', 'dispensary-age-verification' ),
+                        '<a href="' . esc_url( $notice_link ) . '" target="_blank" rel="noopener">' . __( 'Learn more', 'dispensary-age-verification' ) . '</a>'
                     )
                 );
                 ?>
@@ -292,13 +292,13 @@ function wpcom_activation_check() {
             wp_kses_post(
                 sprintf(
                     '<h1>%s</h1><p>%s</p><p><a href="%s" target="_blank" rel="noopener">%s</a></p>',
-                    __( 'Plugin Activation Blocked', 'plugin-name' ),
-                    __( 'This plugin cannot be activated on WordPress.com-hosted websites. It is restricted due to concerns about WordPress.com policies impacting the community.', 'plugin-name' ),
+                    __( 'Plugin Activation Blocked', 'dispensary-age-verification' ),
+                    __( 'This plugin cannot be activated on WordPress.com-hosted websites. It is restricted due to concerns about WordPress.com policies impacting the community.', 'dispensary-age-verification' ),
                     esc_url( 'https://robertdevore.com/why-this-plugin-doesnt-support-wordpress-com-hosting/' ),
-                    __( 'Learn more', 'plugin-name' )
+                    __( 'Learn more', 'dispensary-age-verification' )
                 )
             ),
-            esc_html__( 'Plugin Activation Blocked', 'plugin-name' ),
+            esc_html__( 'Plugin Activation Blocked', 'dispensary-age-verification' ),
             [ 'back_link' => true ]
         );
     }
