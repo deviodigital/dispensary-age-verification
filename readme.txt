@@ -4,7 +4,7 @@ Donate link: https://www.deviodigital.com
 Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 4.6
 Tested up to: 6.6.2
-Stable tag: 2.9.5
+Stable tag: 2.9.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -35,6 +35,7 @@ Age Verification for WordPress has been translated into the following languages:
 
 *   Afrikaans
 *   Czech
+*   Danish
 *   German
 *   Spanish
 *   Spanish (Mexico)
@@ -75,6 +76,11 @@ Customize your age verification pop up even more by using our [Age Verification 
 4. All of the available customizer options in the Pro version
 
 == Changelog ==
+
+= 2.9.6 =
+*   Added 'Danish' language translation in `languages/dispensary-age-verification-da_DK.po`
+*   Added 'Danish' language translation in `languages/dispensary-age-verification-da_DK.mo`
+*   Added plugin usage restriction for websites hosted on wordpress.com in `dispensary-age-verification.php`
 
 = 2.9.5 =
 *   Bugfix for admin notice to make sure it's fully dismissable in `dispensary-age-verification.php`
