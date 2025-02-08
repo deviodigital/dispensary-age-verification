@@ -26,7 +26,7 @@ if ( ! defined( 'WPINC' ) ) {
     wp_die();
 }
 
-require 'plugin-update-checker/plugin-update-checker.php';
+require 'vendor/plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
