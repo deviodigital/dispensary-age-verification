@@ -3,8 +3,8 @@ Contributors: deviodigital
 Donate link: https://www.deviodigital.com
 Tags: age-verify, dispensary, adults-only, verification, modal, alcohol, cannabis, marijuana, age-verification, over-16, over-18, over-19, over-20, over-21, pop-up, popup, restrict, splash screen, verify
 Requires at least: 4.6
-Tested up to: 6.6.2
-Stable tag: 2.9.6
+Tested up to: 6.7.1
+Stable tag: 3.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,7 +12,7 @@ Check a visitors age before allowing them to view your website.
 
 == Description ==
 
-### Age Verification for WordPress
+### Age Verification for WordPress®
 
 Add a pop-up window to your website and verify the age of the visitor before allowing them to view your content.
 
@@ -42,6 +42,13 @@ Age Verification for WordPress has been translated into the following languages:
 *   Finnish
 *   French
 *   Italian
+*   Russian
+*   Hebrew
+*   Romanian
+*   Ukrainian
+*   Japanese
+*   Dutch
+*   Hindi
 
 ## Age Verification Pro
 
@@ -76,6 +83,22 @@ Customize your age verification pop up even more by using our [Age Verification 
 4. All of the available customizer options in the Pro version
 
 == Changelog ==
+
+= 3.0.0 =
+
+* [📦 NEW: Added WPCom Check to restrict plugin usage on wordpress.com](https://github.com/deviodigital/dispensary-age-verification/commit/877f24898b7a256bef36e1411cf6b5c73d581d89)
+* [📦 NEW: Added settings page for FSE themes to edit popup settings](https://github.com/deviodigital/dispensary-age-verification/commit/f7541f2812645b0df92bd5ff1f284b4c022a88fc)
+* [📦 NEW: Added Hindi translation](https://github.com/deviodigital/dispensary-age-verification/commit/7f2bb50b5ddacf0e0e24a1ffce4bb39b724e4a61)
+* [📦 NEW: Added Dutch translation](https://github.com/deviodigital/dispensary-age-verification/commit/3469fac44ae33a3d231bdd4168e9eea68f051d44)
+* [📦 NEW: Added Japanese translation](https://github.com/deviodigital/dispensary-age-verification/commit/9d86652ce0a8850c176b81b519003db5186f9fdc)
+* [📦 NEW: Added Ukrainian translation](https://github.com/deviodigital/dispensary-age-verification/commit/9bcfac580842f2c52ff06cdce092fa8a2dcdf731)
+* [📦 NEW: Added Romanian translation](https://github.com/deviodigital/dispensary-age-verification/commit/da10678f770dcea75ee77abae527c38d300f710f)
+* [📦 NEW: Added Hebrew translation](https://github.com/deviodigital/dispensary-age-verification/commit/5658f39063b0314e8fbae3d9a5536164febe9929)
+* [📦 NEW: Added Russian translation](https://github.com/deviodigital/dispensary-age-verification/commit/4e82065b6a0c74332cc215ac6800901828a8f751)
+* [👌 IMPROVE: Updated text strings for localization](https://github.com/deviodigital/dispensary-age-verification/commit/0e02b0fd4be1665cba1e7d8bff1b6b4850be3c0d)
+* [👌 IMPROVE: Updated PluginUpdateChecker folder location](https://github.com/deviodigital/dispensary-age-verification/commit/36baa2aa73b06422cdbd14a591ce9a91fa557a92)
+* [👌 IMPROVE: Updated overlay background image to be applied with JS instead of inline CSS](https://github.com/deviodigital/dispensary-age-verification/commit/fb6fa4143bfbc282a74de60601bdbc968cd90790)
+* [👌 IMPROVE: Updated usage of array() to the short syntax []](https://github.com/deviodigital/dispensary-age-verification/commit/bdf071ff652045c60fe9ef5bde8742dfc7bf82f0)
 
 = 2.9.6 =
 *   Added 'Danish' language translation in `languages/dispensary-age-verification-da_DK.po`

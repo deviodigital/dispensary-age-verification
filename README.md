@@ -29,6 +29,13 @@ Age Verification for WordPress® has been translated into the following language
 *   Finnish
 *   French
 *   Italian
+*   Russian
+*   Hebrew
+*   Romanian
+*   Ukrainian
+*   Japanese
+*   Dutch
+*   Hindi
 
 ## Age Verification Pro
 

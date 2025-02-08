@@ -12,7 +12,7 @@
  * Plugin Name:       Age Verification
  * Plugin URI:        https://www.deviodigital.com
  * Description:       Check a visitors age before allowing them to view your website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
- * Version:           2.9.6
+ * Version:           3.0.0
  * Author:            Devio Digital
  * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
@@ -39,7 +39,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 $myUpdateChecker->setBranch( 'main' );
 
 // Current plugin version.
-define( 'AVWP_VERSION', '2.9.6' );
+define( 'AVWP_VERSION', '3.0.0' );
 
 // Plugin folder name.
 $pluginname = plugin_basename( __FILE__ );
