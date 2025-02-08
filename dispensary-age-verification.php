@@ -72,6 +72,7 @@ add_action( 'plugins_loaded', 'dav_load_textdomain' );
  * The code that runs during plugin activation.
  * This action is documented in includes/class-dispensary-age-verification-activator.php
  * 
+ * @since  1.0.0
  * @return void
  */
 function avwp_activate() {
@@ -83,6 +84,7 @@ function avwp_activate() {
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-dispensary-age-verification-deactivator.php
  * 
+ * @since  1.0.0
  * @return void
  */
 function avwp_deactivate() {
@@ -212,16 +214,19 @@ add_action( 'admin_notices', 'avwp_custom_update_notice' );
  * @return void
  */
 function avwp_custom_update_notice_scripts() {
-    wp_enqueue_script( 'avwp-custom-notice-dismiss', plugin_dir_url( __FILE__ ) . 'public/js/custom-notice-dismiss.js', array( 'jquery' ), false, true );
-    wp_localize_script( 'avwp-custom-notice-dismiss', 'custom_notice', array(
+    wp_enqueue_script( 'avwp-custom-notice-dismiss', plugin_dir_url( __FILE__ ) . 'public/js/custom-notice-dismiss.js', [ 'jquery' ], false, true );
+    wp_localize_script( 'avwp-custom-notice-dismiss', 'custom_notice', [
         'ajax_url' => admin_url( 'admin-ajax.php' ),
         'nonce'    => wp_create_nonce( 'avwp_custom_notice_dismiss_nonce' ),
-    ) );
+    ] );
 }
 add_action( 'admin_enqueue_scripts', 'avwp_custom_update_notice_scripts' );
 
 /**
  * AJAX handler to mark the notice as dismissed.
+ * 
+ * @since  2.9.5
+ * @return void
  */
 function avwp_custom_dismiss_update_notice() {
     check_ajax_referer( 'avwp_custom_notice_dismiss_nonce', 'nonce' );

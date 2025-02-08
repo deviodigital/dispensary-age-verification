@@ -67,7 +67,7 @@ class Age_Verification_Public {
      */
     public function enqueue_styles() {
         // Public CSS.
-        wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-public.min.css', array(), $this->version, 'all' );
+        wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-public.min.css', [], $this->version, 'all' );
     }
 
     /**
@@ -91,20 +91,20 @@ class Age_Verification_Public {
         $afterContent = apply_filters( 'avwp_after_popup_content', '' );
 
         // Enqueue the cookie script.
-        wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', array( 'jquery' ), $this->version, false );
+        wp_enqueue_script( 'age-verification-cookie', plugin_dir_url( __FILE__ ) . 'js/js.cookie.js', [ 'jquery' ], $this->version, false );
 
         // Add age verification codes based on setting in the Customizer.    
         if ( '1' === get_theme_mod( 'dav_adminHide' ) && current_user_can( 'administrator' ) ) {
             // Do nothing.
         } else {
-            wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', array( 'jquery' ), $this->version, false );
+            wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-public.js', [ 'jquery' ], $this->version, false );
         }
 
         // Default logo image dimensions.
-        $img_dimensions = array(
+        $img_dimensions = [
             'width'  => '',
             'height' => '',
-        );
+        ];
 
         // Get image dimensions for logo (if available).
         if ( get_theme_mod( 'dav_logo' ) ) {
@@ -112,15 +112,15 @@ class Age_Verification_Public {
             if ( $logo_media_id ) {
                 $img_dimensions = avwp_get_image_sizes_by_id( $logo_media_id );
             } else { 
-                $img_dimensions = array(
+                $img_dimensions = [
                     'width'  => '',
                     'height' => ''
-                );
+                ];
             }
         }
 
         // Translation array data.
-        $translation_array = array(
+        $translation_array = [
             'bgImage'        => get_theme_mod( 'dav_bgImage' ),
             'minAge'         => get_theme_mod( 'dav_minAge', '18' ),
             'imgLogo'        => get_theme_mod( 'dav_logo' ),
@@ -139,7 +139,7 @@ class Age_Verification_Public {
             'redirectOnFail' => $redirectOnFail,
             'beforeContent'  => $beforeContent,
             'afterContent'   => $afterContent,
-        );    
+        ];    
 
         // Translation array filter.
         $translation_array = apply_filters( 'avwp_localize_script_translation_array', $translation_array );

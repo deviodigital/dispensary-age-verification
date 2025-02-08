@@ -9,7 +9,6 @@
  * @subpackage Age_Verification/includes
  */
 
-
 /**
  * Convert hexdec color string to rgb(a) string
  * 
@@ -33,9 +32,9 @@ function avwp_hex2rgba( $color, $opacity = false ) {
 
     // Check if color has 6 or 3 characters and get values.
     if ( 6 == strlen( $color ) ) {
-        $hex = array( $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] );
+        $hex = [ $color[0] . $color[1], $color[2] . $color[3], $color[4] . $color[5] ];
     } elseif ( 3 == strlen( $color ) ) {
-        $hex = array( $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] );
+        $hex = [ $color[0] . $color[0], $color[1] . $color[1], $color[2] . $color[2] ];
     } else {
         return $default;
     }
@@ -91,14 +90,14 @@ function avwp_get_image_sizes_by_id( $media_id ) {
         $image_size_info = wp_get_attachment_image_src( $media_id, 'full' );
 
         if ( $image_size_info ) {
-            // Extract the width and height from the returned array
+            // Extract the width and height from the returned array.
             list( $url, $width, $height ) = $image_size_info;
 
-            // Return the dimensions as an array
-            return array(
+            // Return the dimensions as an array.
+            return [
                 'width'  => $width,
                 'height' => $height
-            );
+            ];
         }
     }
 
@@ -120,10 +119,10 @@ function avwp_get_explicit_image_sizes( $image_url ) {
     if ( $image_url ) {
         $logo_media_id  = avwp_get_media_id_from_url( $image_url );
         $img_dimensions = avwp_get_image_sizes_by_id( $logo_media_id );
-        
+
         if ( $img_dimensions ) {
             $img_explicit = ' width="' . $img_dimensions['width'] . '" height="' . $img_dimensions['height'] . '" ';
-        }        
+        }
     }
 
     return $img_explicit;
