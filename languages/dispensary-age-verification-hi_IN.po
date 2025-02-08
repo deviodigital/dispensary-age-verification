@@ -1,0 +1,173 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Age Verification\n"
+"POT-Creation-Date: 2025-02-07 22:26-0500\n"
+"PO-Revision-Date: 2025-02-07 22:27-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hi_IN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: dispensary-age-verification.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#. Plugin Name of the plugin/theme
+#: admin/age-verification-settings.php:23
+#: admin/age-verification-settings.php:24
+#: admin/age-verification-settings.php:64 includes/customizer.php:26
+#: includes/customizer.php:88
+#: public/class-dispensary-age-verification-public.php:131
+#: public/class-dispensary-age-verification-public.php:153
+msgid "Age Verification"
+msgstr "आयु सत्यापन"
+
+#: admin/age-verification-settings.php:41
+#: admin/age-verification-settings.php:124
+msgid "Age Verification Settings"
+msgstr "आयु सत्यापन सेटिंग्स"
+
+#: admin/age-verification-settings.php:49 includes/customizer.php:44
+msgid "Minimum age?"
+msgstr "न्यूनतम आयु?"
+
+#: admin/age-verification-settings.php:54 includes/customizer.php:59
+msgid "Background image"
+msgstr "पृष्ठभूमि छवि"
+
+#: admin/age-verification-settings.php:58 includes/customizer.php:76
+msgid "Logo image"
+msgstr "लोगो छवि"
+
+#: admin/age-verification-settings.php:62 includes/customizer.php:97
+msgid "Title"
+msgstr "शीर्षक"
+
+#: admin/age-verification-settings.php:67 includes/customizer.php:116
+msgid "Copy"
+msgstr "प्रतिलिपि"
+
+#: admin/age-verification-settings.php:69 includes/customizer.php:107
+#: public/class-dispensary-age-verification-public.php:132
+#: public/class-dispensary-age-verification-public.php:154
+msgid "You must be [age] years old to enter."
+msgstr "प्रवेश के लिए आपकी आयु [उम्र] वर्ष होनी चाहिए।"
+
+#: admin/age-verification-settings.php:72 includes/customizer.php:135
+msgid "Button #1 text"
+msgstr "बटन #1 पाठ"
+
+#: admin/age-verification-settings.php:74 includes/customizer.php:126
+#: public/class-dispensary-age-verification-public.php:133
+#: public/class-dispensary-age-verification-public.php:155
+msgid "YES"
+msgstr "हाँ"
+
+#: admin/age-verification-settings.php:77 includes/customizer.php:154
+msgid "Button #2 text"
+msgstr "बटन #2 पाठ"
+
+#: admin/age-verification-settings.php:79 includes/customizer.php:145
+#: public/class-dispensary-age-verification-public.php:134
+#: public/class-dispensary-age-verification-public.php:156
+msgid "NO"
+msgstr "नहीं"
+
+#: admin/age-verification-settings.php:82 includes/customizer.php:173
+msgid "Message display time (milliseconds)"
+msgstr "संदेश प्रदर्शन समय (मिलीसेकंड)"
+
+#: admin/age-verification-settings.php:87 includes/customizer.php:192
+msgid "Hide for admin users?"
+msgstr "व्यवस्थापक उपयोगकर्ताओं के लिए छिपाएँ?"
+
+#: admin/age-verification-settings.php:126
+msgid "Support"
+msgstr "मदद"
+
+#: admin/age-verification-settings.php:129
+msgid "Documentation"
+msgstr "प्रलेखन"
+
+#: admin/age-verification-settings.php:198
+msgid "Upload Image"
+msgstr "छवि अपलोड करें"
+
+#: dispensary-age-verification.php:117
+msgid "Go Pro"
+msgstr "पेशेवर बनो"
+
+#: dispensary-age-verification.php:160
+msgid "Orders"
+msgstr "आदेश"
+
+#: dispensary-age-verification.php:161
+#, php-format
+msgid ""
+"There is a new version of AVWP Pro available. Download your copy from the "
+"%1$s page on Devio Digital."
+msgstr ""
+"AVWP Pro का नया संस्करण उपलब्ध है। Devio Digital पर %1$s पेज से अपनी कॉपी डाउनलोड "
+"करें।"
+
+#: dispensary-age-verification.php:184
+#, php-format
+msgid ""
+"Important Notice: Due to recent changes initiated by WordPress® leadership, "
+"access to the plugin repository is being restricted for certain hosting "
+"providers and developers. This may impact automatic updates for your "
+"plugins. To ensure you continue receiving updates and to learn about the "
+"next steps, please visit %s."
+msgstr ""
+"महत्वपूर्ण सूचना: WordPress® नेतृत्व द्वारा हाल ही में किए गए परिवर्तनों के कारण, कुछ "
+"होस्टिंग प्रदाताओं और डेवलपर्स के लिए प्लगइन रिपोजिटरी तक पहुँच प्रतिबंधित की जा रही है। "
+"यह आपके प्लगइन के लिए स्वचालित अपडेट को प्रभावित कर सकता है। यह सुनिश्चित करने के लिए "
+"कि आपको अपडेट मिलते रहें और अगले चरणों के बारे में जानने के लिए, कृपया %s पर जाएँ।"
+
+#: public/class-dispensary-age-verification-public.php:135
+#: public/class-dispensary-age-verification-public.php:157
+msgid "Success!"
+msgstr "सफलता!"
+
+#: public/class-dispensary-age-verification-public.php:136
+#: public/class-dispensary-age-verification-public.php:158
+msgid "You are now being redirected back to the site ..."
+msgstr "अब आपको वापस साइट पर भेज दिया जा रहा है..."
+
+#: public/class-dispensary-age-verification-public.php:138
+#: public/class-dispensary-age-verification-public.php:160
+msgid "Sorry!"
+msgstr "क्षमा मांगना!"
+
+#: public/class-dispensary-age-verification-public.php:139
+#: public/class-dispensary-age-verification-public.php:161
+msgid "You are not old enough to view the site ..."
+msgstr "आपकी उम्र साइट देखने के लिए पर्याप्त नहीं है..."
+
+#. Plugin URI of the plugin/theme
+#. Author URI of the plugin/theme
+msgid "https://www.deviodigital.com"
+msgstr "https://www.deviodigital.com"
+
+#. Description of the plugin/theme
+msgid ""
+"Check a visitors age before allowing them to view your website. Brought to "
+"you by <a href=\"https://www.deviodigital.com/\" target=\"_blank\">Devio "
+"Digital</a>"
+msgstr ""
+"किसी विज़िटर को अपनी वेबसाइट देखने की अनुमति देने से पहले उसकी आयु जाँच लें। <a "
+"href=\"https://www.deviodigital.com/\" target=\"_blank\">डेवियो डिजिटल</a> "
+"द्वारा प्रस्तुत"
+
+#. Author of the plugin/theme
+msgid "Devio Digital"
+msgstr "Devio Digital"
