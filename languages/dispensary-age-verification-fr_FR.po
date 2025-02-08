@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2024-12-22 00:31-0500\n"
-"PO-Revision-Date: 2025-02-07 20:59-0500\n"
+"POT-Creation-Date: 2025-02-07 22:24-0500\n"
+"PO-Revision-Date: 2025-02-07 22:24-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: fr_FR\n"
@@ -19,17 +19,98 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
-"X-Poedit-SearchPathExcluded-1: plugin-update-checker/vendor\n"
+"X-Poedit-SearchPathExcluded-1: vendor\n"
 
-#: dispensary-age-verification.php:106
+#. Plugin Name of the plugin/theme
+#: admin/age-verification-settings.php:23
+#: admin/age-verification-settings.php:24
+#: admin/age-verification-settings.php:64 includes/customizer.php:26
+#: includes/customizer.php:88
+#: public/class-dispensary-age-verification-public.php:131
+#: public/class-dispensary-age-verification-public.php:153
+msgid "Age Verification"
+msgstr "Verification d'âge"
+
+#: admin/age-verification-settings.php:41
+#: admin/age-verification-settings.php:124
+msgid "Age Verification Settings"
+msgstr "Paramètres de vérification de l’âge"
+
+#: admin/age-verification-settings.php:49 includes/customizer.php:44
+msgid "Minimum age?"
+msgstr "Âge minimum?"
+
+#: admin/age-verification-settings.php:54 includes/customizer.php:59
+msgid "Background image"
+msgstr "Image de fond"
+
+#: admin/age-verification-settings.php:58 includes/customizer.php:76
+msgid "Logo image"
+msgstr "Image du logo"
+
+#: admin/age-verification-settings.php:62 includes/customizer.php:97
+msgid "Title"
+msgstr "Titre"
+
+#: admin/age-verification-settings.php:67 includes/customizer.php:116
+msgid "Copy"
+msgstr "Copier"
+
+#: admin/age-verification-settings.php:69 includes/customizer.php:107
+#: public/class-dispensary-age-verification-public.php:132
+#: public/class-dispensary-age-verification-public.php:154
+msgid "You must be [age] years old to enter."
+msgstr "Vous devez avoir [age] des années pour entrer."
+
+#: admin/age-verification-settings.php:72 includes/customizer.php:135
+msgid "Button #1 text"
+msgstr "Texte du bouton 1"
+
+#: admin/age-verification-settings.php:74 includes/customizer.php:126
+#: public/class-dispensary-age-verification-public.php:133
+#: public/class-dispensary-age-verification-public.php:155
+msgid "YES"
+msgstr "OUI"
+
+#: admin/age-verification-settings.php:77 includes/customizer.php:154
+msgid "Button #2 text"
+msgstr "Texte du bouton 2"
+
+#: admin/age-verification-settings.php:79 includes/customizer.php:145
+#: public/class-dispensary-age-verification-public.php:134
+#: public/class-dispensary-age-verification-public.php:156
+msgid "NO"
+msgstr "NON"
+
+#: admin/age-verification-settings.php:82 includes/customizer.php:173
+msgid "Message display time (milliseconds)"
+msgstr "Durée d'affichage du message (millisecondes)"
+
+#: admin/age-verification-settings.php:87 includes/customizer.php:192
+msgid "Hide for admin users?"
+msgstr "Masquer pour les utilisateurs administrateurs?"
+
+#: admin/age-verification-settings.php:126
+msgid "Support"
+msgstr "Support"
+
+#: admin/age-verification-settings.php:129
+msgid "Documentation"
+msgstr "Documentation"
+
+#: admin/age-verification-settings.php:198
+msgid "Upload Image"
+msgstr "Télécharger une image"
+
+#: dispensary-age-verification.php:117
 msgid "Go Pro"
 msgstr "Go Pro"
 
-#: dispensary-age-verification.php:149
+#: dispensary-age-verification.php:160
 msgid "Orders"
 msgstr "Commandes"
 
-#: dispensary-age-verification.php:150
+#: dispensary-age-verification.php:161
 #, php-format
 msgid ""
 "There is a new version of AVWP Pro available. Download your copy from the "
@@ -38,7 +119,7 @@ msgstr ""
 "Une nouvelle version d’AVWP Pro est disponible. Téléchargez votre copie à "
 "partir de la page %1$s sur Devio Digital."
 
-#: dispensary-age-verification.php:173
+#: dispensary-age-verification.php:184
 #, php-format
 msgid ""
 "Important Notice: Due to recent changes initiated by WordPress® leadership, "
@@ -54,143 +135,23 @@ msgstr ""
 "les mises à jour et pour connaître les prochaines étapes, veuillez visiter "
 "%s."
 
-#: dispensary-age-verification.php:269
-#, php-format
-msgid ""
-"My Plugin has been deactivated because it cannot be used on WordPress.com-"
-"hosted websites. %s"
-msgstr ""
-"Mon plugin a été désactivé car il ne peut pas être utilisé sur les sites "
-"hébergés par WordPress.com. %s"
-
-#: dispensary-age-verification.php:270 dispensary-age-verification.php:298
-msgid "Learn more"
-msgstr "En savoir plus"
-
-#: dispensary-age-verification.php:295 dispensary-age-verification.php:301
-msgid "Plugin Activation Blocked"
-msgstr "Activation du plugin bloquée"
-
-#: dispensary-age-verification.php:296
-msgid ""
-"This plugin cannot be activated on WordPress.com-hosted websites. It is "
-"restricted due to concerns about WordPress.com policies impacting the "
-"community."
-msgstr ""
-"Ce plugin ne peut pas être activé sur les sites web hébergés par WordPress."
-"com. Il est restreint en raison de préoccupations concernant les politiques "
-"de WordPress.com ayant un impact sur la communauté."
-
-#. Plugin Name of the plugin/theme
-#: includes/customizer.php:26 includes/customizer.php:88
-#: public/class-dispensary-age-verification-public.php:129
-msgid "Age Verification"
-msgstr "Verification d'âge"
-
-#: includes/customizer.php:44
-msgid "Minimum age?"
-msgstr "Âge minimum?"
-
-#: includes/customizer.php:59
-msgid "Background image"
-msgstr "Image de fond"
-
-#: includes/customizer.php:76
-msgid "Logo image"
-msgstr "Image du logo"
-
-#: includes/customizer.php:97
-msgid "Title"
-msgstr "Titre"
-
-#: includes/customizer.php:107
-#: public/class-dispensary-age-verification-public.php:130
-msgid "You must be [age] years old to enter."
-msgstr "Vous devez avoir [age] des années pour entrer."
-
-#: includes/customizer.php:116
-msgid "Copy"
-msgstr "Copier"
-
-#: includes/customizer.php:126
-#: public/class-dispensary-age-verification-public.php:131
-msgid "YES"
-msgstr "OUI"
-
-#: includes/customizer.php:135
-msgid "Button #1 text"
-msgstr "Texte du bouton 1"
-
-#: includes/customizer.php:145
-#: public/class-dispensary-age-verification-public.php:132
-msgid "NO"
-msgstr "NON"
-
-#: includes/customizer.php:154
-msgid "Button #2 text"
-msgstr "Texte du bouton 2"
-
-#: includes/customizer.php:173
-msgid "Message display time (milliseconds)"
-msgstr "Durée d'affichage du message (millisecondes)"
-
-#: includes/customizer.php:192
-msgid "Hide for admin users?"
-msgstr "Masquer pour les utilisateurs administrateurs?"
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
-msgid "View details"
-msgstr "Voir les détails"
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:79
-#, php-format
-msgid "More information about %s"
-msgstr "Plus d’informations sur %s"
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:130
-msgid "Check for updates"
-msgstr "Vérifier les mises à jour"
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:217
-#, php-format
-msgctxt "the plugin title"
-msgid "The %s plugin is up to date."
-msgstr "Le plugin %s est à jour."
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:219
-#, php-format
-msgctxt "the plugin title"
-msgid "A new version of the %s plugin is available."
-msgstr "Une nouvelle version de l'extension %s est disponible."
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:221
-#, php-format
-msgctxt "the plugin title"
-msgid "Could not determine if updates are available for %s."
-msgstr "Impossible de déterminer si des mises à jour sont disponibles pour %s."
-
-#: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:227
-#, php-format
-msgid "Unknown update checker status \"%s\""
-msgstr "Mise à jour inconnue statut \"%s\""
-
-#: plugin-update-checker/Puc/v5p4/Vcs/PluginUpdateChecker.php:113
-msgid "There is no changelog available."
-msgstr "Aucun registre de modifications disponible."
-
-#: public/class-dispensary-age-verification-public.php:133
+#: public/class-dispensary-age-verification-public.php:135
+#: public/class-dispensary-age-verification-public.php:157
 msgid "Success!"
 msgstr "Succès !"
 
-#: public/class-dispensary-age-verification-public.php:134
+#: public/class-dispensary-age-verification-public.php:136
+#: public/class-dispensary-age-verification-public.php:158
 msgid "You are now being redirected back to the site ..."
 msgstr "Vous êtes maintenant redirigé vers le site …"
 
-#: public/class-dispensary-age-verification-public.php:136
+#: public/class-dispensary-age-verification-public.php:138
+#: public/class-dispensary-age-verification-public.php:160
 msgid "Sorry!"
 msgstr "Désolé !"
 
-#: public/class-dispensary-age-verification-public.php:137
+#: public/class-dispensary-age-verification-public.php:139
+#: public/class-dispensary-age-verification-public.php:161
 msgid "You are not old enough to view the site ..."
 msgstr "Vous n’êtes pas assez âgé pour consulter le site …"
 
@@ -212,6 +173,62 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Devio Digital"
 msgstr "Devio Digital"
+
+#, php-format
+#~ msgid ""
+#~ "My Plugin has been deactivated because it cannot be used on WordPress.com-"
+#~ "hosted websites. %s"
+#~ msgstr ""
+#~ "Mon plugin a été désactivé car il ne peut pas être utilisé sur les sites "
+#~ "hébergés par WordPress.com. %s"
+
+#~ msgid "Learn more"
+#~ msgstr "En savoir plus"
+
+#~ msgid "Plugin Activation Blocked"
+#~ msgstr "Activation du plugin bloquée"
+
+#~ msgid ""
+#~ "This plugin cannot be activated on WordPress.com-hosted websites. It is "
+#~ "restricted due to concerns about WordPress.com policies impacting the "
+#~ "community."
+#~ msgstr ""
+#~ "Ce plugin ne peut pas être activé sur les sites web hébergés par "
+#~ "WordPress.com. Il est restreint en raison de préoccupations concernant "
+#~ "les politiques de WordPress.com ayant un impact sur la communauté."
+
+#~ msgid "View details"
+#~ msgstr "Voir les détails"
+
+#, php-format
+#~ msgid "More information about %s"
+#~ msgstr "Plus d’informations sur %s"
+
+#~ msgid "Check for updates"
+#~ msgstr "Vérifier les mises à jour"
+
+#, php-format
+#~ msgctxt "the plugin title"
+#~ msgid "The %s plugin is up to date."
+#~ msgstr "Le plugin %s est à jour."
+
+#, php-format
+#~ msgctxt "the plugin title"
+#~ msgid "A new version of the %s plugin is available."
+#~ msgstr "Une nouvelle version de l'extension %s est disponible."
+
+#, php-format
+#~ msgctxt "the plugin title"
+#~ msgid "Could not determine if updates are available for %s."
+#~ msgstr ""
+#~ "Impossible de déterminer si des mises à jour sont disponibles pour %s."
+
+#, php-format
+#~ msgid "Unknown update checker status \"%s\""
+#~ msgstr "Mise à jour inconnue statut \"%s\""
+
+#~ msgid "There is no changelog available."
+#~ msgstr "Aucun registre de modifications disponible."
 
 #~ msgid "Success Message"
 #~ msgstr "Message de réussite"

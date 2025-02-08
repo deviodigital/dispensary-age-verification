@@ -2,8 +2,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Age Verification\n"
-"POT-Creation-Date: 2025-02-07 20:59-0500\n"
-"PO-Revision-Date: 2025-02-07 20:59-0500\n"
+"POT-Creation-Date: 2025-02-07 22:18-0500\n"
+"PO-Revision-Date: 2025-02-07 22:18-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -21,6 +21,87 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
+
+#. Plugin Name of the plugin/theme
+#: admin/age-verification-settings.php:23
+#: admin/age-verification-settings.php:24
+#: admin/age-verification-settings.php:64 includes/customizer.php:26
+#: includes/customizer.php:88
+#: public/class-dispensary-age-verification-public.php:131
+#: public/class-dispensary-age-verification-public.php:153
+msgid "Age Verification"
+msgstr ""
+
+#: admin/age-verification-settings.php:41
+#: admin/age-verification-settings.php:124
+msgid "Age Verification Settings"
+msgstr ""
+
+#: admin/age-verification-settings.php:49 includes/customizer.php:44
+msgid "Minimum age?"
+msgstr ""
+
+#: admin/age-verification-settings.php:54 includes/customizer.php:59
+msgid "Background image"
+msgstr ""
+
+#: admin/age-verification-settings.php:58 includes/customizer.php:76
+msgid "Logo image"
+msgstr ""
+
+#: admin/age-verification-settings.php:62 includes/customizer.php:97
+msgid "Title"
+msgstr ""
+
+#: admin/age-verification-settings.php:67 includes/customizer.php:116
+msgid "Copy"
+msgstr ""
+
+#: admin/age-verification-settings.php:69 includes/customizer.php:107
+#: public/class-dispensary-age-verification-public.php:132
+#: public/class-dispensary-age-verification-public.php:154
+msgid "You must be [age] years old to enter."
+msgstr ""
+
+#: admin/age-verification-settings.php:72 includes/customizer.php:135
+msgid "Button #1 text"
+msgstr ""
+
+#: admin/age-verification-settings.php:74 includes/customizer.php:126
+#: public/class-dispensary-age-verification-public.php:133
+#: public/class-dispensary-age-verification-public.php:155
+msgid "YES"
+msgstr ""
+
+#: admin/age-verification-settings.php:77 includes/customizer.php:154
+msgid "Button #2 text"
+msgstr ""
+
+#: admin/age-verification-settings.php:79 includes/customizer.php:145
+#: public/class-dispensary-age-verification-public.php:134
+#: public/class-dispensary-age-verification-public.php:156
+msgid "NO"
+msgstr ""
+
+#: admin/age-verification-settings.php:82 includes/customizer.php:173
+msgid "Message display time (milliseconds)"
+msgstr ""
+
+#: admin/age-verification-settings.php:87 includes/customizer.php:192
+msgid "Hide for admin users?"
+msgstr ""
+
+#: admin/age-verification-settings.php:126
+msgid "Support"
+msgstr ""
+
+#: admin/age-verification-settings.php:129
+msgid "Documentation"
+msgstr ""
+
+#: admin/age-verification-settings.php:198
+msgid "Upload Image"
+msgstr ""
 
 #: dispensary-age-verification.php:117
 msgid "Go Pro"
@@ -47,76 +128,23 @@ msgid ""
 "next steps, please visit %s."
 msgstr ""
 
-#. Plugin Name of the plugin/theme
-#: includes/customizer.php:26 includes/customizer.php:88
-#: public/class-dispensary-age-verification-public.php:129
-msgid "Age Verification"
-msgstr ""
-
-#: includes/customizer.php:44
-msgid "Minimum age?"
-msgstr ""
-
-#: includes/customizer.php:59
-msgid "Background image"
-msgstr ""
-
-#: includes/customizer.php:76
-msgid "Logo image"
-msgstr ""
-
-#: includes/customizer.php:97
-msgid "Title"
-msgstr ""
-
-#: includes/customizer.php:107
-#: public/class-dispensary-age-verification-public.php:130
-msgid "You must be [age] years old to enter."
-msgstr ""
-
-#: includes/customizer.php:116
-msgid "Copy"
-msgstr ""
-
-#: includes/customizer.php:126
-#: public/class-dispensary-age-verification-public.php:131
-msgid "YES"
-msgstr ""
-
-#: includes/customizer.php:135
-msgid "Button #1 text"
-msgstr ""
-
-#: includes/customizer.php:145
-#: public/class-dispensary-age-verification-public.php:132
-msgid "NO"
-msgstr ""
-
-#: includes/customizer.php:154
-msgid "Button #2 text"
-msgstr ""
-
-#: includes/customizer.php:173
-msgid "Message display time (milliseconds)"
-msgstr ""
-
-#: includes/customizer.php:192
-msgid "Hide for admin users?"
-msgstr ""
-
-#: public/class-dispensary-age-verification-public.php:133
+#: public/class-dispensary-age-verification-public.php:135
+#: public/class-dispensary-age-verification-public.php:157
 msgid "Success!"
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:134
+#: public/class-dispensary-age-verification-public.php:136
+#: public/class-dispensary-age-verification-public.php:158
 msgid "You are now being redirected back to the site ..."
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:136
+#: public/class-dispensary-age-verification-public.php:138
+#: public/class-dispensary-age-verification-public.php:160
 msgid "Sorry!"
 msgstr ""
 
-#: public/class-dispensary-age-verification-public.php:137
+#: public/class-dispensary-age-verification-public.php:139
+#: public/class-dispensary-age-verification-public.php:161
 msgid "You are not old enough to view the site ..."
 msgstr ""
 
