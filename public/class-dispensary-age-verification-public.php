@@ -148,28 +148,3 @@ class Age_Verification_Public {
         wp_localize_script( $this->plugin_name, 'object_name', $translation_array );
     }
 }
-
-/**
- * Register the CSS through wp_header().
- *
- * @since  1.0.0
- * @return void
- */
-function avwp_public_css() {
-    if ( '' !== get_theme_mod( 'dav_bgImage' ) ) { ?>
-        <style type="text/css">
-        .avwp-av-overlay {
-            background-image: url(<?php echo esc_url( get_theme_mod( 'dav_bgImage' ) ); ?>);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
-            background-attachment: fixed;
-            box-sizing: border-box;
-        }
-        .avwp-av {
-            box-shadow: none;
-        }
-        </style>
-    <?php }
-}
-add_action( 'wp_head', 'avwp_public_css' );

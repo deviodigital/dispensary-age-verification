@@ -14,6 +14,7 @@
   "use strict";
   $.ageCheck = function (options) {
     const settings = $.extend({
+      bgImage: '',
       minAge: 18,
       redirectTo: "",
       redirectOnFail: "",
@@ -209,4 +210,21 @@ jQuery(document).ready(function($) {
         "beforeContent" : object_name.beforeContent,
         "afterContent" : object_name.afterContent
     });
+
+    if (typeof object_name !== "undefined" && object_name.bgImage) {
+        let overlay = document.querySelector(".avwp-av-overlay");
+        if (overlay) {
+            overlay.style.backgroundImage = `url(${object_name.bgImage})`;
+            overlay.style.backgroundRepeat = "no-repeat";
+            overlay.style.backgroundPosition = "center";
+            overlay.style.backgroundSize = "cover";
+            overlay.style.backgroundAttachment = "fixed";
+            overlay.style.boxSizing = "border-box";
+        }
+
+        let avwpAv = document.querySelector(".avwp-av");
+        if (avwpAv) {
+            avwpAv.style.boxShadow = "none";
+        }
+    }
 });
