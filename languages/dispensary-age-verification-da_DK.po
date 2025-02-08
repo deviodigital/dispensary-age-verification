@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Age Verification\n"
 "POT-Creation-Date: 2024-12-22 00:36-0500\n"
-"PO-Revision-Date: 2024-12-22 00:37-0500\n"
+"PO-Revision-Date: 2025-02-07 21:01-0500\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: da_DK\n"
@@ -104,9 +104,8 @@ msgstr "Titel"
 
 #: includes/customizer.php:107
 #: public/class-dispensary-age-verification-public.php:130
-#, fuzzy
 msgid "You must be [age] years old to enter."
-msgstr "Du skal være [age] år for at deltage."
+msgstr "Du skal være [alder] år gammel for at deltage."
 
 #: includes/customizer.php:116
 msgid "Copy"
@@ -118,9 +117,8 @@ msgid "YES"
 msgstr "JA"
 
 #: includes/customizer.php:135
-#, fuzzy
 msgid "Button #1 text"
-msgstr "Knap #1 tekst"
+msgstr "Tekst til knap 1"
 
 #: includes/customizer.php:145
 #: public/class-dispensary-age-verification-public.php:132
@@ -128,19 +126,16 @@ msgid "NO"
 msgstr "NEJ"
 
 #: includes/customizer.php:154
-#, fuzzy
 msgid "Button #2 text"
-msgstr "Knap #2 tekst"
+msgstr "Tekst til knap nr. 2"
 
 #: includes/customizer.php:173
-#, fuzzy
 msgid "Message display time (milliseconds)"
-msgstr "Visningstid for besked (millisekunder)"
+msgstr "Tid for visning af besked (millisekunder)"
 
 #: includes/customizer.php:192
-#, fuzzy
 msgid "Hide for admin users?"
-msgstr "Skjul for administratorbrugere?"
+msgstr "Skjul for admin-brugere?"
 
 #: plugin-update-checker/Puc/v5p4/Plugin/Ui.php:56
 msgid "View details"

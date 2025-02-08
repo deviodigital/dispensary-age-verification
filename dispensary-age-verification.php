@@ -54,21 +54,6 @@ use RobertDevore\WPComCheck\WPComPluginHandler;
 new WPComPluginHandler( plugin_basename( __FILE__ ), 'https://robertdevore.com/why-this-plugin-doesnt-support-wordpress-com-hosting/' );
 
 /**
- * Load plugin text domain for translations
- * 
- * @since  3.0.0
- * @return void
- */
-function dav_load_textdomain() {
-    load_plugin_textdomain( 
-        'dispensary-age-verification',
-        false,
-        dirname( plugin_basename( __FILE__ ) ) . '/languages/'
-    );
-}
-add_action( 'plugins_loaded', 'dav_load_textdomain' );
-
-/**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-dispensary-age-verification-activator.php
  * 
