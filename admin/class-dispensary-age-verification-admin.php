@@ -66,8 +66,12 @@ class Age_Verification_Admin {
      * 
      * @return void
      */
-    public function enqueue_styles() {
-        //wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-admin.css', [], $this->version, 'all' );
+    public function enqueue_styles( $hook ) {
+        if ( $hook !== 'settings_page_age-verification-settings' ) {
+            return;
+        }
+
+        wp_enqueue_style( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'css/dispensary-age-verification-admin.css', [], $this->version, 'all' );
     }
 
     /**
@@ -77,7 +81,13 @@ class Age_Verification_Admin {
      * 
      * @return void
      */
-    public function enqueue_scripts() {
-        //wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-admin.js', [ 'jquery' ], $this->version, false );
+    public function enqueue_scripts( $hook ) {
+        if ( $hook !== 'settings_page_age-verification-settings' ) {
+            return;
+        }
+
+        wp_enqueue_media();
+    
+        wp_enqueue_script( $this->plugin_name, plugin_dir_url( __FILE__ ) . 'js/dispensary-age-verification-admin.js', [ 'jquery' ], $this->version, false );
     }
 }

@@ -119,27 +119,52 @@ class Age_Verification_Public {
             }
         }
 
-        // Translation array data.
-        $translation_array = [
-            'bgImage'        => get_theme_mod( 'dav_bgImage' ),
-            'minAge'         => get_theme_mod( 'dav_minAge', '18' ),
-            'imgLogo'        => get_theme_mod( 'dav_logo' ),
-            'logoWidth'      => $img_dimensions['width'],
-            'logoHeight'     => $img_dimensions['height'],
-            'title'          => get_theme_mod( 'dav_title', esc_attr__( 'Age Verification', 'dispensary-age-verification' ) ),
-            'copy'           => get_theme_mod( 'dav_copy', esc_attr__( 'You must be [age] years old to enter.', 'dispensary-age-verification' ) ),
-            'btnYes'         => get_theme_mod( 'dav_button_yes', esc_attr__( 'YES', 'dispensary-age-verification' ) ),
-            'btnNo'          => get_theme_mod( 'dav_button_no', esc_attr__( 'NO', 'dispensary-age-verification' ) ),
-            'successTitle'   => esc_attr__( 'Success!', 'dispensary-age-verification' ),
-            'successText'    => esc_attr__( 'You are now being redirected back to the site ...', 'dispensary-age-verification' ),
-            'successMessage' => get_theme_mod( 'dav_success_message' ),
-            'failTitle'      => esc_attr__( 'Sorry!', 'dispensary-age-verification' ),
-            'failText'       => esc_attr__( 'You are not old enough to view the site ...', 'dispensary-age-verification' ),
-            'messageTime'    => get_theme_mod( 'dav_message_display_time' ),
-            'redirectOnFail' => $redirectOnFail,
-            'beforeContent'  => $beforeContent,
-            'afterContent'   => $afterContent,
-        ];    
+        // Check if the theme is an FSE (Full Site Editing) theme
+        if ( wp_is_block_theme() ) {
+            // Use settings from the options table (FSE themes)
+            $translation_array = [
+                'bgImage'        => get_option( 'dav_bgImage', '' ),
+                'minAge'         => get_option( 'dav_minAge', '18' ),
+                'imgLogo'        => get_option( 'dav_logo', '' ),
+                'logoWidth'      => $img_dimensions['width'],
+                'logoHeight'     => $img_dimensions['height'],
+                'title'          => get_option( 'dav_title', esc_attr__( 'Age Verification', 'dispensary-age-verification' ) ),
+                'copy'           => get_option( 'dav_copy', esc_attr__( 'You must be [age] years old to enter.', 'dispensary-age-verification' ) ),
+                'btnYes'         => get_option( 'dav_button_yes', esc_attr__( 'YES', 'dispensary-age-verification' ) ),
+                'btnNo'          => get_option( 'dav_button_no', esc_attr__( 'NO', 'dispensary-age-verification' ) ),
+                'successTitle'   => esc_attr__( 'Success!', 'dispensary-age-verification' ),
+                'successText'    => esc_attr__( 'You are now being redirected back to the site ...', 'dispensary-age-verification' ),
+                'successMessage' => get_option( 'dav_success_message', '' ),
+                'failTitle'      => esc_attr__( 'Sorry!', 'dispensary-age-verification' ),
+                'failText'       => esc_attr__( 'You are not old enough to view the site ...', 'dispensary-age-verification' ),
+                'messageTime'    => get_option( 'dav_message_display_time', '2000' ),
+                'redirectOnFail' => $redirectOnFail,
+                'beforeContent'  => $beforeContent,
+                'afterContent'   => $afterContent,
+            ];
+        } else {
+            // Use Customizer settings (Classic themes)
+            $translation_array = [
+                'bgImage'        => get_theme_mod( 'dav_bgImage' ),
+                'minAge'         => get_theme_mod( 'dav_minAge', '18' ),
+                'imgLogo'        => get_theme_mod( 'dav_logo' ),
+                'logoWidth'      => $img_dimensions['width'],
+                'logoHeight'     => $img_dimensions['height'],
+                'title'          => get_theme_mod( 'dav_title', esc_attr__( 'Age Verification', 'dispensary-age-verification' ) ),
+                'copy'           => get_theme_mod( 'dav_copy', esc_attr__( 'You must be [age] years old to enter.', 'dispensary-age-verification' ) ),
+                'btnYes'         => get_theme_mod( 'dav_button_yes', esc_attr__( 'YES', 'dispensary-age-verification' ) ),
+                'btnNo'          => get_theme_mod( 'dav_button_no', esc_attr__( 'NO', 'dispensary-age-verification' ) ),
+                'successTitle'   => esc_attr__( 'Success!', 'dispensary-age-verification' ),
+                'successText'    => esc_attr__( 'You are now being redirected back to the site ...', 'dispensary-age-verification' ),
+                'successMessage' => get_theme_mod( 'dav_success_message' ),
+                'failTitle'      => esc_attr__( 'Sorry!', 'dispensary-age-verification' ),
+                'failText'       => esc_attr__( 'You are not old enough to view the site ...', 'dispensary-age-verification' ),
+                'messageTime'    => get_theme_mod( 'dav_message_display_time' ),
+                'redirectOnFail' => $redirectOnFail,
+                'beforeContent'  => $beforeContent,
+                'afterContent'   => $afterContent,
+            ];
+        }
 
         // Translation array filter.
         $translation_array = apply_filters( 'avwp_localize_script_translation_array', $translation_array );

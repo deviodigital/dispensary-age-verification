@@ -124,6 +124,13 @@ class Age_Verification {
          */
         require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/class-dispensary-age-verification-admin.php';
 
+        if ( wp_is_block_theme() ) {
+            /**
+             * The class responsible for defining the plugin settings page
+             */
+            require_once plugin_dir_path( dirname( __FILE__ ) ) . 'admin/age-verification-settings.php';
+        }
+
         /**
          * The class responsible for defining all actions that occur in the public-facing
          * side of the site.
