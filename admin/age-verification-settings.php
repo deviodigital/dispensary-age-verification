@@ -20,8 +20,8 @@ add_action( 'admin_init', 'dav_register_settings' );
  */
 function dav_register_settings_page() {
     add_options_page(
-        __( 'Age Verification', 'dispensary-age-verification' ),
-        __( 'Age Verification', 'dispensary-age-verification' ),
+        esc_html__( 'Age Verification', 'dispensary-age-verification' ),
+        esc_html__( 'Age Verification', 'dispensary-age-verification' ),
         'manage_options',
         'age-verification-settings',
         'dav_render_settings_page'
@@ -38,7 +38,7 @@ function dav_register_settings() {
     // Register settings section.
     add_settings_section(
         'dav_settings_section',
-        __( 'Age Verification Settings', 'dispensary-age-verification' ),
+        esc_html__( 'Age Verification Settings', 'dispensary-age-verification' ),
         '__return_false',
         'age-verification-settings'
     );
@@ -46,45 +46,45 @@ function dav_register_settings() {
     // Fields array to loop through.
     $fields = [
         'dav_minAge' => [
-            'label'   => __( 'Minimum age?', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Minimum age?', 'dispensary-age-verification' ),
             'type'    => 'number',
             'default' => '18',
         ],
         'dav_bgImage' => [
-            'label' => __( 'Background image', 'dispensary-age-verification' ),
+            'label' => esc_html__( 'Background image', 'dispensary-age-verification' ),
             'type'  => 'image',
         ],
         'dav_logo' => [
-            'label' => __( 'Logo image', 'dispensary-age-verification' ),
+            'label' => esc_html__( 'Logo image', 'dispensary-age-verification' ),
             'type'  => 'image',
         ],
         'dav_title' => [
-            'label'   => __( 'Title', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Title', 'dispensary-age-verification' ),
             'type'    => 'text',
-            'default' => __( 'Age Verification', 'dispensary-age-verification' ),
+            'default' => esc_html__( 'Age Verification', 'dispensary-age-verification' ),
         ],
         'dav_copy' => [
-            'label'   => __( 'Copy', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Copy', 'dispensary-age-verification' ),
             'type'    => 'textarea',
-            'default' => __( 'You must be [age] years old to enter.', 'dispensary-age-verification' ),
+            'default' => esc_html__( 'You must be [age] years old to enter.', 'dispensary-age-verification' ),
         ],
         'dav_button_yes' => [
-            'label'   => __( 'Button #1 text', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Button #1 text', 'dispensary-age-verification' ),
             'type'    => 'text',
-            'default' => __( 'YES', 'dispensary-age-verification' ),
+            'default' => esc_html__( 'YES', 'dispensary-age-verification' ),
         ],
         'dav_button_no' => [
-            'label'   => __( 'Button #2 text', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Button #2 text', 'dispensary-age-verification' ),
             'type'    => 'text',
-            'default' => __( 'NO', 'dispensary-age-verification' ),
+            'default' => esc_html__( 'NO', 'dispensary-age-verification' ),
         ],
         'dav_message_display_time' => [
-            'label'   => __( 'Message display time (milliseconds)', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Message display time (milliseconds)', 'dispensary-age-verification' ),
             'type'    => 'number',
             'default' => 2000,
         ],
         'dav_adminHide' => [
-            'label'   => __( 'Hide for admin users?', 'dispensary-age-verification' ),
+            'label'   => esc_html__( 'Hide for admin users?', 'dispensary-age-verification' ),
             'type'    => 'checkbox',
             'default' => '',
         ],

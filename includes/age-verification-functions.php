@@ -16,15 +16,14 @@
  * @return string
  */ 
 function avwp_hex2rgba( $color, $opacity = false ) {
-
     // Default.
     $default = 'rgb(0,0,0)';
- 
+
     // Return default if no color provided.
     if ( empty( $color ) ) {
         return $default; 
     }
- 
+
     // Sanitize $color if "#" is provided.
     if ( '#' == $color[0] ) {
         $color = substr( $color, 1 );
@@ -52,7 +51,7 @@ function avwp_hex2rgba( $color, $opacity = false ) {
         $output = 'rgb(' . implode( ',', $rgb ) . ')';
     }
 
-    // Return rgb(a) color string
+    // Return rgb(a) color string.
     return $output;
 }
 
@@ -66,7 +65,7 @@ function avwp_hex2rgba( $color, $opacity = false ) {
 function avwp_get_media_id_from_url( $image_url ) {
     global $wpdb;
 
-    // Prepare the SQL query using $wpdb->prepare() to prevent SQL injection
+    // Prepare the SQL query using $wpdb->prepare() to prevent SQL injection.
     $sql = $wpdb->prepare( "SELECT ID FROM $wpdb->posts WHERE guid = %s", $image_url );
 
     // Use $wpdb->get_var() to execute the prepared query and retrieve the result.

@@ -77,16 +77,12 @@ class Age_Verification_Public {
      * @return void
      */
     public function enqueue_scripts() {
-
         // Empty redirect.
         $redirect_fail = '';
-
         // Set the redirect URL.
         $redirectOnFail = esc_url( apply_filters( 'avwp_redirect_on_fail_link', $redirect_fail ) );
-
         // Add content before popup contents.
         $beforeContent = apply_filters( 'avwp_before_popup_content', '' );
-
         // Add content after popup contents.
         $afterContent = apply_filters( 'avwp_after_popup_content', '' );
 
@@ -119,9 +115,9 @@ class Age_Verification_Public {
             }
         }
 
-        // Check if the theme is an FSE (Full Site Editing) theme
+        // Check if the theme is an FSE (Full Site Editing) theme.
         if ( wp_is_block_theme() ) {
-            // Use settings from the options table (FSE themes)
+            // Use settings from the options table (FSE themes).
             $translation_array = [
                 'bgImage'        => get_option( 'dav_bgImage', '' ),
                 'minAge'         => get_option( 'dav_minAge', '18' ),
