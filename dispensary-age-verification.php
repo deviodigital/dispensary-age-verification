@@ -12,7 +12,7 @@
  * Plugin Name:       Age Verification
  * Plugin URI:        https://www.deviodigital.com
  * Description:       Check a visitors age before allowing them to view your website. Brought to you by <a href="https://www.deviodigital.com/" target="_blank">Devio Digital</a>
- * Version:           3.0.0
+ * Version:           3.0.1
  * Author:            Devio Digital
  * Author URI:        https://www.deviodigital.com
  * License:           GPL-2.0+
@@ -39,7 +39,7 @@ $myUpdateChecker = PucFactory::buildUpdateChecker(
 $myUpdateChecker->setBranch( 'main' );
 
 // Current plugin version.
-define( 'AVWP_VERSION', '3.0.0' );
+define( 'AVWP_VERSION', '3.0.1' );
 
 // Plugin folder name.
 $pluginname = plugin_basename( __FILE__ );
@@ -142,7 +142,7 @@ function avwp_check_pro_version() {
         }
         // Set pro version number.
         $pro_version = AVWP_PRO_VERSION;
-        if ( '0' == $pro_version || $pro_version < '1.4' ) {
+        if ( '0' == $pro_version || $pro_version < '1.4.1' ) {
             add_action( 'admin_notices', 'avwp_update_avwp_pro_notice' );
         }
     }
@@ -157,7 +157,7 @@ add_action( 'admin_init', 'avwp_check_pro_version' );
  * @return void
  */
 function avwp_update_avwp_pro_notice() {
-    $avwp_orders = '<a href="https://www.deviodigital.com/my-account/orders/" target="_blank">' . esc_attr__( 'Orders', 'dispensary-age-verification' ) . '</a>';
+    $avwp_orders = '<a href="https://www.deviodigital.com/age-verification-pro/" target="_blank">' . esc_attr__( 'Orders', 'dispensary-age-verification' ) . '</a>';
     $error       = sprintf( esc_html__( 'There is a new version of AVWP Pro available. Download your copy from the %1$s page on Devio Digital.', 'dispensary-age-verification' ), $avwp_orders );
     echo '<div class="notice notice-info"><p>' . $error . '</p></div>';
 }
